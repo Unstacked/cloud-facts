@@ -1,19 +1,8 @@
 ---
 import instanceOfferings from "../../../data/instance_type_offerings.json"
 import regions from "../../../data/regions.json"
-const instance_types = Object.entries(instanceOfferings.instances).map(i => {
-    return i[0]
-})
-
-let instance_families: string[] = []
-instance_types.forEach(instance => {
-    const parts = instance.split(".")
-    if (!instance_families.includes(parts[0])) {
-        instance_families.push(parts[0])
-    }
-})
-
-
+import instanceTypes from "../../../data/all_instance_types.json"
+import instanceFamilies from "../../../data/all_instance_families.json"
 ---
 
 <html lang="en">
@@ -26,7 +15,7 @@ instance_types.forEach(instance => {
 	</head>
 	<body>
 		<ul>
-            {instance_families.map((instance) => (
+            {instanceFamilies.map((instance) => (
                 <li>{instance}</li>
             ))}
         </ul>
