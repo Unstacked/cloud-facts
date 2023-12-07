@@ -1,0 +1,34 @@
+---
+import instanceOfferings from "../../../data/instance_type_offerings.json"
+import regions from "../../../data/regions.json"
+const instance_types = Object.entries(instanceOfferings.instances).map(i => {
+    return i[0]
+})
+
+let instance_families: string[] = []
+instance_types.forEach(instance => {
+    const parts = instance.split(".")
+    if (!instance_families.includes(parts[0])) {
+        instance_families.push(parts[0])
+    }
+})
+
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<ul>
+            {instance_families.map((instance) => (
+                <li>{instance}</li>
+            ))}
+        </ul>
+	</body>
+</html>
