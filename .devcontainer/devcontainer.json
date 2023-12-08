@@ -7,7 +7,9 @@
         "ghcr.io/devcontainers/features/node:1": {}
     },
     "postStartCommand": "bash /workspaces/cloud-facts/.devcontainer/install-dendencies.sh",
-    "forwardPorts": [4321],
+    "forwardPorts": [
+        4321
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
@@ -15,5 +17,11 @@
                 "ms-python.black-formatter"
             ]
         }
-    }
+    },
+    "mounts": [
+        "source=/home/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,type=bind,readonly",
+        "source=/home/${localEnv:USER}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,readonly",
+        "source=/home/${localEnv:USER}/.aws,target=/home/vscode/.aws,type=bind",
+        "source=/home/${localEnv:USER}/.gnupg,target=/home/vscode/.gnupg,type=bind,readonly"
+    ]
 }
