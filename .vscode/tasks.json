@@ -2,13 +2,15 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"isBackground": true,
 			"type": "npm",
 			"script": "dev",
 			"path": "frontend",
 			"problemMatcher": [],
 			"label": "Astro Dev",
-			"detail": "astro dev"
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		},
 		{
 			"type": "npm",
@@ -16,8 +18,13 @@
 			"path": "cdk",
 			"group": "build",
 			"problemMatcher": [],
-			"label": "CDK Synth",
-			"detail": "tsc"
+			"label": "CDK Synth"
+		},
+		{
+			"type": "shell",
+			"command": "aws",
+			"args": ["sso", "login"],
+			"label": "AWS Login"
 		}
 	]
 }

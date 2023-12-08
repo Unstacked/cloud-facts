@@ -3,21 +3,10 @@ import instanceOfferings from "../../../data/instance_type_offerings.json"
 import regions from "../../../data/regions.json"
 import instanceTypes from "../../../data/all_instance_types.json"
 import instanceFamilies from "../../../data/all_instance_families.json"
+
+import SiteLayout from "../layouts/SiteLayout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<ul>
-            {instanceFamilies.map((instance) => (
-                <li>{instance}</li>
-            ))}
-        </ul>
-	</body>
-</html>
+<SiteLayout title="Instances">
+	<h1>test</h1>
+</SiteLayout>

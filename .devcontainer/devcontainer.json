@@ -4,7 +4,13 @@
         "ghcr.io/devcontainers/features/aws-cli:1": {},
         "ghcr.io/devcontainers/features/python:1": {},
         "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {},
-        "ghcr.io/devcontainers/features/node:1": {}
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+            "moby": true,
+            "installDockerBuildx": true,
+            "version": "latest",
+            "dockerDashComposeVersion": "v2"
+        }
     },
     "postCreateCommand": "bash /workspaces/cloud-facts/.devcontainer/install-dendencies.sh",
     "forwardPorts": [
