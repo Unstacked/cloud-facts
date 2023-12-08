@@ -1,12 +1,45 @@
 ---
-import instanceOfferings from "../../../data/instance_type_offerings.json"
-import regions from "../../../data/regions.json"
-import instanceTypes from "../../../data/all_instance_types.json"
-import instanceFamilies from "../../../data/all_instance_families.json"
+import instanceOfferings from "../../../data/instance_type_offerings.json";
+import regions from "../../../data/regions.json";
+import instanceTypes from "../../../data/all_instance_types.json";
+import instanceFamilies from "../../../data/all_instance_families.json";
+import { offerings } from "../../../data/family_offerings";
+import { instanceSizeSort } from "../lib/instance-size-sort"
 
-import SiteLayout from "../layouts/SiteLayout.astro"
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Card from "react-bootstrap/Card";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 ---
 
 <SiteLayout title="Instances">
-	<h1>test</h1>
+	<Row xs={1} sm={2} md={3} lg={3} xl={4} xxl={5}>
+		{
+			instanceFamilies.sort().map((k) => (
+				<Container className="p-2">
+					<Card className="px-0">
+						<Card.Header>
+							<Card.Title>{k}</Card.Title>
+						</Card.Header>
+						<Card.Body>
+							<Card.Text>
+								<h5>Regions</h5>
+								<ul style="list-style-type: none;">
+									{offerings[k].regions.sort().map((r) => (
+										<li>{r}</li>
+									))}
+								</ul>
+								<h5>Sizes</h5>
+								<ul style="list-style-type: none;">
+									{instanceSizeSort(offerings[k].sizes).map((s) => (
+										<li>{s}</li>
+									))}
+								</ul>
+							</Card.Text>
+						</Card.Body>
+					</Card>
+				</Container>
+			))
+		}
+	</Row>
 </SiteLayout>
