@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"isBackground": true,
+			"type": "npm",
+			"script": "dev",
+			"path": "frontend",
+			"problemMatcher": [],
+			"label": "Astro Dev",
+			"detail": "astro dev"
+		},
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "cdk",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "CDK Synth",
+			"detail": "tsc"
+		}
+	]
+}
