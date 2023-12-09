@@ -1,0 +1,96 @@
+{
+  "AutoRecoverySupported": false,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 315,
+      "BaselineIops": 2500,
+      "BaselineThroughputInMBps": 39.375,
+      "MaximumBandwidthInMbps": 4750,
+      "MaximumIops": 20000,
+      "MaximumThroughputInMBps": 593.75
+    },
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageInfo": {
+    "Disks": [
+      {
+        "Count": 1,
+        "SizeInGB": 59,
+        "Type": "ssd"
+      }
+    ],
+    "EncryptionSupport": "required",
+    "NvmeSupport": "required",
+    "TotalSizeInGB": 59
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "r6gd.medium",
+  "MemoryInfo": {
+    "SizeInMiB": 8192
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "required",
+    "EncryptionInTransitSupported": false,
+    "Ipv4AddressesPerInterface": 4,
+    "Ipv6AddressesPerInterface": 4,
+    "Ipv6Supported": true,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 2,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 0.5,
+        "MaximumNetworkInterfaces": 2,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 10 Gigabit",
+        "PeakBandwidthInGbps": 10.0
+      }
+    ],
+    "NetworkPerformance": "Up to 10 Gigabit"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "AWS",
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.5
+  },
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 1,
+    "DefaultVCpus": 1
+  }
+}

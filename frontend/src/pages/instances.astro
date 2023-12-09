@@ -7,13 +7,13 @@ import { offerings } from "../../../data/family_offerings";
 import { instanceSizeSort } from "../lib/instance-size-sort"
 
 import SiteLayout from "../layouts/SiteLayout.astro";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
+import Card from "react-bootstrap/cjs/Card.js";
+import Row from "react-bootstrap/cjs/Row.js";
+import Container from "react-bootstrap/cjs/Container.js";
 ---
 
 <SiteLayout title="Instances">
-	<Row xs={1} sm={2} md={3} lg={3} xl={4} xxl={5} className="px-3">
+	<Row xs={1} sm={2} md={3} lg={3} xl={4} xxl={5} xxxl={6} className="px-3">
 		{
 			instanceFamilies.sort().map((k) => (
 				<Container className="p-2">

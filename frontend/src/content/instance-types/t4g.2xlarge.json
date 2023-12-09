@@ -1,0 +1,96 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": true,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 695,
+      "BaselineIops": 4000,
+      "BaselineThroughputInMBps": 86.875,
+      "MaximumBandwidthInMbps": 2780,
+      "MaximumIops": 15700,
+      "MaximumThroughputInMBps": 347.5
+    },
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "t4g.2xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 32768
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "required",
+    "EncryptionInTransitSupported": false,
+    "Ipv4AddressesPerInterface": 15,
+    "Ipv6AddressesPerInterface": 15,
+    "Ipv6Supported": true,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 4,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 2.048,
+        "MaximumNetworkInterfaces": 4,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 5 Gigabit",
+        "PeakBandwidthInGbps": 5.0
+      }
+    ],
+    "NetworkPerformance": "Up to 5 Gigabit"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "AWS",
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.5
+  },
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 8,
+    "DefaultThreadsPerCore": 1,
+    "DefaultVCpus": 8,
+    "ValidCores": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "ValidThreadsPerCore": [
+      1
+    ]
+  }
+}

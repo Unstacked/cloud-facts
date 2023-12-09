@@ -1,0 +1,95 @@
+{
+  "AutoRecoverySupported": false,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": false,
+  "DedicatedHostsSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "unsupported",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "unsupported"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "xen",
+  "InstanceStorageInfo": {
+    "Disks": [
+      {
+        "Count": 1,
+        "SizeInGB": 420,
+        "Type": "hdd"
+      }
+    ],
+    "EncryptionSupport": "unsupported",
+    "NvmeSupport": "unsupported",
+    "TotalSizeInGB": 420
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "m2.xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 17510
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "unsupported",
+    "EncryptionInTransitSupported": false,
+    "Ipv4AddressesPerInterface": 15,
+    "Ipv6AddressesPerInterface": 0,
+    "Ipv6Supported": false,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 4,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 0.3,
+        "MaximumNetworkInterfaces": 4,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Moderate",
+        "PeakBandwidthInGbps": 1.2
+      }
+    ],
+    "NetworkPerformance": "Moderate"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "Intel",
+    "SupportedArchitectures": [
+      "x86_64"
+    ]
+  },
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs",
+    "instance-store"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm",
+    "paravirtual"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 2,
+    "DefaultThreadsPerCore": 1,
+    "DefaultVCpus": 2,
+    "ValidCores": [
+      1,
+      2
+    ],
+    "ValidThreadsPerCore": [
+      1
+    ]
+  }
+}

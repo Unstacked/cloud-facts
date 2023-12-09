@@ -1,0 +1,90 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": true,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 347,
+      "BaselineIops": 2000,
+      "BaselineThroughputInMBps": 43.375,
+      "MaximumBandwidthInMbps": 2085,
+      "MaximumIops": 11800,
+      "MaximumThroughputInMBps": 260.625
+    },
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "t4g.medium",
+  "MemoryInfo": {
+    "SizeInMiB": 4096
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "required",
+    "EncryptionInTransitSupported": false,
+    "Ipv4AddressesPerInterface": 6,
+    "Ipv6AddressesPerInterface": 6,
+    "Ipv6Supported": true,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 3,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 0.256,
+        "MaximumNetworkInterfaces": 3,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 5 Gigabit",
+        "PeakBandwidthInGbps": 5.0
+      }
+    ],
+    "NetworkPerformance": "Up to 5 Gigabit"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "AWS",
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.5
+  },
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 2,
+    "DefaultThreadsPerCore": 1,
+    "DefaultVCpus": 2,
+    "ValidCores": [
+      1,
+      2
+    ],
+    "ValidThreadsPerCore": [
+      1
+    ]
+  }
+}

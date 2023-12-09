@@ -1,0 +1,109 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 15000,
+      "BaselineIops": 60000,
+      "BaselineThroughputInMBps": 1875.0,
+      "MaximumBandwidthInMbps": 15000,
+      "MaximumIops": 60000,
+      "MaximumThroughputInMBps": 1875.0
+    },
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "c6a.12xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 98304
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "required",
+    "EncryptionInTransitSupported": true,
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 8,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 18.75,
+        "MaximumNetworkInterfaces": 8,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "18.75 Gigabit",
+        "PeakBandwidthInGbps": 18.75
+      }
+    ],
+    "NetworkPerformance": "18.75 Gigabit"
+  },
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  },
+  "NitroTpmSupport": "supported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "AMD",
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SupportedFeatures": [
+      "amd-sev-snp"
+    ],
+    "SustainedClockSpeedInGhz": 3.6
+  },
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 24,
+    "DefaultThreadsPerCore": 2,
+    "DefaultVCpus": 48,
+    "ValidCores": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      16,
+      24
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}

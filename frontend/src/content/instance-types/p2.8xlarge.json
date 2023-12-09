@@ -1,0 +1,119 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 5000,
+      "BaselineIops": 32500,
+      "BaselineThroughputInMBps": 625.0,
+      "MaximumBandwidthInMbps": 5000,
+      "MaximumIops": 32500,
+      "MaximumThroughputInMBps": 625.0
+    },
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "unsupported"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Count": 8,
+        "Manufacturer": "NVIDIA",
+        "MemoryInfo": {
+          "SizeInMiB": 12288
+        },
+        "Name": "K80"
+      }
+    ],
+    "TotalGpuMemoryInMiB": 98304
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "xen",
+  "InstanceStorageSupported": false,
+  "InstanceType": "p2.8xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 499712
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "supported",
+    "EncryptionInTransitSupported": false,
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 8,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 5.0,
+        "MaximumNetworkInterfaces": 8,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "10 Gigabit",
+        "PeakBandwidthInGbps": 20.0
+      }
+    ],
+    "NetworkPerformance": "10 Gigabit"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "Intel",
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 2.7
+  },
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 16,
+    "DefaultThreadsPerCore": 2,
+    "DefaultVCpus": 32,
+    "ValidCores": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}

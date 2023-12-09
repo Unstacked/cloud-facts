@@ -1,0 +1,105 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": false,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 500,
+      "BaselineIops": 4000,
+      "BaselineThroughputInMBps": 62.5,
+      "MaximumBandwidthInMbps": 500,
+      "MaximumIops": 4000,
+      "MaximumThroughputInMBps": 62.5
+    },
+    "EbsOptimizedSupport": "supported",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "unsupported"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": true,
+  "Hypervisor": "xen",
+  "InstanceStorageInfo": {
+    "Disks": [
+      {
+        "Count": 2,
+        "SizeInGB": 40,
+        "Type": "ssd"
+      }
+    ],
+    "EncryptionSupport": "unsupported",
+    "NvmeSupport": "unsupported",
+    "TotalSizeInGB": 80
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "m3.xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 15360
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "unsupported",
+    "EncryptionInTransitSupported": false,
+    "Ipv4AddressesPerInterface": 15,
+    "Ipv6AddressesPerInterface": 0,
+    "Ipv6Supported": false,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 4,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 1.0,
+        "MaximumNetworkInterfaces": 4,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "High",
+        "PeakBandwidthInGbps": 10.0
+      }
+    ],
+    "NetworkPerformance": "High"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "Intel",
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 2.5
+  },
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs",
+    "instance-store"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm",
+    "paravirtual"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 2,
+    "DefaultThreadsPerCore": 2,
+    "DefaultVCpus": 4,
+    "ValidCores": [
+      1,
+      2
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}

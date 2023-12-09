@@ -1,0 +1,76 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": false,
+  "DedicatedHostsSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "unsupported",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "unsupported"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "xen",
+  "InstanceStorageSupported": false,
+  "InstanceType": "t1.micro",
+  "MemoryInfo": {
+    "SizeInMiB": 627
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "unsupported",
+    "EncryptionInTransitSupported": false,
+    "Ipv4AddressesPerInterface": 2,
+    "Ipv6AddressesPerInterface": 0,
+    "Ipv6Supported": false,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 2,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 0.07,
+        "MaximumNetworkInterfaces": 2,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Very Low",
+        "PeakBandwidthInGbps": 0.28
+      }
+    ],
+    "NetworkPerformance": "Very Low"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "Intel",
+    "SupportedArchitectures": [
+      "i386",
+      "x86_64"
+    ]
+  },
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm",
+    "paravirtual"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 1,
+    "DefaultVCpus": 1
+  }
+}

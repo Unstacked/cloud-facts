@@ -1,0 +1,117 @@
+{
+  "AutoRecoverySupported": false,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 800,
+      "BaselineIops": 3400,
+      "BaselineThroughputInMBps": 100.0,
+      "MaximumBandwidthInMbps": 3170,
+      "MaximumIops": 13333,
+      "MaximumThroughputInMBps": 396.25
+    },
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Count": 1,
+        "Manufacturer": "AMD",
+        "MemoryInfo": {
+          "SizeInMiB": 8192
+        },
+        "Name": "Radeon Pro V520"
+      }
+    ],
+    "TotalGpuMemoryInMiB": 8192
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageInfo": {
+    "Disks": [
+      {
+        "Count": 1,
+        "SizeInGB": 300,
+        "Type": "ssd"
+      }
+    ],
+    "EncryptionSupport": "required",
+    "NvmeSupport": "required",
+    "TotalSizeInGB": 300
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "g4ad.2xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 32768
+  },
+  "NetworkInfo": {
+    "DefaultNetworkCardIndex": 0,
+    "EfaSupported": false,
+    "EnaSrdSupported": false,
+    "EnaSupport": "required",
+    "EncryptionInTransitSupported": true,
+    "Ipv4AddressesPerInterface": 4,
+    "Ipv6AddressesPerInterface": 4,
+    "Ipv6Supported": true,
+    "MaximumNetworkCards": 1,
+    "MaximumNetworkInterfaces": 2,
+    "NetworkCards": [
+      {
+        "BaselineBandwidthInGbps": 4.167,
+        "MaximumNetworkInterfaces": 2,
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 10 Gigabit",
+        "PeakBandwidthInGbps": 10.0
+      }
+    ],
+    "NetworkPerformance": "Up to 10 Gigabit"
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "Manufacturer": "AMD",
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.0
+  },
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultCores": 4,
+    "DefaultThreadsPerCore": 2,
+    "DefaultVCpus": 8,
+    "ValidCores": [
+      2,
+      4
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}
