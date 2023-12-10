@@ -1,0 +1,23 @@
+{
+  "name": "r4",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "xlarge",
+    "2xlarge",
+    "8xlarge",
+    "large",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 15616,
+    "maxMib": 499712
+  }
+}

@@ -1,57 +1,72 @@
 {
-  "AutoRecoverySupported": true,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": false,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 87,
-      "BaselineIops": 500,
-      "BaselineThroughputInMBps": 10.875,
-      "MaximumBandwidthInMbps": 2085,
-      "MaximumIops": 11000,
-      "MaximumThroughputInMBps": 260.625
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "required"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "nitro",
-  "InstanceStorageSupported": false,
   "InstanceType": "hpc7g.8xlarge",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 32,
+    "DefaultCores": 32,
+    "DefaultThreadsPerCore": 1
+  },
   "MemoryInfo": {
     "SizeInMiB": 131072
   },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaInfo": {
-      "MaximumEfaInterfaces": 1
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 87,
+      "BaselineThroughputInMBps": 10.875,
+      "BaselineIops": 500,
+      "MaximumBandwidthInMbps": 2085,
+      "MaximumThroughputInMBps": 260.625,
+      "MaximumIops": 11000
     },
-    "EfaSupported": true,
-    "EnaSrdSupported": false,
-    "EnaSupport": "required",
-    "EncryptionInTransitSupported": true,
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "200 Gigabit",
+    "MaximumNetworkInterfaces": 4,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "200 Gigabit",
+        "MaximumNetworkInterfaces": 4,
+        "BaselineBandwidthInGbps": 200,
+        "PeakBandwidthInGbps": 200
+      }
+    ],
     "Ipv4AddressesPerInterface": 50,
     "Ipv6AddressesPerInterface": 50,
     "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 4,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 200.0,
-        "MaximumNetworkInterfaces": 4,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "200 Gigabit",
-        "PeakBandwidthInGbps": 200.0
-      }
-    ],
-    "NetworkPerformance": "200 Gigabit"
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 1
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
   },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "cluster",
@@ -59,28 +74,13 @@
       "spread"
     ]
   },
-  "ProcessorInfo": {
-    "Manufacturer": "AWS",
-    "SupportedArchitectures": [
-      "arm64"
-    ],
-    "SustainedClockSpeedInGhz": 2.6
-  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": false,
+  "AutoRecoverySupported": true,
   "SupportedBootModes": [
     "uefi"
   ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
-  "SupportedUsageClasses": [
-    "on-demand"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm"
-  ],
-  "VCpuInfo": {
-    "DefaultCores": 32,
-    "DefaultThreadsPerCore": 1,
-    "DefaultVCpus": 32
-  }
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

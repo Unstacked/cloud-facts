@@ -1,0 +1,19 @@
+{
+  "name": "c1",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "medium"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 8
+  },
+  "memory": {
+    "minMib": 1740,
+    "maxMib": 7168
+  }
+}

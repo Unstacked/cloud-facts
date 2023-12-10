@@ -1,91 +1,30 @@
 {
-  "AutoRecoverySupported": true,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": false,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 3170,
-      "BaselineIops": 13300,
-      "BaselineThroughputInMBps": 396.25,
-      "MaximumBandwidthInMbps": 3170,
-      "MaximumIops": 13300,
-      "MaximumThroughputInMBps": 396.25
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "required"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "nitro",
-  "InstanceStorageSupported": false,
   "InstanceType": "c5a.8xlarge",
-  "MemoryInfo": {
-    "SizeInMiB": 65536
-  },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "required",
-    "EncryptionInTransitSupported": true,
-    "Ipv4AddressesPerInterface": 30,
-    "Ipv6AddressesPerInterface": 30,
-    "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 8,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 10.0,
-        "MaximumNetworkInterfaces": 8,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "10 Gigabit",
-        "PeakBandwidthInGbps": 10.0
-      }
-    ],
-    "NetworkPerformance": "10 Gigabit"
-  },
-  "NitroEnclavesSupport": "supported",
-  "NitroTpmInfo": {
-    "SupportedVersions": [
-      "2.0"
-    ]
-  },
-  "NitroTpmSupport": "supported",
-  "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
-  },
-  "ProcessorInfo": {
-    "Manufacturer": "AMD",
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
-    "SustainedClockSpeedInGhz": 3.3
-  },
-  "SupportedBootModes": [
-    "legacy-bios",
-    "uefi"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedVirtualizationTypes": [
     "hvm"
   ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.3,
+    "Manufacturer": "AMD"
+  },
   "VCpuInfo": {
+    "DefaultVCpus": 32,
     "DefaultCores": 16,
     "DefaultThreadsPerCore": 2,
-    "DefaultVCpus": 32,
     "ValidCores": [
       1,
       2,
@@ -98,6 +37,67 @@
     "ValidThreadsPerCore": [
       1,
       2
+    ]
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 65536
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 3170,
+      "BaselineThroughputInMBps": 396.25,
+      "BaselineIops": 13300,
+      "MaximumBandwidthInMbps": 3170,
+      "MaximumThroughputInMBps": 396.25,
+      "MaximumIops": 13300
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "10 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "10 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 10,
+        "PeakBandwidthInGbps": 10
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": false,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
     ]
   }
 }

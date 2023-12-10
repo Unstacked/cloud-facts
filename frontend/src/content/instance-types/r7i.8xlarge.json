@@ -1,86 +1,30 @@
 {
-  "AutoRecoverySupported": true,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": true,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 10000,
-      "BaselineIops": 40000,
-      "BaselineThroughputInMBps": 1250.0,
-      "MaximumBandwidthInMbps": 10000,
-      "MaximumIops": 40000,
-      "MaximumThroughputInMBps": 1250.0
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "required"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "nitro",
-  "InstanceStorageSupported": false,
   "InstanceType": "r7i.8xlarge",
-  "MemoryInfo": {
-    "SizeInMiB": 262144
-  },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "required",
-    "EncryptionInTransitSupported": true,
-    "Ipv4AddressesPerInterface": 30,
-    "Ipv6AddressesPerInterface": 30,
-    "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 8,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 12.5,
-        "MaximumNetworkInterfaces": 8,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "12.5 Gigabit",
-        "PeakBandwidthInGbps": 12.5
-      }
-    ],
-    "NetworkPerformance": "12.5 Gigabit"
-  },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
-  "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
-  },
-  "ProcessorInfo": {
-    "Manufacturer": "Intel",
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
-    "SustainedClockSpeedInGhz": 3.2
-  },
-  "SupportedBootModes": [
-    "legacy-bios",
-    "uefi"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedVirtualizationTypes": [
     "hvm"
   ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.2,
+    "Manufacturer": "Intel"
+  },
   "VCpuInfo": {
+    "DefaultVCpus": 32,
     "DefaultCores": 16,
     "DefaultThreadsPerCore": 2,
-    "DefaultVCpus": 32,
     "ValidCores": [
       1,
       2,
@@ -103,5 +47,61 @@
       1,
       2
     ]
-  }
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 262144
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 10000,
+      "BaselineThroughputInMBps": 1250,
+      "BaselineIops": 40000,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 40000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "12.5 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "12.5 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 12.5,
+        "PeakBandwidthInGbps": 12.5
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

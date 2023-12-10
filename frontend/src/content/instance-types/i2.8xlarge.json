@@ -1,90 +1,31 @@
 {
-  "AutoRecoverySupported": false,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": false,
-  "DedicatedHostsSupported": true,
-  "EbsInfo": {
-    "EbsOptimizedSupport": "unsupported",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "unsupported"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "xen",
-  "InstanceStorageInfo": {
-    "Disks": [
-      {
-        "Count": 8,
-        "SizeInGB": 800,
-        "Type": "ssd"
-      }
-    ],
-    "EncryptionSupport": "unsupported",
-    "NvmeSupport": "unsupported",
-    "TotalSizeInGB": 6400
-  },
-  "InstanceStorageSupported": true,
   "InstanceType": "i2.8xlarge",
-  "MemoryInfo": {
-    "SizeInMiB": 249856
-  },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "unsupported",
-    "EncryptionInTransitSupported": false,
-    "Ipv4AddressesPerInterface": 30,
-    "Ipv6AddressesPerInterface": 30,
-    "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 8,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 10.0,
-        "MaximumNetworkInterfaces": 8,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "10 Gigabit",
-        "PeakBandwidthInGbps": 10.0
-      }
-    ],
-    "NetworkPerformance": "10 Gigabit"
-  },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
-  "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
-  },
-  "ProcessorInfo": {
-    "Manufacturer": "Intel",
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
-    "SustainedClockSpeedInGhz": 2.5
-  },
-  "SupportedBootModes": [
-    "legacy-bios"
+  "CurrentGeneration": false,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
   ],
   "SupportedRootDeviceTypes": [
     "ebs",
     "instance-store"
   ],
-  "SupportedUsageClasses": [
-    "on-demand",
-    "spot"
-  ],
   "SupportedVirtualizationTypes": [
     "hvm"
   ],
+  "BareMetal": false,
+  "Hypervisor": "xen",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 2.5,
+    "Manufacturer": "Intel"
+  },
   "VCpuInfo": {
+    "DefaultVCpus": 32,
     "DefaultCores": 16,
     "DefaultThreadsPerCore": 2,
-    "DefaultVCpus": 32,
     "ValidCores": [
       2,
       4,
@@ -99,5 +40,64 @@
       1,
       2
     ]
-  }
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 249856
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 6400,
+    "Disks": [
+      {
+        "SizeInGB": 800,
+        "Count": 8,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "unsupported",
+    "EncryptionSupport": "unsupported"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "unsupported",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "unsupported"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "10 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "10 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 10,
+        "PeakBandwidthInGbps": 10
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "unsupported",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

@@ -1,0 +1,19 @@
+{
+  "name": "u-6tb1",
+  "regions": [],
+  "sizes": [
+    "56xlarge",
+    "112xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 224,
+    "maxCores": 448
+  },
+  "memory": {
+    "minMib": 6291456,
+    "maxMib": 6291456
+  }
+}

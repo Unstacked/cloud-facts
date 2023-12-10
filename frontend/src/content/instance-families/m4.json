@@ -1,0 +1,23 @@
+{
+  "name": "m4",
+  "regions": [],
+  "sizes": [
+    "4xlarge",
+    "xlarge",
+    "large",
+    "16xlarge",
+    "10xlarge",
+    "2xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 262144
+  }
+}

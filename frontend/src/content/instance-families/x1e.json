@@ -1,0 +1,23 @@
+{
+  "name": "x1e",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "2xlarge",
+    "32xlarge",
+    "16xlarge",
+    "4xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 124928,
+    "maxMib": 3997696
+  }
+}

@@ -1,97 +1,30 @@
 {
-  "AutoRecoverySupported": false,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": true,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 630,
-      "BaselineIops": 3600,
-      "BaselineThroughputInMBps": 78.75,
-      "MaximumBandwidthInMbps": 10000,
-      "MaximumIops": 40000,
-      "MaximumThroughputInMBps": 1250.0
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "required"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "nitro",
-  "InstanceStorageInfo": {
-    "Disks": [
-      {
-        "Count": 1,
-        "SizeInGB": 118,
-        "Type": "ssd"
-      }
-    ],
-    "EncryptionSupport": "required",
-    "NvmeSupport": "required",
-    "TotalSizeInGB": 118
-  },
-  "InstanceStorageSupported": true,
   "InstanceType": "m7gd.large",
-  "MemoryInfo": {
-    "SizeInMiB": 8192
-  },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "required",
-    "EncryptionInTransitSupported": true,
-    "Ipv4AddressesPerInterface": 10,
-    "Ipv6AddressesPerInterface": 10,
-    "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 3,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 0.937,
-        "MaximumNetworkInterfaces": 3,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "Up to 12.5 Gigabit",
-        "PeakBandwidthInGbps": 12.5
-      }
-    ],
-    "NetworkPerformance": "Up to 12.5 Gigabit"
-  },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
-  "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
-  },
-  "ProcessorInfo": {
-    "Manufacturer": "AWS",
-    "SupportedArchitectures": [
-      "arm64"
-    ],
-    "SustainedClockSpeedInGhz": 2.6
-  },
-  "SupportedBootModes": [
-    "uefi"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedVirtualizationTypes": [
     "hvm"
   ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
+  },
   "VCpuInfo": {
+    "DefaultVCpus": 2,
     "DefaultCores": 2,
     "DefaultThreadsPerCore": 1,
-    "DefaultVCpus": 2,
     "ValidCores": [
       1,
       2
@@ -99,5 +32,72 @@
     "ValidThreadsPerCore": [
       1
     ]
-  }
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 8192
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 118,
+    "Disks": [
+      {
+        "SizeInGB": 118,
+        "Count": 1,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 630,
+      "BaselineThroughputInMBps": 78.75,
+      "BaselineIops": 3600,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 40000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Up to 12.5 Gigabit",
+    "MaximumNetworkInterfaces": 3,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 12.5 Gigabit",
+        "MaximumNetworkInterfaces": 3,
+        "BaselineBandwidthInGbps": 0.937,
+        "PeakBandwidthInGbps": 12.5
+      }
+    ],
+    "Ipv4AddressesPerInterface": 10,
+    "Ipv6AddressesPerInterface": 10,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

@@ -1,0 +1,20 @@
+{
+  "name": "g3",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "8xlarge",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 16,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 124928,
+    "maxMib": 499712
+  }
+}

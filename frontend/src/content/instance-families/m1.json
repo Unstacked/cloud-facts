@@ -1,0 +1,21 @@
+{
+  "name": "m1",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "small",
+    "large",
+    "medium"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 1,
+    "maxCores": 4
+  },
+  "memory": {
+    "minMib": 1740,
+    "maxMib": 15360
+  }
+}

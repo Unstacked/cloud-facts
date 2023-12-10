@@ -1,0 +1,23 @@
+{
+  "name": "g5g",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "16xlarge",
+    "8xlarge",
+    "metal",
+    "4xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 4,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 131072
+  }
+}

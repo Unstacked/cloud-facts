@@ -1,85 +1,30 @@
 {
-  "AutoRecoverySupported": true,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": true,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 1250,
-      "BaselineIops": 6000,
-      "BaselineThroughputInMBps": 156.25039999999998,
-      "MaximumBandwidthInMbps": 10000,
-      "MaximumIops": 40000,
-      "MaximumThroughputInMBps": 1250.0
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "required"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "nitro",
-  "InstanceStorageSupported": false,
   "InstanceType": "c7g.xlarge",
-  "MemoryInfo": {
-    "SizeInMiB": 8192
-  },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "required",
-    "EncryptionInTransitSupported": true,
-    "Ipv4AddressesPerInterface": 15,
-    "Ipv6AddressesPerInterface": 15,
-    "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 4,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 1.876,
-        "MaximumNetworkInterfaces": 4,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "Up to 12.5 Gigabit",
-        "PeakBandwidthInGbps": 12.5
-      }
-    ],
-    "NetworkPerformance": "Up to 12.5 Gigabit"
-  },
-  "NitroEnclavesSupport": "supported",
-  "NitroTpmSupport": "unsupported",
-  "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
-  },
-  "ProcessorInfo": {
-    "Manufacturer": "AWS",
-    "SupportedArchitectures": [
-      "arm64"
-    ],
-    "SustainedClockSpeedInGhz": 2.6
-  },
-  "SupportedBootModes": [
-    "uefi"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedVirtualizationTypes": [
     "hvm"
   ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
+  },
   "VCpuInfo": {
+    "DefaultVCpus": 4,
     "DefaultCores": 4,
     "DefaultThreadsPerCore": 1,
-    "DefaultVCpus": 4,
     "ValidCores": [
       1,
       2,
@@ -89,5 +34,60 @@
     "ValidThreadsPerCore": [
       1
     ]
-  }
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 8192
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 1250,
+      "BaselineThroughputInMBps": 156.25039999999998,
+      "BaselineIops": 6000,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 40000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Up to 12.5 Gigabit",
+    "MaximumNetworkInterfaces": 4,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 12.5 Gigabit",
+        "MaximumNetworkInterfaces": 4,
+        "BaselineBandwidthInGbps": 1.876,
+        "PeakBandwidthInGbps": 12.5
+      }
+    ],
+    "Ipv4AddressesPerInterface": 15,
+    "Ipv6AddressesPerInterface": 15,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmSupport": "unsupported"
 }

@@ -1,0 +1,29 @@
+{
+  "name": "m7a",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "32xlarge",
+    "16xlarge",
+    "medium",
+    "48xlarge",
+    "4xlarge",
+    "12xlarge",
+    "8xlarge",
+    "24xlarge",
+    "2xlarge",
+    "metal-48xl",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 1,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 786432
+  }
+}

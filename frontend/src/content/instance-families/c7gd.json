@@ -1,0 +1,25 @@
+{
+  "name": "c7gd",
+  "regions": [],
+  "sizes": [
+    "medium",
+    "16xlarge",
+    "large",
+    "xlarge",
+    "2xlarge",
+    "12xlarge",
+    "8xlarge",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 2048,
+    "maxMib": 131072
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "c5",
+  "regions": [],
+  "sizes": [
+    "4xlarge",
+    "xlarge",
+    "12xlarge",
+    "24xlarge",
+    "metal",
+    "9xlarge",
+    "2xlarge",
+    "large",
+    "18xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 196608
+  }
+}

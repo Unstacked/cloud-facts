@@ -1,0 +1,23 @@
+{
+  "name": "i4g",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "8xlarge",
+    "large",
+    "16xlarge",
+    "4xlarge",
+    "2xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 2,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 524288
+  }
+}

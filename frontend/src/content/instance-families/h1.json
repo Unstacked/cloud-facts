@@ -1,0 +1,21 @@
+{
+  "name": "h1",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "2xlarge",
+    "16xlarge",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 8,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 32768,
+    "maxMib": 262144
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "r7g",
+  "regions": [],
+  "sizes": [
+    "medium",
+    "xlarge",
+    "metal",
+    "2xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "12xlarge",
+    "16xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 524288
+  }
+}

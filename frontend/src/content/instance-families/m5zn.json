@@ -1,0 +1,24 @@
+{
+  "name": "m5zn",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "large",
+    "6xlarge",
+    "3xlarge",
+    "12xlarge",
+    "metal",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 48
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 196608
+  }
+}

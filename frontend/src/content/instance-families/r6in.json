@@ -1,0 +1,27 @@
+{
+  "name": "r6in",
+  "regions": [],
+  "sizes": [
+    "24xlarge",
+    "metal",
+    "12xlarge",
+    "large",
+    "32xlarge",
+    "4xlarge",
+    "8xlarge",
+    "16xlarge",
+    "2xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  }
+}

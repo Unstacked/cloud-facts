@@ -1,0 +1,29 @@
+{
+  "name": "c7a",
+  "regions": [],
+  "sizes": [
+    "medium",
+    "xlarge",
+    "large",
+    "metal-48xl",
+    "4xlarge",
+    "2xlarge",
+    "8xlarge",
+    "12xlarge",
+    "24xlarge",
+    "16xlarge",
+    "32xlarge",
+    "48xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 1,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 2048,
+    "maxMib": 393216
+  }
+}

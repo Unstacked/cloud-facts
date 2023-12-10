@@ -1,0 +1,22 @@
+{
+  "name": "r3",
+  "regions": [],
+  "sizes": [
+    "large",
+    "8xlarge",
+    "2xlarge",
+    "4xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 32
+  },
+  "memory": {
+    "minMib": 15360,
+    "maxMib": 249856
+  }
+}

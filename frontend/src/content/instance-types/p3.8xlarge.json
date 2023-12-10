@@ -1,98 +1,30 @@
 {
-  "AutoRecoverySupported": true,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": true,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 7000,
-      "BaselineIops": 40000,
-      "BaselineThroughputInMBps": 875.0,
-      "MaximumBandwidthInMbps": 7000,
-      "MaximumIops": 40000,
-      "MaximumThroughputInMBps": 875.0
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "unsupported"
-  },
-  "FreeTierEligible": false,
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Count": 4,
-        "Manufacturer": "NVIDIA",
-        "MemoryInfo": {
-          "SizeInMiB": 16384
-        },
-        "Name": "V100"
-      }
-    ],
-    "TotalGpuMemoryInMiB": 65536
-  },
-  "HibernationSupported": false,
-  "Hypervisor": "xen",
-  "InstanceStorageSupported": false,
   "InstanceType": "p3.8xlarge",
-  "MemoryInfo": {
-    "SizeInMiB": 249856
-  },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "supported",
-    "EncryptionInTransitSupported": false,
-    "Ipv4AddressesPerInterface": 30,
-    "Ipv6AddressesPerInterface": 30,
-    "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 8,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 5.0,
-        "MaximumNetworkInterfaces": 8,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "10 Gigabit",
-        "PeakBandwidthInGbps": 10.0
-      }
-    ],
-    "NetworkPerformance": "10 Gigabit"
-  },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
-  "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
-  },
-  "ProcessorInfo": {
-    "Manufacturer": "Intel",
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
-    "SustainedClockSpeedInGhz": 2.7
-  },
-  "SupportedBootModes": [
-    "legacy-bios"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedVirtualizationTypes": [
     "hvm"
   ],
+  "BareMetal": false,
+  "Hypervisor": "xen",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 2.7,
+    "Manufacturer": "Intel"
+  },
   "VCpuInfo": {
+    "DefaultVCpus": 32,
     "DefaultCores": 16,
     "DefaultThreadsPerCore": 2,
-    "DefaultVCpus": 32,
     "ValidCores": [
       1,
       2,
@@ -115,5 +47,73 @@
       1,
       2
     ]
-  }
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 249856
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 7000,
+      "BaselineThroughputInMBps": 875,
+      "BaselineIops": 40000,
+      "MaximumBandwidthInMbps": 7000,
+      "MaximumThroughputInMBps": 875,
+      "MaximumIops": 40000
+    },
+    "NvmeSupport": "unsupported"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "10 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "10 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 5,
+        "PeakBandwidthInGbps": 10
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "supported",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
+  },
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "V100",
+        "Manufacturer": "NVIDIA",
+        "Count": 4,
+        "MemoryInfo": {
+          "SizeInMiB": 16384
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 65536
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

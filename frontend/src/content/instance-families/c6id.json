@@ -1,0 +1,27 @@
+{
+  "name": "c6id",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "24xlarge",
+    "large",
+    "16xlarge",
+    "32xlarge",
+    "metal",
+    "12xlarge",
+    "2xlarge",
+    "xlarge",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 262144
+  }
+}

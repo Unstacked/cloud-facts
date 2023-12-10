@@ -1,0 +1,26 @@
+{
+  "name": "r5d",
+  "regions": [],
+  "sizes": [
+    "4xlarge",
+    "xlarge",
+    "large",
+    "2xlarge",
+    "16xlarge",
+    "24xlarge",
+    "8xlarge",
+    "metal",
+    "12xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 786432
+  }
+}

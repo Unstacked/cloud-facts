@@ -1,0 +1,25 @@
+{
+  "name": "c5ad",
+  "regions": [],
+  "sizes": [
+    "24xlarge",
+    "12xlarge",
+    "4xlarge",
+    "16xlarge",
+    "xlarge",
+    "2xlarge",
+    "8xlarge",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 196608
+  }
+}

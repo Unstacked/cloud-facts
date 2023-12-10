@@ -1,0 +1,20 @@
+{
+  "name": "f1",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "4xlarge",
+    "16xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 8,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 124928,
+    "maxMib": 999424
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "p5",
+  "regions": [],
+  "sizes": [
+    "48xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 192,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 2097152,
+    "maxMib": 2097152
+  }
+}

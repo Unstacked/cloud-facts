@@ -1,0 +1,27 @@
+{
+  "name": "i4i",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "24xlarge",
+    "metal",
+    "4xlarge",
+    "2xlarge",
+    "large",
+    "32xlarge",
+    "12xlarge",
+    "xlarge",
+    "8xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  }
+}

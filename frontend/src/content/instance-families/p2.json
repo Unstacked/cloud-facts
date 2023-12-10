@@ -1,0 +1,20 @@
+{
+  "name": "p2",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "16xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 62464,
+    "maxMib": 749568
+  }
+}

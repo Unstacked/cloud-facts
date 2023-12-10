@@ -1,0 +1,24 @@
+{
+  "name": "t4g",
+  "regions": [],
+  "sizes": [
+    "nano",
+    "2xlarge",
+    "medium",
+    "large",
+    "small",
+    "micro",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 2,
+    "maxCores": 8
+  },
+  "memory": {
+    "minMib": 512,
+    "maxMib": 32768
+  }
+}

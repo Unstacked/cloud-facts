@@ -1,0 +1,24 @@
+{
+  "name": "c5n",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "large",
+    "4xlarge",
+    "9xlarge",
+    "18xlarge",
+    "metal",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 72
+  },
+  "memory": {
+    "minMib": 5376,
+    "maxMib": 196608
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "m6idn",
+  "regions": [],
+  "sizes": [
+    "large",
+    "12xlarge",
+    "4xlarge",
+    "xlarge",
+    "32xlarge",
+    "2xlarge",
+    "24xlarge",
+    "metal",
+    "8xlarge",
+    "16xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 524288
+  }
+}

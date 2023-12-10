@@ -1,59 +1,77 @@
 {
-  "AutoRecoverySupported": true,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": true,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 1250,
-      "BaselineIops": 5417,
-      "BaselineThroughputInMBps": 156.25,
-      "MaximumBandwidthInMbps": 10000,
-      "MaximumIops": 43333,
-      "MaximumThroughputInMBps": 1250.0
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "required"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "nitro",
-  "InstanceStorageSupported": false,
   "InstanceType": "r5b.large",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.1,
+    "Manufacturer": "Intel"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 2,
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      1
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  },
   "MemoryInfo": {
     "SizeInMiB": 16384
   },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 1250,
+      "BaselineThroughputInMBps": 156.25,
+      "BaselineIops": 5417,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 43333
+    },
+    "NvmeSupport": "required"
+  },
   "NetworkInfo": {
+    "NetworkPerformance": "Up to 10 Gigabit",
+    "MaximumNetworkInterfaces": 3,
+    "MaximumNetworkCards": 1,
     "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "required",
-    "EncryptionInTransitSupported": false,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 10 Gigabit",
+        "MaximumNetworkInterfaces": 3,
+        "BaselineBandwidthInGbps": 0.75,
+        "PeakBandwidthInGbps": 10
+      }
+    ],
     "Ipv4AddressesPerInterface": 10,
     "Ipv6AddressesPerInterface": 10,
     "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 3,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 0.75,
-        "MaximumNetworkInterfaces": 3,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "Up to 10 Gigabit",
-        "PeakBandwidthInGbps": 10.0
-      }
-    ],
-    "NetworkPerformance": "Up to 10 Gigabit"
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
   },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmInfo": {
-    "SupportedVersions": [
-      "2.0"
-    ]
-  },
-  "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "cluster",
@@ -61,37 +79,19 @@
       "spread"
     ]
   },
-  "ProcessorInfo": {
-    "Manufacturer": "Intel",
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
-    "SustainedClockSpeedInGhz": 3.1
-  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
   "SupportedBootModes": [
     "legacy-bios",
     "uefi"
   ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
-  "SupportedUsageClasses": [
-    "on-demand",
-    "spot"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm"
-  ],
-  "VCpuInfo": {
-    "DefaultCores": 1,
-    "DefaultThreadsPerCore": 2,
-    "DefaultVCpus": 2,
-    "ValidCores": [
-      1
-    ],
-    "ValidThreadsPerCore": [
-      1,
-      2
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
     ]
   }
 }

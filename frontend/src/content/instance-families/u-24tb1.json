@@ -1,0 +1,18 @@
+{
+  "name": "u-24tb1",
+  "regions": [],
+  "sizes": [
+    "112xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 448,
+    "maxCores": 448
+  },
+  "memory": {
+    "minMib": 25165824,
+    "maxMib": 25165824
+  }
+}

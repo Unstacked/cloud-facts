@@ -1,0 +1,27 @@
+{
+  "name": "c6i",
+  "regions": [],
+  "sizes": [
+    "4xlarge",
+    "32xlarge",
+    "24xlarge",
+    "8xlarge",
+    "2xlarge",
+    "large",
+    "16xlarge",
+    "metal",
+    "xlarge",
+    "12xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 262144
+  }
+}

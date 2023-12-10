@@ -1,0 +1,21 @@
+{
+  "name": "x2idn",
+  "regions": [],
+  "sizes": [
+    "24xlarge",
+    "16xlarge",
+    "metal",
+    "32xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 64,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 1048576,
+    "maxMib": 2097152
+  }
+}

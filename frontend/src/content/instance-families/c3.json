@@ -1,0 +1,22 @@
+{
+  "name": "c3",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "large",
+    "xlarge",
+    "4xlarge",
+    "2xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 32
+  },
+  "memory": {
+    "minMib": 3840,
+    "maxMib": 61440
+  }
+}

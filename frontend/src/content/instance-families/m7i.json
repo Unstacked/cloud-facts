@@ -1,0 +1,28 @@
+{
+  "name": "m7i",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "metal-24xl",
+    "8xlarge",
+    "2xlarge",
+    "24xlarge",
+    "48xlarge",
+    "large",
+    "xlarge",
+    "12xlarge",
+    "4xlarge",
+    "metal-48xl"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 786432
+  }
+}

@@ -1,110 +1,30 @@
 {
-  "AutoRecoverySupported": false,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
-  "DedicatedHostsSupported": false,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 400,
-      "BaselineIops": 1700,
-      "BaselineThroughputInMBps": 50.0,
-      "MaximumBandwidthInMbps": 3170,
-      "MaximumIops": 13333,
-      "MaximumThroughputInMBps": 396.25
-    },
-    "EbsOptimizedSupport": "default",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "required"
-  },
-  "FreeTierEligible": false,
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Count": 1,
-        "Manufacturer": "AMD",
-        "MemoryInfo": {
-          "SizeInMiB": 8192
-        },
-        "Name": "Radeon Pro V520"
-      }
-    ],
-    "TotalGpuMemoryInMiB": 8192
-  },
-  "HibernationSupported": false,
-  "Hypervisor": "nitro",
-  "InstanceStorageInfo": {
-    "Disks": [
-      {
-        "Count": 1,
-        "SizeInGB": 150,
-        "Type": "ssd"
-      }
-    ],
-    "EncryptionSupport": "required",
-    "NvmeSupport": "required",
-    "TotalSizeInGB": 150
-  },
-  "InstanceStorageSupported": true,
   "InstanceType": "g4ad.xlarge",
-  "MemoryInfo": {
-    "SizeInMiB": 16384
-  },
-  "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "required",
-    "EncryptionInTransitSupported": true,
-    "Ipv4AddressesPerInterface": 4,
-    "Ipv6AddressesPerInterface": 4,
-    "Ipv6Supported": true,
-    "MaximumNetworkCards": 1,
-    "MaximumNetworkInterfaces": 2,
-    "NetworkCards": [
-      {
-        "BaselineBandwidthInGbps": 2.0,
-        "MaximumNetworkInterfaces": 2,
-        "NetworkCardIndex": 0,
-        "NetworkPerformance": "Up to 10 Gigabit",
-        "PeakBandwidthInGbps": 10.0
-      }
-    ],
-    "NetworkPerformance": "Up to 10 Gigabit"
-  },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
-  "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
-  },
-  "ProcessorInfo": {
-    "Manufacturer": "AMD",
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
-    "SustainedClockSpeedInGhz": 3.0
-  },
-  "SupportedBootModes": [
-    "legacy-bios"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedVirtualizationTypes": [
     "hvm"
   ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3,
+    "Manufacturer": "AMD"
+  },
   "VCpuInfo": {
+    "DefaultVCpus": 4,
     "DefaultCores": 2,
     "DefaultThreadsPerCore": 2,
-    "DefaultVCpus": 4,
     "ValidCores": [
       2
     ],
@@ -112,5 +32,85 @@
       1,
       2
     ]
-  }
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 16384
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 150,
+    "Disks": [
+      {
+        "SizeInGB": 150,
+        "Count": 1,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 400,
+      "BaselineThroughputInMBps": 50,
+      "BaselineIops": 1700,
+      "MaximumBandwidthInMbps": 3170,
+      "MaximumThroughputInMBps": 396.25,
+      "MaximumIops": 13333
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Up to 10 Gigabit",
+    "MaximumNetworkInterfaces": 2,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 10 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 2,
+        "PeakBandwidthInGbps": 10
+      }
+    ],
+    "Ipv4AddressesPerInterface": 4,
+    "Ipv6AddressesPerInterface": 4,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "Radeon Pro V520",
+        "Manufacturer": "AMD",
+        "Count": 1,
+        "MemoryInfo": {
+          "SizeInMiB": 8192
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 8192
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": false,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

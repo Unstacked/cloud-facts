@@ -1,0 +1,25 @@
+{
+  "name": "m5ad",
+  "regions": [],
+  "sizes": [
+    "12xlarge",
+    "large",
+    "4xlarge",
+    "8xlarge",
+    "2xlarge",
+    "xlarge",
+    "24xlarge",
+    "16xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 393216
+  }
+}

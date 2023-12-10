@@ -1,0 +1,23 @@
+{
+  "name": "x2iezn",
+  "regions": [],
+  "sizes": [
+    "4xlarge",
+    "8xlarge",
+    "12xlarge",
+    "6xlarge",
+    "2xlarge",
+    "metal"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 8,
+    "maxCores": 48
+  },
+  "memory": {
+    "minMib": 262144,
+    "maxMib": 1572864
+  }
+}

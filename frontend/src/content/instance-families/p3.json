@@ -1,0 +1,20 @@
+{
+  "name": "p3",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "16xlarge",
+    "8xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 8,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 62464,
+    "maxMib": 499712
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "m6i",
+  "regions": [],
+  "sizes": [
+    "large",
+    "24xlarge",
+    "8xlarge",
+    "16xlarge",
+    "32xlarge",
+    "metal",
+    "4xlarge",
+    "xlarge",
+    "2xlarge",
+    "12xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 524288
+  }
+}

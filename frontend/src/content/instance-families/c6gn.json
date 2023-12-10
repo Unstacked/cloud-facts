@@ -1,0 +1,25 @@
+{
+  "name": "c6gn",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "xlarge",
+    "4xlarge",
+    "12xlarge",
+    "medium",
+    "8xlarge",
+    "2xlarge",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 2048,
+    "maxMib": 131072
+  }
+}

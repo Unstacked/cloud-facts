@@ -1,0 +1,26 @@
+{
+  "name": "r5dn",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "large",
+    "metal",
+    "xlarge",
+    "16xlarge",
+    "12xlarge",
+    "2xlarge",
+    "4xlarge",
+    "24xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 786432
+  }
+}

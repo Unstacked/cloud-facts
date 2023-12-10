@@ -1,0 +1,28 @@
+{
+  "name": "m6a",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "large",
+    "metal",
+    "4xlarge",
+    "16xlarge",
+    "8xlarge",
+    "xlarge",
+    "24xlarge",
+    "32xlarge",
+    "12xlarge",
+    "48xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 786432
+  }
+}

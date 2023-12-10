@@ -1,0 +1,21 @@
+{
+  "name": "inf1",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "2xlarge",
+    "6xlarge",
+    "24xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 196608
+  }
+}

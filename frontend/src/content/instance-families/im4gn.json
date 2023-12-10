@@ -1,0 +1,23 @@
+{
+  "name": "im4gn",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "8xlarge",
+    "xlarge",
+    "large",
+    "4xlarge",
+    "16xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 2,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 262144
+  }
+}

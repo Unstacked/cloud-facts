@@ -1,0 +1,27 @@
+{
+  "name": "r7iz",
+  "regions": [],
+  "sizes": [
+    "12xlarge",
+    "8xlarge",
+    "16xlarge",
+    "xlarge",
+    "32xlarge",
+    "metal-16xl",
+    "2xlarge",
+    "metal-32xl",
+    "4xlarge",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  }
+}

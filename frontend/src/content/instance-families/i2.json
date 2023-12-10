@@ -1,0 +1,21 @@
+{
+  "name": "i2",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "xlarge",
+    "4xlarge",
+    "8xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 32
+  },
+  "memory": {
+    "minMib": 31232,
+    "maxMib": 249856
+  }
+}

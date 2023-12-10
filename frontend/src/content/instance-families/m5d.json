@@ -1,0 +1,26 @@
+{
+  "name": "m5d",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "8xlarge",
+    "metal",
+    "16xlarge",
+    "large",
+    "24xlarge",
+    "12xlarge",
+    "2xlarge",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 393216
+  }
+}

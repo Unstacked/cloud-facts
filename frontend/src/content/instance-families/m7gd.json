@@ -1,0 +1,25 @@
+{
+  "name": "m7gd",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "xlarge",
+    "large",
+    "8xlarge",
+    "12xlarge",
+    "medium",
+    "4xlarge",
+    "2xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 262144
+  }
+}

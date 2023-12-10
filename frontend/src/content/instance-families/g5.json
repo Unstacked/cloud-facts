@@ -1,0 +1,25 @@
+{
+  "name": "g5",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "4xlarge",
+    "24xlarge",
+    "12xlarge",
+    "16xlarge",
+    "xlarge",
+    "48xlarge",
+    "8xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 786432
+  }
+}

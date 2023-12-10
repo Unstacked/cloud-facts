@@ -1,0 +1,21 @@
+{
+  "name": "d3",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "xlarge",
+    "2xlarge",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 32
+  },
+  "memory": {
+    "minMib": 32768,
+    "maxMib": 262144
+  }
+}

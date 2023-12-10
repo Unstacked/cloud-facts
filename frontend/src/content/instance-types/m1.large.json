@@ -1,96 +1,96 @@
 {
-  "AutoRecoverySupported": false,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
-  "CurrentGeneration": false,
-  "DedicatedHostsSupported": false,
-  "EbsInfo": {
-    "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 500,
-      "BaselineIops": 4000,
-      "BaselineThroughputInMBps": 62.5,
-      "MaximumBandwidthInMbps": 500,
-      "MaximumIops": 4000,
-      "MaximumThroughputInMBps": 62.5
-    },
-    "EbsOptimizedSupport": "supported",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "unsupported"
-  },
-  "FreeTierEligible": false,
-  "HibernationSupported": false,
-  "Hypervisor": "xen",
-  "InstanceStorageInfo": {
-    "Disks": [
-      {
-        "Count": 2,
-        "SizeInGB": 420,
-        "Type": "hdd"
-      }
-    ],
-    "EncryptionSupport": "unsupported",
-    "NvmeSupport": "unsupported",
-    "TotalSizeInGB": 840
-  },
-  "InstanceStorageSupported": true,
   "InstanceType": "m1.large",
+  "CurrentGeneration": false,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs",
+    "instance-store"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm",
+    "paravirtual"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "xen",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "Manufacturer": "Intel"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 2,
+    "DefaultCores": 2,
+    "DefaultThreadsPerCore": 1
+  },
   "MemoryInfo": {
     "SizeInMiB": 7680
   },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 840,
+    "Disks": [
+      {
+        "SizeInGB": 420,
+        "Count": 2,
+        "Type": "hdd"
+      }
+    ],
+    "NvmeSupport": "unsupported",
+    "EncryptionSupport": "unsupported"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "supported",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 500,
+      "BaselineThroughputInMBps": 62.5,
+      "BaselineIops": 4000,
+      "MaximumBandwidthInMbps": 500,
+      "MaximumThroughputInMBps": 62.5,
+      "MaximumIops": 4000
+    },
+    "NvmeSupport": "unsupported"
+  },
   "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "unsupported",
-    "EncryptionInTransitSupported": false,
-    "Ipv4AddressesPerInterface": 10,
-    "Ipv6AddressesPerInterface": 0,
-    "Ipv6Supported": false,
-    "MaximumNetworkCards": 1,
+    "NetworkPerformance": "Moderate",
     "MaximumNetworkInterfaces": 3,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
-        "BaselineBandwidthInGbps": 0.7,
-        "MaximumNetworkInterfaces": 3,
         "NetworkCardIndex": 0,
         "NetworkPerformance": "Moderate",
+        "MaximumNetworkInterfaces": 3,
+        "BaselineBandwidthInGbps": 0.7,
         "PeakBandwidthInGbps": 2.8
       }
     ],
-    "NetworkPerformance": "Moderate"
+    "Ipv4AddressesPerInterface": 10,
+    "Ipv6AddressesPerInterface": 0,
+    "Ipv6Supported": false,
+    "EnaSupport": "unsupported",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
   },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "partition",
       "spread"
     ]
   },
-  "ProcessorInfo": {
-    "Manufacturer": "Intel",
-    "SupportedArchitectures": [
-      "x86_64"
-    ]
-  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": false,
+  "AutoRecoverySupported": false,
   "SupportedBootModes": [
     "legacy-bios"
   ],
-  "SupportedRootDeviceTypes": [
-    "ebs",
-    "instance-store"
-  ],
-  "SupportedUsageClasses": [
-    "on-demand",
-    "spot"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm",
-    "paravirtual"
-  ],
-  "VCpuInfo": {
-    "DefaultCores": 2,
-    "DefaultThreadsPerCore": 1,
-    "DefaultVCpus": 2
-  }
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

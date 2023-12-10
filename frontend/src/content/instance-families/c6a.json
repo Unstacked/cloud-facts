@@ -1,0 +1,28 @@
+{
+  "name": "c6a",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "24xlarge",
+    "48xlarge",
+    "32xlarge",
+    "8xlarge",
+    "metal",
+    "12xlarge",
+    "4xlarge",
+    "xlarge",
+    "2xlarge",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 393216
+  }
+}

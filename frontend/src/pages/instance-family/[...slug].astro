@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import type { InstanceFamily } from "../../../../generator/ec2-instance-types";
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const instanceFamilyEntries = await getCollection('instance-families');
+  return instanceFamilyEntries.map(entry => ({
+    params: { slug: entry.id }, props: { entry },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { entry } = Astro.props;
+const data: InstanceFamily = Astro.props.entry.data
+---
+<SiteLayout title={entry.id}>
+  <h1>{entry.id}</h1>
+  <pre>{JSON.stringify(data, null, 2)}</pre>
+</SiteLayout>

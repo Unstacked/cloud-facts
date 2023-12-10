@@ -1,0 +1,22 @@
+{
+  "name": "g4ad",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "2xlarge",
+    "4xlarge",
+    "16xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 262144
+  }
+}

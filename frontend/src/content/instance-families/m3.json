@@ -1,0 +1,21 @@
+{
+  "name": "m3",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "2xlarge",
+    "medium",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 1,
+    "maxCores": 8
+  },
+  "memory": {
+    "minMib": 3840,
+    "maxMib": 30720
+  }
+}

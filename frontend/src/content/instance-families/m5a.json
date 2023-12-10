@@ -1,0 +1,25 @@
+{
+  "name": "m5a",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "16xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "xlarge",
+    "24xlarge",
+    "12xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 393216
+  }
+}

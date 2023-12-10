@@ -1,0 +1,23 @@
+{
+  "name": "is4gen",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "4xlarge",
+    "2xlarge",
+    "large",
+    "medium",
+    "8xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 32
+  },
+  "memory": {
+    "minMib": 6144,
+    "maxMib": 196608
+  }
+}

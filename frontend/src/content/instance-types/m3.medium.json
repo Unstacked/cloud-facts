@@ -1,89 +1,89 @@
 {
-  "AutoRecoverySupported": true,
-  "BareMetal": false,
-  "BurstablePerformanceSupported": false,
+  "InstanceType": "m3.medium",
   "CurrentGeneration": false,
-  "DedicatedHostsSupported": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs",
+    "instance-store"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm",
+    "paravirtual"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "xen",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 2.5,
+    "Manufacturer": "Intel"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 1,
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 1
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 3840
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 4,
+    "Disks": [
+      {
+        "SizeInGB": 4,
+        "Count": 1,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "unsupported",
+    "EncryptionSupport": "unsupported"
+  },
   "EbsInfo": {
     "EbsOptimizedSupport": "unsupported",
     "EncryptionSupport": "supported",
     "NvmeSupport": "unsupported"
   },
-  "FreeTierEligible": false,
-  "HibernationSupported": true,
-  "Hypervisor": "xen",
-  "InstanceStorageInfo": {
-    "Disks": [
-      {
-        "Count": 1,
-        "SizeInGB": 4,
-        "Type": "ssd"
-      }
-    ],
-    "EncryptionSupport": "unsupported",
-    "NvmeSupport": "unsupported",
-    "TotalSizeInGB": 4
-  },
-  "InstanceStorageSupported": true,
-  "InstanceType": "m3.medium",
-  "MemoryInfo": {
-    "SizeInMiB": 3840
-  },
   "NetworkInfo": {
-    "DefaultNetworkCardIndex": 0,
-    "EfaSupported": false,
-    "EnaSrdSupported": false,
-    "EnaSupport": "unsupported",
-    "EncryptionInTransitSupported": false,
-    "Ipv4AddressesPerInterface": 6,
-    "Ipv6AddressesPerInterface": 0,
-    "Ipv6Supported": false,
-    "MaximumNetworkCards": 1,
+    "NetworkPerformance": "Moderate",
     "MaximumNetworkInterfaces": 2,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
-        "BaselineBandwidthInGbps": 0.3,
-        "MaximumNetworkInterfaces": 2,
         "NetworkCardIndex": 0,
         "NetworkPerformance": "Moderate",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 0.3,
         "PeakBandwidthInGbps": 1.2
       }
     ],
-    "NetworkPerformance": "Moderate"
+    "Ipv4AddressesPerInterface": 6,
+    "Ipv6AddressesPerInterface": 0,
+    "Ipv6Supported": false,
+    "EnaSupport": "unsupported",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
   },
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "partition",
       "spread"
     ]
   },
-  "ProcessorInfo": {
-    "Manufacturer": "Intel",
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
-    "SustainedClockSpeedInGhz": 2.5
-  },
+  "HibernationSupported": true,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
   "SupportedBootModes": [
     "legacy-bios"
   ],
-  "SupportedRootDeviceTypes": [
-    "ebs",
-    "instance-store"
-  ],
-  "SupportedUsageClasses": [
-    "on-demand",
-    "spot"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm",
-    "paravirtual"
-  ],
-  "VCpuInfo": {
-    "DefaultCores": 1,
-    "DefaultThreadsPerCore": 1,
-    "DefaultVCpus": 1
-  }
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
 }

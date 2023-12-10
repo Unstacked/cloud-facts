@@ -1,0 +1,24 @@
+{
+  "name": "t3",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "xlarge",
+    "large",
+    "medium",
+    "nano",
+    "micro",
+    "small"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 8
+  },
+  "memory": {
+    "minMib": 512,
+    "maxMib": 32768
+  }
+}

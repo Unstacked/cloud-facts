@@ -1,0 +1,26 @@
+{
+  "name": "r5",
+  "regions": [],
+  "sizes": [
+    "24xlarge",
+    "large",
+    "metal",
+    "4xlarge",
+    "16xlarge",
+    "xlarge",
+    "8xlarge",
+    "2xlarge",
+    "12xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 786432
+  }
+}

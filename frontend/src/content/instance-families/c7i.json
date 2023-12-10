@@ -1,0 +1,28 @@
+{
+  "name": "c7i",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "8xlarge",
+    "metal-24xl",
+    "24xlarge",
+    "large",
+    "16xlarge",
+    "xlarge",
+    "metal-48xl",
+    "12xlarge",
+    "4xlarge",
+    "48xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 393216
+  }
+}

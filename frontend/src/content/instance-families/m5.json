@@ -1,0 +1,26 @@
+{
+  "name": "m5",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "12xlarge",
+    "24xlarge",
+    "metal",
+    "xlarge",
+    "4xlarge",
+    "large",
+    "2xlarge",
+    "16xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 393216
+  }
+}

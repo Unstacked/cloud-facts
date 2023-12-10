@@ -1,0 +1,20 @@
+{
+  "name": "vt1",
+  "regions": [],
+  "sizes": [
+    "6xlarge",
+    "3xlarge",
+    "24xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 12,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 24576,
+    "maxMib": 196608
+  }
+}

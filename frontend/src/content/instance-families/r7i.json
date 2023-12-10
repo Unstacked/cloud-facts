@@ -1,0 +1,28 @@
+{
+  "name": "r7i",
+  "regions": [],
+  "sizes": [
+    "metal-48xl",
+    "16xlarge",
+    "metal-24xl",
+    "8xlarge",
+    "12xlarge",
+    "2xlarge",
+    "large",
+    "xlarge",
+    "24xlarge",
+    "48xlarge",
+    "4xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1572864
+  }
+}

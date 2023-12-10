@@ -1,0 +1,22 @@
+{
+  "name": "m7i-flex",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 32
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 131072
+  }
+}

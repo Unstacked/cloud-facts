@@ -1,0 +1,20 @@
+{
+  "name": "m2",
+  "regions": [],
+  "sizes": [
+    "4xlarge",
+    "2xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 8
+  },
+  "memory": {
+    "minMib": 17510,
+    "maxMib": 70041
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "t1",
+  "regions": [],
+  "sizes": [
+    "micro"
+  ],
+  "cpu": {
+    "architectures": [
+      "i386",
+      "x86_64"
+    ],
+    "minThreads": 1,
+    "maxCores": 1
+  },
+  "memory": {
+    "minMib": 627,
+    "maxMib": 627
+  }
+}

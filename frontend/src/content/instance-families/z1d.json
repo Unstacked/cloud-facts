@@ -1,0 +1,24 @@
+{
+  "name": "z1d",
+  "regions": [],
+  "sizes": [
+    "2xlarge",
+    "xlarge",
+    "12xlarge",
+    "6xlarge",
+    "metal",
+    "large",
+    "3xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 48
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 393216
+  }
+}

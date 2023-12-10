@@ -1,0 +1,28 @@
+{
+  "name": "r6a",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "metal",
+    "2xlarge",
+    "12xlarge",
+    "32xlarge",
+    "8xlarge",
+    "48xlarge",
+    "4xlarge",
+    "16xlarge",
+    "24xlarge",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1572864
+  }
+}

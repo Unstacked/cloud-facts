@@ -1,0 +1,19 @@
+{
+  "name": "x1",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "32xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 64,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 999424,
+    "maxMib": 1998848
+  }
+}

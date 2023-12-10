@@ -4,7 +4,7 @@ import regions from "../../../data/regions.json";
 import instanceTypes from "../../../data/all_instance_types.json";
 import instanceFamilies from "../../../data/all_instance_families.json";
 import { offerings } from "../../../data/family_offerings";
-import { instanceSizeSort } from "../lib/instance-size-sort"
+import { getInstanceComputeClass, instanceSizeSort } from "../lib/instances"
 
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Card from "react-bootstrap/cjs/Card.js";
@@ -19,22 +19,14 @@ import Container from "react-bootstrap/cjs/Container.js";
 				<Container className="p-2">
 					<Card className="px-0">
 						<Card.Header>
-							<Card.Title>{k}</Card.Title>
+							<Card.Title>{k.toUpperCase()} - {getInstanceComputeClass(k)}</Card.Title>
 						</Card.Header>
 						<Card.Body>
 							<Card.Text>
 								<h5>Regions</h5>
-								<ul style="list-style-type: none;">
-									{offerings[k].regions.sort().map((r) => (
-										<li>{r}</li>
-									))}
-								</ul>
+									<p>{offerings[k].regions.length}</p>
 								<h5>Sizes</h5>
-								<ul style="list-style-type: none;">
-									{instanceSizeSort(offerings[k].sizes).map((s) => (
-										<li>{s}</li>
-									))}
-								</ul>
+								<p>{instanceSizeSort(offerings[k].sizes)[0]} - {instanceSizeSort(offerings[k].sizes, true)[instanceSizeSort(offerings[k].sizes, true).length-1]}</p>
 							</Card.Text>
 						</Card.Body>
 					</Card>

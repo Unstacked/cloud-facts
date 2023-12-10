@@ -1,0 +1,26 @@
+{
+  "name": "m5n",
+  "regions": [],
+  "sizes": [
+    "16xlarge",
+    "8xlarge",
+    "12xlarge",
+    "large",
+    "4xlarge",
+    "metal",
+    "xlarge",
+    "24xlarge",
+    "2xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 393216
+  }
+}

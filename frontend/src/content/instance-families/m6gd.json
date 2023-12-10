@@ -1,0 +1,26 @@
+{
+  "name": "m6gd",
+  "regions": [],
+  "sizes": [
+    "12xlarge",
+    "4xlarge",
+    "xlarge",
+    "medium",
+    "16xlarge",
+    "metal",
+    "8xlarge",
+    "large",
+    "2xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 262144
+  }
+}

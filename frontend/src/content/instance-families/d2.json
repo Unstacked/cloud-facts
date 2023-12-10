@@ -1,0 +1,21 @@
+{
+  "name": "d2",
+  "regions": [],
+  "sizes": [
+    "8xlarge",
+    "2xlarge",
+    "4xlarge",
+    "xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 36
+  },
+  "memory": {
+    "minMib": 31232,
+    "maxMib": 249856
+  }
+}

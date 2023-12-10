@@ -1,0 +1,26 @@
+{
+  "name": "r6gd",
+  "regions": [],
+  "sizes": [
+    "medium",
+    "2xlarge",
+    "large",
+    "xlarge",
+    "metal",
+    "4xlarge",
+    "16xlarge",
+    "8xlarge",
+    "12xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 524288
+  }
+}

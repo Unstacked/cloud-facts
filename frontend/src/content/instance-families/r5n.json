@@ -1,0 +1,26 @@
+{
+  "name": "r5n",
+  "regions": [],
+  "sizes": [
+    "12xlarge",
+    "4xlarge",
+    "16xlarge",
+    "24xlarge",
+    "2xlarge",
+    "xlarge",
+    "8xlarge",
+    "metal",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 786432
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "r5b",
+  "regions": [],
+  "sizes": [
+    "12xlarge",
+    "large",
+    "metal",
+    "2xlarge",
+    "24xlarge",
+    "4xlarge",
+    "xlarge",
+    "16xlarge",
+    "8xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 786432
+  }
+}

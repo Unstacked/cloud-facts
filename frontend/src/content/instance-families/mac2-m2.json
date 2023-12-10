@@ -1,0 +1,18 @@
+{
+  "name": "mac2-m2",
+  "regions": [],
+  "sizes": [
+    "metal"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64_mac"
+    ],
+    "minThreads": 8,
+    "maxCores": 8
+  },
+  "memory": {
+    "minMib": 24576,
+    "maxMib": 24576
+  }
+}

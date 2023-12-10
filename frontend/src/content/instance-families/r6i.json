@@ -1,0 +1,27 @@
+{
+  "name": "r6i",
+  "regions": [],
+  "sizes": [
+    "xlarge",
+    "24xlarge",
+    "4xlarge",
+    "16xlarge",
+    "12xlarge",
+    "metal",
+    "32xlarge",
+    "8xlarge",
+    "2xlarge",
+    "large"
+  ],
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  }
+}

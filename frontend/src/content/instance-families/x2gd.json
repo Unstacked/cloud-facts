@@ -1,0 +1,26 @@
+{
+  "name": "x2gd",
+  "regions": [],
+  "sizes": [
+    "metal",
+    "8xlarge",
+    "16xlarge",
+    "4xlarge",
+    "medium",
+    "xlarge",
+    "2xlarge",
+    "large",
+    "12xlarge"
+  ],
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  }
+}
