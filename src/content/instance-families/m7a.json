@@ -1,20 +1,26 @@
 {
   "name": "m7a",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "us-west-2",
+    "us-east-2",
+    "us-east-1"
+  ],
   "sizes": [
     "xlarge",
-    "32xlarge",
     "16xlarge",
+    "32xlarge",
     "medium",
     "48xlarge",
-    "4xlarge",
-    "12xlarge",
     "8xlarge",
     "24xlarge",
+    "12xlarge",
+    "4xlarge",
     "2xlarge",
     "metal-48xl",
     "large"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

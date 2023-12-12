@@ -1,19 +1,35 @@
 {
   "name": "m7i",
-  "regions": [],
+  "regions": [
+    "ap-southeast-2",
+    "ap-south-1",
+    "ap-northeast-2",
+    "eu-west-1",
+    "us-west-1",
+    "us-west-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-3",
+    "us-east-1",
+    "us-east-2",
+    "eu-south-2",
+    "eu-north-1",
+    "eu-west-2"
+  ],
   "sizes": [
     "16xlarge",
     "metal-24xl",
-    "8xlarge",
     "2xlarge",
     "24xlarge",
+    "8xlarge",
     "48xlarge",
     "large",
     "xlarge",
-    "12xlarge",
     "4xlarge",
+    "12xlarge",
     "metal-48xl"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

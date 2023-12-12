@@ -1,9 +1,14 @@
 {
   "name": "u-24tb1",
-  "regions": [],
+  "regions": [
+    "ap-northeast-2",
+    "us-west-2",
+    "us-east-1"
+  ],
   "sizes": [
     "112xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

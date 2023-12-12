@@ -1,12 +1,18 @@
 {
   "name": "h1",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "us-west-2",
+    "us-east-1",
+    "us-east-2"
+  ],
   "sizes": [
     "8xlarge",
     "2xlarge",
     "16xlarge",
     "4xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

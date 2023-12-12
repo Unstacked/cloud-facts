@@ -1,19 +1,27 @@
 {
   "name": "c7i",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "us-west-2",
+    "us-east-1",
+    "us-east-2",
+    "eu-south-2",
+    "eu-north-1"
+  ],
   "sizes": [
     "2xlarge",
     "8xlarge",
     "metal-24xl",
-    "24xlarge",
-    "large",
     "16xlarge",
     "xlarge",
+    "24xlarge",
+    "large",
     "metal-48xl",
     "12xlarge",
     "4xlarge",
     "48xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

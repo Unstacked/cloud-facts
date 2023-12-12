@@ -1,9 +1,14 @@
 {
   "name": "mac2-m2",
-  "regions": [],
+  "regions": [
+    "us-west-2",
+    "us-east-1",
+    "us-east-2"
+  ],
   "sizes": [
     "metal"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "arm64_mac"

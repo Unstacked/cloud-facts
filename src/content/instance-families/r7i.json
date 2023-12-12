@@ -1,6 +1,13 @@
 {
   "name": "r7i",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "eu-south-2",
+    "eu-north-1",
+    "us-west-2",
+    "us-east-2",
+    "us-east-1"
+  ],
   "sizes": [
     "metal-48xl",
     "16xlarge",
@@ -8,12 +15,13 @@
     "8xlarge",
     "12xlarge",
     "2xlarge",
-    "large",
     "xlarge",
+    "large",
     "24xlarge",
     "48xlarge",
     "4xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

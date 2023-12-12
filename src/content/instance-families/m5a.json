@@ -1,9 +1,26 @@
 {
   "name": "m5a",
-  "regions": [],
+  "regions": [
+    "ap-southeast-2",
+    "ap-south-1",
+    "ap-northeast-2",
+    "ap-southeast-1",
+    "eu-west-1",
+    "ap-northeast-1",
+    "us-west-1",
+    "us-west-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-3",
+    "us-east-1",
+    "us-east-2",
+    "sa-east-1",
+    "eu-west-2",
+    "eu-south-1"
+  ],
   "sizes": [
-    "2xlarge",
     "16xlarge",
+    "2xlarge",
     "4xlarge",
     "8xlarge",
     "large",
@@ -11,6 +28,7 @@
     "24xlarge",
     "12xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

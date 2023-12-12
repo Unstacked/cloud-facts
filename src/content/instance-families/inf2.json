@@ -1,12 +1,17 @@
 {
   "name": "inf2",
-  "regions": [],
+  "regions": [
+    "us-west-2",
+    "us-east-1",
+    "us-east-2"
+  ],
   "sizes": [
     "48xlarge",
     "8xlarge",
     "24xlarge",
     "xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

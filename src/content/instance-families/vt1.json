@@ -1,11 +1,17 @@
 {
   "name": "vt1",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "ap-northeast-1",
+    "us-west-2",
+    "us-east-1"
+  ],
   "sizes": [
-    "6xlarge",
     "3xlarge",
+    "6xlarge",
     "24xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

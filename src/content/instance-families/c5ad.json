@@ -1,16 +1,29 @@
 {
   "name": "c5ad",
-  "regions": [],
+  "regions": [
+    "ap-southeast-2",
+    "ap-southeast-1",
+    "eu-west-1",
+    "us-west-2",
+    "eu-central-1",
+    "us-east-1",
+    "us-east-2",
+    "sa-east-1",
+    "me-south-1",
+    "eu-south-1",
+    "af-south-1"
+  ],
   "sizes": [
     "24xlarge",
     "12xlarge",
     "4xlarge",
-    "16xlarge",
     "xlarge",
+    "16xlarge",
     "2xlarge",
     "8xlarge",
     "large"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

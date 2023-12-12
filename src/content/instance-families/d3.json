@@ -1,12 +1,27 @@
 {
   "name": "d3",
-  "regions": [],
+  "regions": [
+    "ap-southeast-2",
+    "ap-south-1",
+    "eu-west-1",
+    "ap-southeast-1",
+    "ca-central-1",
+    "ap-northeast-1",
+    "eu-central-1",
+    "il-central-1",
+    "eu-central-2",
+    "eu-west-2",
+    "us-west-2",
+    "us-east-1",
+    "us-east-2"
+  ],
   "sizes": [
     "8xlarge",
-    "xlarge",
     "2xlarge",
+    "xlarge",
     "4xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

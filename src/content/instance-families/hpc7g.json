@@ -1,11 +1,16 @@
 {
   "name": "hpc7g",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "ap-northeast-1",
+    "us-east-1"
+  ],
   "sizes": [
     "4xlarge",
     "8xlarge",
     "16xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "arm64"

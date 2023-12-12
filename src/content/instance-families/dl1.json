@@ -1,9 +1,13 @@
 {
   "name": "dl1",
-  "regions": [],
+  "regions": [
+    "us-west-2",
+    "us-east-1"
+  ],
   "sizes": [
     "24xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

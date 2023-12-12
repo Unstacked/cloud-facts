@@ -1,9 +1,14 @@
 {
   "name": "u-18tb1",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "us-west-2",
+    "us-east-1"
+  ],
   "sizes": [
     "112xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

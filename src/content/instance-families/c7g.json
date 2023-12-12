@@ -1,17 +1,35 @@
 {
   "name": "c7g",
-  "regions": [],
+  "regions": [
+    "ap-southeast-2",
+    "ap-south-1",
+    "ap-northeast-2",
+    "ap-southeast-1",
+    "eu-west-1",
+    "ap-south-2",
+    "ap-northeast-1",
+    "us-west-1",
+    "us-west-2",
+    "ca-central-1",
+    "eu-central-1",
+    "us-east-1",
+    "us-east-2",
+    "eu-south-2",
+    "eu-north-1",
+    "eu-west-2"
+  ],
   "sizes": [
     "8xlarge",
-    "4xlarge",
     "16xlarge",
+    "4xlarge",
     "xlarge",
     "metal",
     "medium",
     "2xlarge",
-    "large",
-    "12xlarge"
+    "12xlarge",
+    "large"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "arm64"

@@ -1,6 +1,12 @@
 {
   "name": "i4g",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "ca-central-1",
+    "us-west-2",
+    "us-east-2",
+    "us-east-1"
+  ],
   "sizes": [
     "xlarge",
     "8xlarge",
@@ -9,6 +15,7 @@
     "4xlarge",
     "2xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "arm64"

@@ -1,9 +1,14 @@
 {
   "name": "p5",
-  "regions": [],
+  "regions": [
+    "us-west-2",
+    "us-east-2",
+    "us-east-1"
+  ],
   "sizes": [
     "48xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

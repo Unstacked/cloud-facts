@@ -1,17 +1,32 @@
 {
   "name": "r5dn",
-  "regions": [],
+  "regions": [
+    "ap-southeast-2",
+    "ap-northeast-2",
+    "ap-southeast-1",
+    "eu-west-1",
+    "ap-northeast-1",
+    "us-west-2",
+    "eu-central-1",
+    "eu-west-3",
+    "us-east-1",
+    "us-east-2",
+    "eu-north-1",
+    "eu-south-1",
+    "af-south-1"
+  ],
   "sizes": [
     "8xlarge",
-    "large",
     "metal",
+    "large",
     "xlarge",
-    "16xlarge",
     "12xlarge",
-    "2xlarge",
+    "16xlarge",
     "4xlarge",
+    "2xlarge",
     "24xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

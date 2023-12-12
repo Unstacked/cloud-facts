@@ -1,20 +1,26 @@
 {
   "name": "c7a",
-  "regions": [],
+  "regions": [
+    "eu-west-1",
+    "us-west-2",
+    "us-east-1",
+    "us-east-2"
+  ],
   "sizes": [
-    "medium",
     "xlarge",
-    "large",
+    "medium",
     "metal-48xl",
-    "4xlarge",
+    "large",
     "2xlarge",
     "8xlarge",
+    "4xlarge",
     "12xlarge",
     "24xlarge",
     "16xlarge",
-    "32xlarge",
-    "48xlarge"
+    "48xlarge",
+    "32xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

@@ -1,6 +1,21 @@
 {
   "name": "m7i-flex",
-  "regions": [],
+  "regions": [
+    "ap-southeast-2",
+    "ap-south-1",
+    "ap-northeast-2",
+    "eu-west-1",
+    "us-west-1",
+    "ca-central-1",
+    "eu-west-3",
+    "eu-south-2",
+    "eu-north-1",
+    "eu-west-2",
+    "eu-central-1",
+    "us-west-2",
+    "us-east-2",
+    "us-east-1"
+  ],
   "sizes": [
     "2xlarge",
     "4xlarge",
@@ -8,6 +23,7 @@
     "large",
     "xlarge"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"

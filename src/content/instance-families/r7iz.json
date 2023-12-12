@@ -1,10 +1,13 @@
 {
   "name": "r7iz",
-  "regions": [],
+  "regions": [
+    "us-west-2",
+    "us-east-1"
+  ],
   "sizes": [
-    "12xlarge",
-    "8xlarge",
     "16xlarge",
+    "8xlarge",
+    "12xlarge",
     "xlarge",
     "32xlarge",
     "metal-16xl",
@@ -13,6 +16,7 @@
     "4xlarge",
     "large"
   ],
+  "currentGeneration": true,
   "cpu": {
     "architectures": [
       "x86_64"
