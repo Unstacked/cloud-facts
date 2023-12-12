@@ -1,10 +1,7 @@
 ---
-import instanceOfferings from "../../../data/instance_type_offerings.json";
-import regions from "../../../data/regions.json";
-import instanceTypes from "../../../data/all_instance_types.json";
-import instanceFamilies from "../../../data/all_instance_families.json";
-import { offerings } from "../../../data/family_offerings";
-import { getInstanceComputeClass, instanceSizeSort } from "../lib/instances"
+import { getCollection } from "astro:content";
+const instanceFamilyEntries = await getCollection("instance-families");
+import { getInstanceComputeClass, instanceSizeSort } from "../lib/instances";
 
 import SiteLayout from "../layouts/SiteLayout.astro";
 import Card from "react-bootstrap/cjs/Card.js";
@@ -15,18 +12,29 @@ import Container from "react-bootstrap/cjs/Container.js";
 <SiteLayout title="Instances">
 	<Row xs={1} sm={2} md={3} lg={3} xl={4} xxl={5} xxxl={6} className="px-3">
 		{
-			instanceFamilies.sort().map((k) => (
+			instanceFamilyEntries.map((k) => (
 				<Container className="p-2">
 					<Card className="px-0">
 						<Card.Header>
-							<Card.Title>{k.toUpperCase()} - {getInstanceComputeClass(k)}</Card.Title>
+							<Card.Title>
+								<a href={"/instance-family/"+ k.id}>{k.id.toUpperCase()} -{" "}
+								{getInstanceComputeClass(k.id)}</a>
+							</Card.Title>
 						</Card.Header>
 						<Card.Body>
 							<Card.Text>
 								<h5>Regions</h5>
-									<p>{offerings[k].regions.length}</p>
+								<p>{k.data.regions.length}</p>
 								<h5>Sizes</h5>
-								<p>{instanceSizeSort(offerings[k].sizes)[0]} - {instanceSizeSort(offerings[k].sizes, true)[instanceSizeSort(offerings[k].sizes, true).length-1]}</p>
+								<p>
+									{instanceSizeSort(k.data.sizes)[0]} -{" "}
+									{
+										instanceSizeSort(k.data.sizes, true)[
+											instanceSizeSort(k.data.sizes, true)
+												.length - 1
+										]
+									}
+								</p>
 							</Card.Text>
 						</Card.Body>
 					</Card>

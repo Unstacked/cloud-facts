@@ -15,5 +15,11 @@ const data: InstanceFamily = Astro.props.entry.data
 ---
 <SiteLayout title={entry.id}>
   <h1>{entry.id}</h1>
+  <h2>sizes</h2>
+  <ul style="decoration=none">
+    {data.sizes.map(s => (
+      <li><a href={"/instance-type/"+entry.id+"."+s}>{s}</a></li>
+    ))}
+  </ul>
   <pre>{JSON.stringify(data, null, 2)}</pre>
 </SiteLayout>
