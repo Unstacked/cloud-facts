@@ -25,6 +25,7 @@
     "@aws-sdk/client-account": "^3.470.0",
     "@aws-sdk/client-ec2": "^3.470.0",
     "@aws-sdk/types": "^3.468.0",
+    "@fastify/pre-commit": "^2.1.0",
     "@popperjs/core": "^2.11.8",
     "@types/bootstrap": "^5.2.10",
     "@types/git-root-dir": "^1.0.2",
