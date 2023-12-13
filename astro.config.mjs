@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 import react from "@astrojs/react";
@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://undoc.cloud",
-  integrations: [sitemap(), react()]
+  integrations: [sitemap(), react()],
 });

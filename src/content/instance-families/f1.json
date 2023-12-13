@@ -2,22 +2,16 @@
   "name": "f1",
   "regions": [
     "ap-southeast-2",
-    "eu-west-1",
-    "us-west-2",
     "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
     "us-east-1",
-    "eu-west-2"
+    "us-west-2"
   ],
-  "sizes": [
-    "2xlarge",
-    "4xlarge",
-    "16xlarge"
-  ],
+  "sizes": ["16xlarge", "2xlarge", "4xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 8,
     "maxCores": 64
   },

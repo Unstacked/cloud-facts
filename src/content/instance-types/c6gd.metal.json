@@ -2,21 +2,12 @@
   "InstanceType": "c6gd.metal",
   "CurrentGeneration": true,
   "FreeTierEligible": false,
-  "SupportedUsageClasses": [
-    "on-demand",
-    "spot"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm"
-  ],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedVirtualizationTypes": ["hvm"],
   "BareMetal": true,
   "ProcessorInfo": {
-    "SupportedArchitectures": [
-      "arm64"
-    ],
+    "SupportedArchitectures": ["arm64"],
     "SustainedClockSpeedInGhz": 2.5,
     "Manufacturer": "AWS"
   },
@@ -77,19 +68,13 @@
     "EnaSrdSupported": false
   },
   "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
+    "SupportedStrategies": ["cluster", "partition", "spread"]
   },
   "HibernationSupported": false,
   "BurstablePerformanceSupported": false,
   "DedicatedHostsSupported": true,
   "AutoRecoverySupported": false,
-  "SupportedBootModes": [
-    "uefi"
-  ],
+  "SupportedBootModes": ["uefi"],
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported"
 }

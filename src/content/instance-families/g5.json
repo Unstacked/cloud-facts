@@ -1,38 +1,36 @@
 {
   "name": "g5",
   "regions": [
-    "ap-southeast-2",
-    "ap-south-1",
-    "ap-northeast-2",
-    "eu-west-1",
-    "ap-southeast-3",
     "ap-northeast-1",
-    "us-west-2",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
     "ca-central-1",
     "eu-central-1",
-    "us-east-1",
-    "us-east-2",
     "eu-north-1",
-    "sa-east-1",
+    "eu-west-1",
     "eu-west-2",
     "il-central-1",
-    "me-central-1"
+    "me-central-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
   ],
   "sizes": [
-    "4xlarge",
-    "2xlarge",
-    "24xlarge",
     "12xlarge",
     "16xlarge",
-    "xlarge",
+    "24xlarge",
+    "2xlarge",
     "48xlarge",
-    "8xlarge"
+    "4xlarge",
+    "8xlarge",
+    "xlarge"
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 4,
     "maxCores": 192
   },

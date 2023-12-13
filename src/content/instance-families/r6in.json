@@ -1,31 +1,29 @@
 {
   "name": "r6in",
   "regions": [
-    "ap-southeast-1",
-    "eu-west-1",
     "ap-northeast-1",
-    "us-west-2",
+    "ap-southeast-1",
     "eu-central-1",
+    "eu-west-1",
     "us-east-1",
-    "us-east-2"
+    "us-east-2",
+    "us-west-2"
   ],
   "sizes": [
-    "metal",
-    "24xlarge",
     "12xlarge",
-    "large",
+    "16xlarge",
+    "24xlarge",
+    "2xlarge",
     "32xlarge",
     "4xlarge",
     "8xlarge",
-    "16xlarge",
-    "xlarge",
-    "2xlarge"
+    "large",
+    "metal",
+    "xlarge"
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 2,
     "maxCores": 128
   },

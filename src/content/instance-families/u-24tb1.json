@@ -1,18 +1,10 @@
 {
   "name": "u-24tb1",
-  "regions": [
-    "ap-northeast-2",
-    "us-west-2",
-    "us-east-1"
-  ],
-  "sizes": [
-    "112xlarge"
-  ],
+  "regions": ["ap-northeast-2", "us-east-1", "us-west-2"],
+  "sizes": ["112xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 448,
     "maxCores": 448
   },

@@ -1,33 +1,25 @@
 {
   "name": "m7i-flex",
   "regions": [
-    "ap-southeast-2",
-    "ap-south-1",
     "ap-northeast-2",
-    "eu-west-1",
-    "us-west-1",
+    "ap-south-1",
+    "ap-southeast-2",
     "ca-central-1",
-    "eu-west-3",
-    "eu-south-2",
-    "eu-north-1",
-    "eu-west-2",
     "eu-central-1",
-    "us-west-2",
+    "eu-north-1",
+    "eu-south-2",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "us-east-1",
     "us-east-2",
-    "us-east-1"
+    "us-west-1",
+    "us-west-2"
   ],
-  "sizes": [
-    "2xlarge",
-    "4xlarge",
-    "8xlarge",
-    "large",
-    "xlarge"
-  ],
+  "sizes": ["2xlarge", "4xlarge", "8xlarge", "large", "xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 2,
     "maxCores": 32
   },

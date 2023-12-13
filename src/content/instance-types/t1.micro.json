@@ -2,24 +2,13 @@
   "InstanceType": "t1.micro",
   "CurrentGeneration": false,
   "FreeTierEligible": false,
-  "SupportedUsageClasses": [
-    "on-demand",
-    "spot"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm",
-    "paravirtual"
-  ],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedVirtualizationTypes": ["hvm", "paravirtual"],
   "BareMetal": false,
   "Hypervisor": "xen",
   "ProcessorInfo": {
-    "SupportedArchitectures": [
-      "i386",
-      "x86_64"
-    ],
+    "SupportedArchitectures": ["i386", "x86_64"],
     "Manufacturer": "Intel"
   },
   "VCpuInfo": {
@@ -59,18 +48,13 @@
     "EnaSrdSupported": false
   },
   "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "partition",
-      "spread"
-    ]
+    "SupportedStrategies": ["partition", "spread"]
   },
   "HibernationSupported": false,
   "BurstablePerformanceSupported": false,
   "DedicatedHostsSupported": false,
   "AutoRecoverySupported": true,
-  "SupportedBootModes": [
-    "legacy-bios"
-  ],
+  "SupportedBootModes": ["legacy-bios"],
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported"
 }

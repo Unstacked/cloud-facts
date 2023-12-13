@@ -1,27 +1,20 @@
 {
   "name": "x2gd",
-  "regions": [
-    "eu-west-1",
-    "us-west-2",
-    "us-east-1",
-    "us-east-2"
-  ],
+  "regions": ["eu-west-1", "us-east-1", "us-east-2", "us-west-2"],
   "sizes": [
-    "metal",
-    "8xlarge",
+    "12xlarge",
     "16xlarge",
-    "4xlarge",
-    "medium",
     "2xlarge",
-    "xlarge",
+    "4xlarge",
+    "8xlarge",
     "large",
-    "12xlarge"
+    "medium",
+    "metal",
+    "xlarge"
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "arm64"
-    ],
+    "architectures": ["arm64"],
     "minThreads": 1,
     "maxCores": 64
   },

@@ -1,26 +1,21 @@
 {
   "name": "r7iz",
-  "regions": [
-    "us-west-2",
-    "us-east-1"
-  ],
+  "regions": ["us-east-1", "us-west-2"],
   "sizes": [
-    "16xlarge",
-    "8xlarge",
     "12xlarge",
-    "xlarge",
-    "32xlarge",
-    "metal-16xl",
+    "16xlarge",
     "2xlarge",
-    "metal-32xl",
+    "32xlarge",
     "4xlarge",
-    "large"
+    "8xlarge",
+    "large",
+    "metal-16xl",
+    "metal-32xl",
+    "xlarge"
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 2,
     "maxCores": 128
   },

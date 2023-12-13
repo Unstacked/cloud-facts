@@ -1,50 +1,45 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features": {
-        "ghcr.io/devcontainers/features/aws-cli:1": {
-            "version": "latest"
-        },
-        "ghcr.io/devcontainers/features/python:1": {
-            "installTools": true,
-            "optimize": true,
-            "installJupyterlab": true,
-            "version": "latest"
-        },
-        "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {
-            "version": "latest"
-        },
-        "ghcr.io/devcontainers/features/node:1": {
-            "nodeGypDependencies": true,
-            "version": "lts",
-            "nvmVersion": "latest"
-        },
-        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-            "moby": true,
-            "installDockerBuildx": true,
-            "version": "latest",
-            "dockerDashComposeVersion": "v2"
-        },
-        "ghcr.io/devcontainers/features/github-cli:1": {
-            "installDirectlyFromGitHubRelease": true,
-            "version": "latest"
-        },
-        "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
     },
-    "postCreateCommand": "bash /workspaces/cloud-facts/.devcontainer/install-dendencies.sh",
-    "forwardPorts": [
-        4321
-    ],
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "astro-build.astro-vscode",
-                "ms-python.black-formatter"
-            ]
-        }
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true,
+      "optimize": true,
+      "installJupyterlab": true,
+      "version": "latest"
     },
-    "mounts": [
-        "source=/home/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,type=bind,readonly",
-        "source=/home/${localEnv:USER}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,readonly",
-        "source=/home/${localEnv:USER}/.aws,target=/home/vscode/.aws,type=bind"
-    ]
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "lts",
+      "nvmVersion": "latest"
+    },
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": true,
+      "installDockerBuildx": true,
+      "version": "latest",
+      "dockerDashComposeVersion": "v2"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
+  },
+  "postCreateCommand": "bash /workspaces/cloud-facts/.devcontainer/install-dendencies.sh",
+  "forwardPorts": [4321],
+  "customizations": {
+    "vscode": {
+      "extensions": ["astro-build.astro-vscode", "ms-python.black-formatter"]
+    }
+  },
+  "mounts": [
+    "source=/home/${localEnv:USER}/.ssh,target=/home/vscode/.ssh,type=bind,readonly",
+    "source=/home/${localEnv:USER}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,readonly",
+    "source=/home/${localEnv:USER}/.aws,target=/home/vscode/.aws,type=bind"
+  ]
 }

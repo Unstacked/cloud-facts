@@ -1,22 +1,18 @@
 {
   "name": "p4d",
   "regions": [
-    "ap-northeast-2",
-    "eu-west-1",
     "ap-northeast-1",
-    "us-west-2",
+    "ap-northeast-2",
     "eu-central-1",
+    "eu-west-1",
     "us-east-1",
-    "us-east-2"
+    "us-east-2",
+    "us-west-2"
   ],
-  "sizes": [
-    "24xlarge"
-  ],
+  "sizes": ["24xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 96,
     "maxCores": 96
   },

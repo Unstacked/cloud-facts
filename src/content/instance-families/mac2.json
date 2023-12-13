@@ -1,20 +1,16 @@
 {
   "name": "mac2",
   "regions": [
-    "eu-west-1",
     "ap-southeast-1",
-    "us-west-2",
+    "eu-west-1",
     "us-east-1",
-    "us-east-2"
+    "us-east-2",
+    "us-west-2"
   ],
-  "sizes": [
-    "metal"
-  ],
+  "sizes": ["metal"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "arm64_mac"
-    ],
+    "architectures": ["arm64_mac"],
     "minThreads": 8,
     "maxCores": 8
   },

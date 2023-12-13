@@ -1,26 +1,17 @@
 {
   "name": "d3en",
   "regions": [
-    "ap-southeast-1",
-    "eu-west-1",
     "ap-northeast-1",
-    "us-west-2",
+    "ap-southeast-1",
     "eu-central-1",
-    "us-east-1"
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2"
   ],
-  "sizes": [
-    "2xlarge",
-    "8xlarge",
-    "6xlarge",
-    "4xlarge",
-    "12xlarge",
-    "xlarge"
-  ],
+  "sizes": ["12xlarge", "2xlarge", "4xlarge", "6xlarge", "8xlarge", "xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 4,
     "maxCores": 48
   },

@@ -1,38 +1,36 @@
 {
   "name": "r7g",
   "regions": [
-    "ap-southeast-2",
-    "ap-south-1",
+    "ap-northeast-1",
     "ap-northeast-2",
-    "eu-west-1",
+    "ap-south-1",
     "ap-south-2",
     "ap-southeast-1",
+    "ap-southeast-2",
     "ca-central-1",
-    "eu-south-2",
-    "eu-north-1",
-    "ap-northeast-1",
-    "us-west-1",
     "eu-central-1",
-    "us-west-2",
+    "eu-north-1",
+    "eu-south-2",
+    "eu-west-1",
+    "us-east-1",
     "us-east-2",
-    "us-east-1"
+    "us-west-1",
+    "us-west-2"
   ],
   "sizes": [
-    "medium",
-    "metal",
+    "12xlarge",
+    "16xlarge",
     "2xlarge",
-    "xlarge",
     "4xlarge",
     "8xlarge",
     "large",
-    "16xlarge",
-    "12xlarge"
+    "medium",
+    "metal",
+    "xlarge"
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "arm64"
-    ],
+    "architectures": ["arm64"],
     "minThreads": 1,
     "maxCores": 64
   },

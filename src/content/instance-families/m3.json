@@ -1,27 +1,20 @@
 {
   "name": "m3",
   "regions": [
-    "ap-southeast-2",
-    "eu-west-1",
-    "ap-southeast-1",
-    "sa-east-1",
     "ap-northeast-1",
-    "us-west-1",
-    "us-west-2",
+    "ap-southeast-1",
+    "ap-southeast-2",
     "eu-central-1",
-    "us-east-1"
+    "eu-west-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-west-1",
+    "us-west-2"
   ],
-  "sizes": [
-    "xlarge",
-    "2xlarge",
-    "large",
-    "medium"
-  ],
+  "sizes": ["2xlarge", "large", "medium", "xlarge"],
   "currentGeneration": false,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 1,
     "maxCores": 8
   },

@@ -1,31 +1,29 @@
 {
   "name": "c7i",
   "regions": [
+    "eu-north-1",
+    "eu-south-2",
     "eu-west-1",
-    "us-west-2",
     "us-east-1",
     "us-east-2",
-    "eu-south-2",
-    "eu-north-1"
+    "us-west-2"
   ],
   "sizes": [
-    "2xlarge",
-    "8xlarge",
-    "metal-24xl",
-    "16xlarge",
-    "xlarge",
-    "24xlarge",
-    "large",
-    "metal-48xl",
     "12xlarge",
+    "16xlarge",
+    "24xlarge",
+    "2xlarge",
+    "48xlarge",
     "4xlarge",
-    "48xlarge"
+    "8xlarge",
+    "large",
+    "metal-24xl",
+    "metal-48xl",
+    "xlarge"
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 2,
     "maxCores": 192
   },
