@@ -1,3 +1,3 @@
-import { getInstanceTypes } from "./lib/ec2-instance-types";
+import { getInstanceTypes } from './lib/ec2-instance-types';
 
 getInstanceTypes();

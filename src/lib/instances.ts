@@ -1,41 +1,41 @@
 const sizeOrder = [
-  "nano",
-  "micro",
-  "small",
-  "medium",
-  "large",
-  "xlarge",
-  "2xlarge",
-  "3xlarge",
-  "4xlarge",
-  "6xlarge",
-  "8xlarge",
-  "9xlarge",
-  "10xlarge",
-  "12xlarge",
-  "16xlarge",
-  "18xlarge",
-  "24xlarge",
-  "32xlarge",
-  "48xlarge",
-  "56xlarge",
-  "96xlarge",
-  "112xlarge",
+  'nano',
+  'micro',
+  'small',
+  'medium',
+  'large',
+  'xlarge',
+  '2xlarge',
+  '3xlarge',
+  '4xlarge',
+  '6xlarge',
+  '8xlarge',
+  '9xlarge',
+  '10xlarge',
+  '12xlarge',
+  '16xlarge',
+  '18xlarge',
+  '24xlarge',
+  '32xlarge',
+  '48xlarge',
+  '56xlarge',
+  '96xlarge',
+  '112xlarge',
 
-  "metal",
-  "metal-16xl",
-  "metal-24xl",
-  "metal-32xl",
-  "metal-48xl",
+  'metal',
+  'metal-16xl',
+  'metal-24xl',
+  'metal-32xl',
+  'metal-48xl',
 ];
 
 export function instanceSizeSort(
   sizes: string[],
-  excludeMetal?: bool,
+  excludeMetal?: boolean
 ): string[] {
   let output: string[] = [];
   for (let index in sizeOrder) {
-    if (excludeMetal && sizeOrder[index] == "metal") {
+    if (excludeMetal && sizeOrder[index] == 'metal') {
       break;
     }
     const size = sizeOrder[index];
@@ -47,13 +47,13 @@ export function instanceSizeSort(
 }
 
 enum InstanceComputeClass {
-  General_Purpose = "General Purpose",
-  Compute_Optimized = "Compute Optimized",
-  Memory_Optimized = "Memory Optimized",
-  Accelerated_Computing = "Accelerated Computing",
-  Storage_Optimized = "Storage Optimized",
-  HPC_Optimized = "HPC Optimized",
-  Unknown = "",
+  General_Purpose = 'General Purpose',
+  Compute_Optimized = 'Compute Optimized',
+  Memory_Optimized = 'Memory Optimized',
+  Accelerated_Computing = 'Accelerated Computing',
+  Storage_Optimized = 'Storage Optimized',
+  HPC_Optimized = 'HPC Optimized',
+  Unknown = '',
 }
 
 const InstanceComputeTypes: { [type: string]: InstanceComputeClass } = {
@@ -65,7 +65,7 @@ const InstanceComputeTypes: { [type: string]: InstanceComputeClass } = {
   r: InstanceComputeClass.Memory_Optimized,
   x: InstanceComputeClass.Memory_Optimized,
   z: InstanceComputeClass.Memory_Optimized,
-  "u-": InstanceComputeClass.Memory_Optimized,
+  'u-': InstanceComputeClass.Memory_Optimized,
   p: InstanceComputeClass.Accelerated_Computing,
   g: InstanceComputeClass.Accelerated_Computing,
   trn: InstanceComputeClass.Accelerated_Computing,
