@@ -22,6 +22,9 @@ import Container from "react-bootstrap/cjs/Container.js";
 						</Card.Header>
 						<Card.Body>
 							<Card.Text>
+								{!k.data.currentGeneration && (
+									<h6>Legacy</h6>
+								)}
 								<h5>Regions</h5>
 								<p>{k.data.regions.length}</p>
 								<h5>Sizes</h5>
