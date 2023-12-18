@@ -1,47 +1,47 @@
 ---
-import { getCollection } from "astro:content";
-const instanceFamilyEntries = await getCollection("instance-families");
-import { getInstanceComputeClass, instanceSizeSort } from "../lib/instances";
+import { getCollection } from 'astro:content';
+const instanceFamilyEntries = await getCollection('instance-families');
+import { getInstanceComputeClass, instanceSizeSort } from '../lib/instances';
 
-import SiteLayout from "../layouts/SiteLayout.astro";
-import Card from "react-bootstrap/cjs/Card.js";
-import Row from "react-bootstrap/cjs/Row.js";
-import Container from "react-bootstrap/cjs/Container.js";
+import SiteLayout from '../layouts/SiteLayout.astro';
 ---
+
 <SiteLayout title="Instances">
-	<Row xs={1} sm={2} md={3} lg={3} xl={4} xxl={5} xxxl={6} className="px-3">
-		{
-			instanceFamilyEntries.map((k) => (
-				<Container className="p-2">
-					<Card className="px-0">
-						<Card.Header>
-							<Card.Title>
-								<a href={"/instance-family/"+ k.id}>{k.id.toUpperCase()}<br />
-								{getInstanceComputeClass(k.id)}</a>
-							</Card.Title>
-						</Card.Header>
-						<Card.Body>
-							<Card.Text>
-								{!k.data.currentGeneration && (
-									<h6>Legacy</h6>
-								)}
-								<h5>Regions</h5>
-								<p>{k.data.regions.length}</p>
-								<h5>Sizes</h5>
-								<p>
-									{instanceSizeSort(k.data.sizes)[0]} -{" "}
-									{
-										instanceSizeSort(k.data.sizes, true)[
-											instanceSizeSort(k.data.sizes, true)
-												.length - 1
-										]
-									}
-								</p>
-							</Card.Text>
-						</Card.Body>
-					</Card>
-				</Container>
-			))
-		}
-	</Row>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+    {
+      instanceFamilyEntries.map((k) => (
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">
+              <a href={'/instance-family/' + k.id}>
+                {k.id.toUpperCase()}
+                <br />
+                {getInstanceComputeClass(k.id)}
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="px-6 pt-4 pb-2">
+              {!k.data.currentGeneration && (
+                <span class="inline-block bg-gray-300 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300 mr-2 mb-2">
+                  Legacy
+                </span>
+              )}
+              <span class="inline-block bg-gray-300 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300 mr-2 mb-2">
+                regions - {k.data.regions.length}
+              </span>
+              <span class="inline-block bg-gray-300 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300 mr-2 mb-2">
+                {instanceSizeSort(k.data.sizes)[0]} -{' '}
+                {
+                  instanceSizeSort(k.data.sizes, true)[
+                    instanceSizeSort(k.data.sizes, true).length - 1
+                  ]
+                }
+              </span>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </SiteLayout>
