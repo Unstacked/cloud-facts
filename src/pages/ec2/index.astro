@@ -1,9 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 const instanceFamilyEntries = await getCollection('instance-families');
-import { getInstanceComputeClass, instanceSizeSort } from '../lib/instances';
+import { getInstanceComputeClass, instanceSizeSort } from '../../lib/instances';
 
-import SiteLayout from '../layouts/SiteLayout.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
 ---
 
 <SiteLayout title="Instances">
@@ -13,7 +13,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
         <div class="max-w-sm rounded overflow-hidden shadow-lg">
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">
-              <a href={'/instance-family/' + k.id}>
+              <a href={'/ec2/' + k.id}>
                 {k.id.toUpperCase()}
                 <br />
                 {getInstanceComputeClass(k.id)}
@@ -23,7 +23,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
           <div>
             <div class="px-6 pt-4 pb-2">
               {!k.data.currentGeneration && (
-                <span class="inline-block bg-gray-300 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-gray-300 mr-2 mb-2">
+                <span class="inline-block bg-yellow-300 dark:bg-yellow-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 dark:text-gray-100 mr-2 mb-2">
                   Legacy
                 </span>
               )}

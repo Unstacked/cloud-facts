@@ -6,7 +6,7 @@ import type { InstanceTypeInfo } from "@aws-sdk/client-ec2";
 export async function getStaticPaths() {
   const instanceTypeEntries = await getCollection('instance-types');
   return instanceTypeEntries.map(entry => ({
-    params: { slug: entry.id }, props: { entry },
+    params: { slug: entry.id.split(".").join("/") }, props: { entry },
   }));
 }
 // 2. For your template, you can get the entry directly from the prop
