@@ -2,13 +2,22 @@
   "InstanceType": "r7a.large",
   "CurrentGeneration": true,
   "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "BareMetal": false,
   "Hypervisor": "nitro",
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
     "SustainedClockSpeedInGhz": 3.7,
     "Manufacturer": "AMD"
   },
@@ -16,8 +25,13 @@
     "DefaultVCpus": 2,
     "DefaultCores": 2,
     "DefaultThreadsPerCore": 1,
-    "ValidCores": [1, 2],
-    "ValidThreadsPerCore": [1]
+    "ValidCores": [
+      1,
+      2
+    ],
+    "ValidThreadsPerCore": [
+      1
+    ]
   },
   "MemoryInfo": {
     "SizeInMiB": 16384
@@ -59,13 +73,20 @@
     "EnaSrdSupported": false
   },
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "HibernationSupported": true,
   "BurstablePerformanceSupported": false,
   "DedicatedHostsSupported": true,
   "AutoRecoverySupported": true,
-  "SupportedBootModes": ["legacy-bios", "uefi"],
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported"
 }

@@ -3,9 +3,8 @@ import {
   type InstanceTypeInfo,
   paginateDescribeInstanceTypes,
 } from '@aws-sdk/client-ec2';
-import { writeFileSync, rmSync, mkdirSync } from 'fs';
 import { getAllRegions } from './regions';
-import gitRootDir from 'git-root-dir';
+import { writeContentDir, writeDataToFile } from './util';
 
 export interface InstanceFamily {
   name: string;
@@ -119,27 +118,11 @@ export async function getInstanceTypes() {
     );
   }
 
-  // writeDataToFile(
-  //   "src/content/instance-free-tier-regions.json",
-  //   instanceFreeTierRegions,
-  // );
+  writeDataToFile(
+    "src/lib/instance-free-tier-regions.json",
+    instanceFreeTierRegions,
+  );
 
   writeContentDir('instance-families', instanceFamilies);
   writeContentDir('instance-types', instanceTypes);
-  console.log(`Wrote ${filesWritten} files`);
-}
-
-let filesWritten = 0;
-
-async function writeContentDir(name: string, data: { [key: string]: any }) {
-  rmSync(`src/content/${name}`, { recursive: true, force: true });
-  mkdirSync(`src/content/${name}`);
-  for (let key of Object.keys(data)) {
-    writeDataToFile(`src/content/${name}/${key}.json`, data[key]);
-  }
-}
-
-async function writeDataToFile(path: string, data: any) {
-  filesWritten++;
-  writeFileSync(`${await gitRootDir()}/${path}`, JSON.stringify(data, null, 2));
 }

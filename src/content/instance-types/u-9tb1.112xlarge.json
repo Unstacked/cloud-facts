@@ -2,13 +2,21 @@
   "InstanceType": "u-9tb1.112xlarge",
   "CurrentGeneration": true,
   "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "BareMetal": false,
   "Hypervisor": "nitro",
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
     "SustainedClockSpeedInGhz": 2.1,
     "Manufacturer": "Intel"
   },
@@ -17,10 +25,39 @@
     "DefaultCores": 224,
     "DefaultThreadsPerCore": 2,
     "ValidCores": [
-      8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136,
-      144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96,
+      104,
+      112,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      184,
+      192,
+      200,
+      208,
+      216,
+      224
     ],
-    "ValidThreadsPerCore": [1, 2]
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
   },
   "MemoryInfo": {
     "SizeInMiB": 9437184
@@ -62,13 +99,19 @@
     "EnaSrdSupported": false
   },
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "HibernationSupported": false,
   "BurstablePerformanceSupported": false,
   "DedicatedHostsSupported": true,
   "AutoRecoverySupported": true,
-  "SupportedBootModes": ["legacy-bios"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported"
 }

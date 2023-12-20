@@ -39,8 +39,13 @@ const navItems = [
       content={Astro.generator}
     />
   </head>
-  <body> <Navbar navItems={navItems} currentPage={Astro.url.pathname} /></body>
-  <div>
-    <slot />
-  </div>
+  <body>
+    <Navbar
+      navItems={navItems}
+      currentPage={Astro.url.pathname}
+    />
+    <div class="font-mono">
+      <slot />
+    </div>
+  </body>
 </html>

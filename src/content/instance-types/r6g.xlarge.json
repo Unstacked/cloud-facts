@@ -2,13 +2,22 @@
   "InstanceType": "r6g.xlarge",
   "CurrentGeneration": true,
   "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "BareMetal": false,
   "Hypervisor": "nitro",
   "ProcessorInfo": {
-    "SupportedArchitectures": ["arm64"],
+    "SupportedArchitectures": [
+      "arm64"
+    ],
     "SustainedClockSpeedInGhz": 2.5,
     "Manufacturer": "AWS"
   },
@@ -16,8 +25,15 @@
     "DefaultVCpus": 4,
     "DefaultCores": 4,
     "DefaultThreadsPerCore": 1,
-    "ValidCores": [1, 2, 3, 4],
-    "ValidThreadsPerCore": [1]
+    "ValidCores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "ValidThreadsPerCore": [
+      1
+    ]
   },
   "MemoryInfo": {
     "SizeInMiB": 32768
@@ -59,13 +75,19 @@
     "EnaSrdSupported": false
   },
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "HibernationSupported": false,
   "BurstablePerformanceSupported": false,
   "DedicatedHostsSupported": true,
   "AutoRecoverySupported": true,
-  "SupportedBootModes": ["uefi"],
+  "SupportedBootModes": [
+    "uefi"
+  ],
   "NitroEnclavesSupport": "supported",
   "NitroTpmSupport": "unsupported"
 }

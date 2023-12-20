@@ -14,10 +14,19 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["2xlarge", "4xlarge", "8xlarge", "large", "medium", "xlarge"],
+  "sizes": [
+    "2xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "medium",
+    "xlarge"
+  ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": ["arm64"],
+    "architectures": [
+      "arm64"
+    ],
     "minThreads": 1,
     "maxCores": 32
   },

@@ -10,6 +10,7 @@
     "ap-southeast-2",
     "ap-southeast-3",
     "ca-central-1",
+    "ca-west-1",
     "eu-central-1",
     "eu-north-1",
     "eu-south-1",
@@ -36,7 +37,9 @@
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": ["arm64"],
+    "architectures": [
+      "arm64"
+    ],
     "minThreads": 1,
     "maxCores": 64
   },
