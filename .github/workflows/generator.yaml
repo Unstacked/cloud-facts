@@ -21,6 +21,12 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v4
 
+      - name: AWS Login
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: test-github-connect 
+          
+
       - name: Install Dependencies
         run: npm ci
       - name: Run Generator
