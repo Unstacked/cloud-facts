@@ -1,11 +1,11 @@
 name: Run Generator
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
       commit:
-        description: 'Save Output of Generator'
+        description: "Save Output of Generator"
         required: true
         default: true
         type: boolean
@@ -36,6 +36,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm ci
+
       - name: Run Generator
         run: |
           npm run generator

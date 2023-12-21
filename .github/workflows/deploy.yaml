@@ -1,0 +1,41 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - cdk/**
+      - src/**
+      - public/**
+      - tailwind.config.mjs
+      - astro.config.mjs
+      - cdk*.json
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+
+      - name: AWS Login
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::806124249357:role/test-github-connect
+          aws-region: us-east-1
+
+      - name: Install Node
+        uses: actions/setup-node@v4
+
+      - name: Install Dependencies
+        run: |
+          npm ci
+          npm i -g aws-cdk
+
+      - name: CDK
+        run: |
+          cdk synth
+          cdk diff
+          cdk deploy --no-execute
