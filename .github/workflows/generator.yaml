@@ -16,14 +16,42 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Install Node
         uses: actions/setup-node@v4
         with:
           node-version: lts
+
       - name: Install Dependencies
         run: npm ci
       - name: Run Generator
-        run: npm run generator
+        run: |
+          npm run generator
+          npm run prettier
 
       - name: Git Status
-        run: git status
+        id: git-status
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            echo "CHANGES=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "CHANGES=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit Changes
+        if: steps.git-status.outputs.CHANGES == 'true'
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "pwed@duck.com"
+          git checkout -B generator/updates
+          git add .
+          git commit -m "Generator Updates"
+          git push
+      
+      - name: Create PR
+        run: |
+          gh pr create -B main -H generator/updates --title 'Merge generator/updates into main' --body 'Created by Github action'
+          gh pr merge --auto --delete-branch --squash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
