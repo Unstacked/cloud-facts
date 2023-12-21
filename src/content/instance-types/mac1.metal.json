@@ -1,0 +1,81 @@
+{
+  "InstanceType": "mac1.metal",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64_mac"
+    ],
+    "SustainedClockSpeedInGhz": 3.2,
+    "Manufacturer": "Intel"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 12,
+    "DefaultCores": 6,
+    "DefaultThreadsPerCore": 2
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 32768
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 14000,
+      "BaselineThroughputInMBps": 1750,
+      "BaselineIops": 80000,
+      "MaximumBandwidthInMbps": 14000,
+      "MaximumThroughputInMBps": 1750,
+      "MaximumIops": 80000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "25 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "25 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 25,
+        "PeakBandwidthInGbps": 25
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
+}

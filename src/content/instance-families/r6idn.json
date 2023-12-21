@@ -1,0 +1,36 @@
+{
+  "name": "r6idn",
+  "regions": [
+    "ap-northeast-1",
+    "ap-southeast-1",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "12xlarge",
+    "16xlarge",
+    "24xlarge",
+    "2xlarge",
+    "32xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "metal",
+    "xlarge"
+  ],
+  "currentGeneration": true,
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  }
+}

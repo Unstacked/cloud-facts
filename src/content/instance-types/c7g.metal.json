@@ -1,0 +1,86 @@
+{
+  "InstanceType": "c7g.metal",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 64,
+    "DefaultCores": 64,
+    "DefaultThreadsPerCore": 1
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 131072
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 20000,
+      "BaselineThroughputInMBps": 2500,
+      "BaselineIops": 80000,
+      "MaximumBandwidthInMbps": 20000,
+      "MaximumThroughputInMBps": 2500,
+      "MaximumIops": 80000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "30 Gigabit",
+    "MaximumNetworkInterfaces": 15,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "30 Gigabit",
+        "MaximumNetworkInterfaces": 15,
+        "BaselineBandwidthInGbps": 30,
+        "PeakBandwidthInGbps": 30
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 1
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": true
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
+}

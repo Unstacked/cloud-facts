@@ -1,0 +1,85 @@
+{
+  "InstanceType": "c7a.medium",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.7,
+    "Manufacturer": "AMD"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 1,
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 1
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 2048
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 325,
+      "BaselineThroughputInMBps": 40.625,
+      "BaselineIops": 2500,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 40000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Up to 12.5 Gigabit",
+    "MaximumNetworkInterfaces": 2,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 12.5 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 0.39,
+        "PeakBandwidthInGbps": 12.5
+      }
+    ],
+    "Ipv4AddressesPerInterface": 4,
+    "Ipv6AddressesPerInterface": 4,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
+}

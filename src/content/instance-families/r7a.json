@@ -1,0 +1,35 @@
+{
+  "name": "r7a",
+  "regions": [
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "12xlarge",
+    "16xlarge",
+    "24xlarge",
+    "2xlarge",
+    "32xlarge",
+    "48xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "medium",
+    "metal-48xl",
+    "xlarge"
+  ],
+  "currentGeneration": true,
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 1,
+    "maxCores": 192
+  },
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 1572864
+  }
+}

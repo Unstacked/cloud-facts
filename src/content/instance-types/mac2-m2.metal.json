@@ -1,0 +1,81 @@
+{
+  "InstanceType": "mac2-m2.metal",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64_mac"
+    ],
+    "SustainedClockSpeedInGhz": 3.5,
+    "Manufacturer": "Apple"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 8,
+    "DefaultCores": 8,
+    "DefaultThreadsPerCore": 1
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 24576
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 8000,
+      "BaselineThroughputInMBps": 1000,
+      "BaselineIops": 55000,
+      "MaximumBandwidthInMbps": 8000,
+      "MaximumThroughputInMBps": 1000,
+      "MaximumIops": 55000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "10 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "10 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 10,
+        "PeakBandwidthInGbps": 10
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
+}

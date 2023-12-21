@@ -1,0 +1,31 @@
+{
+  "name": "d3en",
+  "regions": [
+    "ap-northeast-1",
+    "ap-southeast-1",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2"
+  ],
+  "sizes": [
+    "12xlarge",
+    "2xlarge",
+    "4xlarge",
+    "6xlarge",
+    "8xlarge",
+    "xlarge"
+  ],
+  "currentGeneration": true,
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 48
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 196608
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "InstanceType": "g5.12xlarge",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.3,
+    "Manufacturer": "AMD"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 48,
+    "DefaultCores": 24,
+    "DefaultThreadsPerCore": 2
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 196608
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 3800,
+    "Disks": [
+      {
+        "SizeInGB": 3800,
+        "Count": 1,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 16000,
+      "BaselineThroughputInMBps": 2000,
+      "BaselineIops": 65000,
+      "MaximumBandwidthInMbps": 16000,
+      "MaximumThroughputInMBps": 2000,
+      "MaximumIops": 65000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "40 Gigabit",
+    "MaximumNetworkInterfaces": 15,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "40 Gigabit",
+        "MaximumNetworkInterfaces": 15,
+        "BaselineBandwidthInGbps": 40,
+        "PeakBandwidthInGbps": 40
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 1
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "A10G",
+        "Manufacturer": "NVIDIA",
+        "Count": 4,
+        "MemoryInfo": {
+          "SizeInMiB": 24576
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 98304
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": false,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  }
+}

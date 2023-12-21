@@ -1,0 +1,116 @@
+{
+  "InstanceType": "r6idn.4xlarge",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.5,
+    "Manufacturer": "Intel"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 16,
+    "DefaultCores": 8,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 131072
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 950,
+    "Disks": [
+      {
+        "SizeInGB": 950,
+        "Count": 1,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 12500,
+      "BaselineThroughputInMBps": 1562.5,
+      "BaselineIops": 50000,
+      "MaximumBandwidthInMbps": 25000,
+      "MaximumThroughputInMBps": 3125,
+      "MaximumIops": 100000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Up to 50 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 50 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 25,
+        "PeakBandwidthInGbps": 50
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "InstanceType": "c5a.12xlarge",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.3,
+    "Manufacturer": "AMD"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 48,
+    "DefaultCores": 24,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 98304
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 4750,
+      "BaselineThroughputInMBps": 593.75,
+      "BaselineIops": 20000,
+      "MaximumBandwidthInMbps": 4750,
+      "MaximumThroughputInMBps": 593.75,
+      "MaximumIops": 20000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "12 Gigabit",
+    "MaximumNetworkInterfaces": 8,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "12 Gigabit",
+        "MaximumNetworkInterfaces": 8,
+        "BaselineBandwidthInGbps": 12,
+        "PeakBandwidthInGbps": 12
+      }
+    ],
+    "Ipv4AddressesPerInterface": 30,
+    "Ipv6AddressesPerInterface": 30,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": false,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  }
+}

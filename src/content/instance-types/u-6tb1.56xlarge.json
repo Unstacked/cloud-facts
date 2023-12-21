@@ -1,0 +1,116 @@
+{
+  "InstanceType": "u-6tb1.56xlarge",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 2.1,
+    "Manufacturer": "Intel"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 224,
+    "DefaultCores": 224,
+    "DefaultThreadsPerCore": 1,
+    "ValidCores": [
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96,
+      104,
+      112,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      184,
+      192,
+      200,
+      208,
+      216,
+      224
+    ],
+    "ValidThreadsPerCore": [
+      1
+    ]
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 6291456
+  },
+  "InstanceStorageSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 38000,
+      "BaselineThroughputInMBps": 4750,
+      "BaselineIops": 160000,
+      "MaximumBandwidthInMbps": 38000,
+      "MaximumThroughputInMBps": 4750,
+      "MaximumIops": 160000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "100 Gigabit",
+    "MaximumNetworkInterfaces": 15,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 15,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
+}

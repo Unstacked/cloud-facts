@@ -1,0 +1,98 @@
+{
+  "InstanceType": "c3.large",
+  "CurrentGeneration": false,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs",
+    "instance-store"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm",
+    "paravirtual"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "xen",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "i386",
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 2.8,
+    "Manufacturer": "Intel"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 2,
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      1
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 3840
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 32,
+    "Disks": [
+      {
+        "SizeInGB": 16,
+        "Count": 2,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "unsupported",
+    "EncryptionSupport": "unsupported"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "unsupported",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "unsupported"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Moderate",
+    "MaximumNetworkInterfaces": 3,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Moderate",
+        "MaximumNetworkInterfaces": 3,
+        "BaselineBandwidthInGbps": 0.5,
+        "PeakBandwidthInGbps": 1.2
+      }
+    ],
+    "Ipv4AddressesPerInterface": 10,
+    "Ipv6AddressesPerInterface": 10,
+    "Ipv6Supported": true,
+    "EnaSupport": "unsupported",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": true,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": true,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
+}

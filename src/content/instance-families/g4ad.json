@@ -1,0 +1,32 @@
+{
+  "name": "g4ad",
+  "regions": [
+    "ap-northeast-1",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "16xlarge",
+    "2xlarge",
+    "4xlarge",
+    "8xlarge",
+    "xlarge"
+  ],
+  "currentGeneration": true,
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 4,
+    "maxCores": 64
+  },
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 262144
+  }
+}

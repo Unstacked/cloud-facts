@@ -1,0 +1,31 @@
+{
+  "name": "u-3tb1",
+  "regions": [
+    "ap-northeast-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-south-1",
+    "eu-west-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "56xlarge"
+  ],
+  "currentGeneration": true,
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 224,
+    "maxCores": 224
+  },
+  "memory": {
+    "minMib": 3145728,
+    "maxMib": 3145728
+  }
+}

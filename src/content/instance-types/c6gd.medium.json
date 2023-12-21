@@ -1,0 +1,96 @@
+{
+  "InstanceType": "c6gd.medium",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.5,
+    "Manufacturer": "AWS"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 1,
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 1
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 2048
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 59,
+    "Disks": [
+      {
+        "SizeInGB": 59,
+        "Count": 1,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 315,
+      "BaselineThroughputInMBps": 39.375,
+      "BaselineIops": 2500,
+      "MaximumBandwidthInMbps": 4750,
+      "MaximumThroughputInMBps": 593.75,
+      "MaximumIops": 20000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Up to 10 Gigabit",
+    "MaximumNetworkInterfaces": 2,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 10 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 0.5,
+        "PeakBandwidthInGbps": 10
+      }
+    ],
+    "Ipv4AddressesPerInterface": 4,
+    "Ipv6AddressesPerInterface": 4,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": false,
+    "EnaSrdSupported": false
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported"
+}

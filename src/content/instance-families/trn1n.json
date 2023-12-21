@@ -1,0 +1,23 @@
+{
+  "name": "trn1n",
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "32xlarge"
+  ],
+  "currentGeneration": true,
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 128,
+    "maxCores": 128
+  },
+  "memory": {
+    "minMib": 524288,
+    "maxMib": 524288
+  }
+}

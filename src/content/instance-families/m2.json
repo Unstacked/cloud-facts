@@ -1,0 +1,30 @@
+{
+  "name": "m2",
+  "regions": [
+    "ap-northeast-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "eu-west-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-west-1",
+    "us-west-2"
+  ],
+  "sizes": [
+    "2xlarge",
+    "4xlarge",
+    "xlarge"
+  ],
+  "currentGeneration": false,
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 2,
+    "maxCores": 8
+  },
+  "memory": {
+    "minMib": 17510,
+    "maxMib": 70041
+  }
+}

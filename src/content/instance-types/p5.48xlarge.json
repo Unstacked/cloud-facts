@@ -1,0 +1,344 @@
+{
+  "InstanceType": "p5.48xlarge",
+  "CurrentGeneration": true,
+  "FreeTierEligible": false,
+  "SupportedUsageClasses": [
+    "capacity-block",
+    "on-demand",
+    "spot"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "BareMetal": false,
+  "Hypervisor": "nitro",
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.6,
+    "Manufacturer": "AMD"
+  },
+  "VCpuInfo": {
+    "DefaultVCpus": 192,
+    "DefaultCores": 96,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      12,
+      24,
+      36,
+      48,
+      60,
+      72,
+      84,
+      96
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  },
+  "MemoryInfo": {
+    "SizeInMiB": 2097152
+  },
+  "InstanceStorageSupported": true,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 30400,
+    "Disks": [
+      {
+        "SizeInGB": 3800,
+        "Count": 8,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 80000,
+      "BaselineThroughputInMBps": 10000,
+      "BaselineIops": 260000,
+      "MaximumBandwidthInMbps": 80000,
+      "MaximumThroughputInMBps": 10000,
+      "MaximumIops": 260000
+    },
+    "NvmeSupport": "required"
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "3200 Gigabit",
+    "MaximumNetworkInterfaces": 64,
+    "MaximumNetworkCards": 32,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 1,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 2,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 3,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 4,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 5,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 6,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 7,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 8,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 9,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 10,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 11,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 12,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 13,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 14,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 15,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 16,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 17,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 18,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 19,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 20,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 21,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 22,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 23,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 24,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 25,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 26,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 27,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 28,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 29,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 30,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      },
+      {
+        "NetworkCardIndex": 31,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 32
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "H100",
+        "Manufacturer": "NVIDIA",
+        "Count": 8,
+        "MemoryInfo": {
+          "SizeInMiB": 81920
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 655360
+  },
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "HibernationSupported": false,
+  "BurstablePerformanceSupported": false,
+  "DedicatedHostsSupported": true,
+  "AutoRecoverySupported": false,
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmSupport": "unsupported"
+}
