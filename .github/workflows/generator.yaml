@@ -50,6 +50,8 @@ jobs:
           fi
 
       - name: Commit Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: steps.git-status.outputs.CHANGES == 'true'
         run: |
           git config --global user.name "GitHub Actions"
