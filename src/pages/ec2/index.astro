@@ -110,7 +110,7 @@ import type { InstanceFamily } from '../../../generator/lib/ec2-instance-types';
   const LegacyCheck = document.getElementById(
     'LegacyCheck'
   ) as HTMLInputElement;
-  LegacyCheck.addEventListener('change', (e) => {
+  LegacyCheck.addEventListener('change', () => {
     const LegacyCards = document.getElementsByClassName('ec2-legacy');
     for (let i = 0; i < LegacyCards.length; i++) {
       if (LegacyCheck.checked) {

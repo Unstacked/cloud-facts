@@ -1,8 +1,9 @@
+#!/usr/bin/env node
+import 'source-map-support/register';
 import {
+  App,
   Stack,
-  StackProps,
-  RemovalPolicy,
-  Duration,
+  type StackProps,
   aws_cloudfront as cf,
   aws_cloudfront_origins as cfo,
   aws_s3 as s3,
@@ -10,12 +11,15 @@ import {
   aws_route53_targets as r53t,
   aws_certificatemanager as acm,
   aws_s3_deployment as s3d,
-  aws_lambda as lambda,
 } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import { join } from 'path';
+import gitRootDir from 'git-root-dir';
+import { spawnSync } from 'child_process';
 
-export class CloudFactsStack extends Stack {
+const rootDir = await gitRootDir();
+
+class CloudFactsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
@@ -52,20 +56,13 @@ export class CloudFactsStack extends Stack {
       ],
     });
 
+    spawnSync('npm', ['run', 'build'], {cwd: rootDir})
+
     new s3d.BucketDeployment(this, 'Deployment', {
       distribution,
       distributionPaths: ['/', '/*'],
       sources: [
-        s3d.Source.asset(join(__dirname, '..', '..'), {
-          bundling: {
-            image: lambda.Runtime.NODEJS_18_X.bundlingImage,
-            command: [
-              'bash',
-              '-xc',
-              'export npm_config_update_notifier=false && export npm_config_cache=$(mktemp -d) && npm ci && npm run build && cp -au dist/* /asset-output',
-            ],
-          },
-        }),
+        s3d.Source.asset(join(rootDir!, "dist"))
       ],
       destinationBucket: websiteBucket,
     });
@@ -87,3 +84,8 @@ export class CloudFactsStack extends Stack {
     });
   }
 }
+
+const app = new App();
+new CloudFactsStack(app, 'CloudFacts', {
+  env: { account: '806124249357', region: 'us-east-1' },
+});

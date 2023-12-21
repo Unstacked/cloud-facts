@@ -1,7 +1,13 @@
 ---
-import SiteLayout from "../layouts/SiteLayout.astro";
-
+import SiteLayout from '../layouts/SiteLayout.astro';
 ---
+
 <SiteLayout title="404">
-    <h1>404</h1>
+  <div class="relative flex min-h-screen flex-col justify-center">
+    <div class="mx-auto text-center">
+      <h1 class="text-8xl">404</h1>
+      <p>This page doesn't exists.</p>
+      <p>Are you lost?</p>
+    </div>
+  </div>
 </SiteLayout>
