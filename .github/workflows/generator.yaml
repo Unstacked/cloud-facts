@@ -1,0 +1,29 @@
+name: Run Generator
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'Save Output of Generator'
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  run_generator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Generator
+        run: npm run generator
+
+      - name: Git Status
+        run: git status
