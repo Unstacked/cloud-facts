@@ -51,8 +51,6 @@ jobs:
           fi
 
       - name: Commit Changes
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: steps.git-status.outputs.CHANGES == 'true'
         run: |
           git config --global user.name "GitHub Actions"
@@ -67,4 +65,4 @@ jobs:
           gh pr create -B main -H generator/updates --title 'Merge generator/updates into main' --body 'Created by Github action'
           gh pr merge --auto --delete-branch --squash
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
