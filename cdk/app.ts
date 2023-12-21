@@ -18,7 +18,7 @@ import { join } from 'path';
 import gitRootDir from 'git-root-dir';
 import { spawnSync } from 'child_process';
 
-const rootDir = await gitRootDir();
+const rootDir = await gitRootDir() || ".";
 
 class CloudFactsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -89,7 +89,7 @@ class CloudFactsStack extends Stack {
     new s3d.BucketDeployment(this, 'Deployment', {
       distribution,
       distributionPaths: ['/', '/*'],
-      sources: [s3d.Source.asset(join(rootDir!, 'dist'))],
+      sources: [s3d.Source.asset(join(rootDir, 'dist'))],
       destinationBucket: websiteBucket,
     });
 
@@ -113,5 +113,5 @@ class CloudFactsStack extends Stack {
 
 const app = new App();
 new CloudFactsStack(app, 'CloudFacts', {
-  env: { account: '806124249357', region: 'us-east-1' },
+  env: { account: '806124249357', region: 'us-east-1' }
 });
