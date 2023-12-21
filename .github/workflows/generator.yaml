@@ -1,12 +1,13 @@
 name: Run Generator
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: '0 0 * * *'
   push:
-      branches:
-        - main
-      paths:
-        - generator/**
+    branches:
+      - main
+    paths:
+      - generator/**
+      - .github/workflows/generator.yaml
 
 permissions:
   id-token: write

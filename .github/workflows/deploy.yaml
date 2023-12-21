@@ -10,6 +10,7 @@ on:
       - tailwind.config.mjs
       - astro.config.mjs
       - cdk*.json
+      - .github/workflows/deploy.yaml
 
 permissions:
   id-token: write
@@ -41,5 +42,5 @@ jobs:
       - name: CDK
         run: |
           cdk synth
-          cdk diff
-          cdk deploy --no-execute
+          cdk --app cdk.out diff
+          cdk --app cdk.out deploy --no-execute --require-approval never

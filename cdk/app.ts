@@ -56,14 +56,12 @@ class CloudFactsStack extends Stack {
       ],
     });
 
-    spawnSync('npm', ['run', 'build'], {cwd: rootDir})
+    spawnSync('npm', ['run', 'build'], { cwd: rootDir });
 
     new s3d.BucketDeployment(this, 'Deployment', {
       distribution,
       distributionPaths: ['/', '/*'],
-      sources: [
-        s3d.Source.asset(join(rootDir!, "dist"))
-      ],
+      sources: [s3d.Source.asset(join(rootDir!, 'dist'))],
       destinationBucket: websiteBucket,
     });
 
