@@ -10,6 +10,11 @@ on:
         default: true
         type: boolean
 
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
 jobs:
   run_generator:
     runs-on: ubuntu-latest
