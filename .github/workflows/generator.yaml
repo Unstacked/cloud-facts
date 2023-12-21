@@ -23,16 +23,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-      - name: Install Node
-        uses: actions/setup-node@v4
 
       - name: AWS Login
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: test-github-connect
+          role-to-assume: arn:aws:iam::806124249357:role/test-github-connect
           aws-region: us-east-1
-          
 
+      - name: Install Node
+        uses: actions/setup-node@v4
+  
       - name: Install Dependencies
         run: npm ci
       - name: Run Generator
