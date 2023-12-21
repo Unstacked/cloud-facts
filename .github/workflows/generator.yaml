@@ -24,7 +24,8 @@ jobs:
       - name: AWS Login
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: test-github-connect 
+          role-to-assume: test-github-connect
+          region: us-east-1
           
 
       - name: Install Dependencies
