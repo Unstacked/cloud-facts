@@ -57,7 +57,7 @@ jobs:
           git checkout -B generator/updates
           git add .
           git commit -m "Generator Updates"
-          git push
+          git push --set-upstream origin generator/updates
       
       - name: Create PR
         run: |
