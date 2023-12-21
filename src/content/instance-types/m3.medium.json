@@ -2,24 +2,13 @@
   "InstanceType": "m3.medium",
   "CurrentGeneration": false,
   "FreeTierEligible": false,
-  "SupportedUsageClasses": [
-    "on-demand",
-    "spot"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs",
-    "instance-store"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm",
-    "paravirtual"
-  ],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedRootDeviceTypes": ["ebs", "instance-store"],
+  "SupportedVirtualizationTypes": ["hvm", "paravirtual"],
   "BareMetal": false,
   "Hypervisor": "xen",
   "ProcessorInfo": {
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
+    "SupportedArchitectures": ["x86_64"],
     "SustainedClockSpeedInGhz": 2.5,
     "Manufacturer": "Intel"
   },
@@ -72,18 +61,13 @@
     "EnaSrdSupported": false
   },
   "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "partition",
-      "spread"
-    ]
+    "SupportedStrategies": ["partition", "spread"]
   },
   "HibernationSupported": true,
   "BurstablePerformanceSupported": false,
   "DedicatedHostsSupported": true,
   "AutoRecoverySupported": true,
-  "SupportedBootModes": [
-    "legacy-bios"
-  ],
+  "SupportedBootModes": ["legacy-bios"],
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported"
 }

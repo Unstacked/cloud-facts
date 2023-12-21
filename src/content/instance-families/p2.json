@@ -12,16 +12,10 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": [
-    "16xlarge",
-    "8xlarge",
-    "xlarge"
-  ],
+  "sizes": ["16xlarge", "8xlarge", "xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 4,
     "maxCores": 64
   },

@@ -33,9 +33,7 @@
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "arm64"
-    ],
+    "architectures": ["arm64"],
     "minThreads": 1,
     "maxCores": 64
   },

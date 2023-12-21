@@ -10,15 +10,10 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": [
-    "medium",
-    "xlarge"
-  ],
+  "sizes": ["medium", "xlarge"],
   "currentGeneration": false,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 2,
     "maxCores": 8
   },

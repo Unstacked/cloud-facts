@@ -2,23 +2,13 @@
   "InstanceType": "p5.48xlarge",
   "CurrentGeneration": true,
   "FreeTierEligible": false,
-  "SupportedUsageClasses": [
-    "capacity-block",
-    "on-demand",
-    "spot"
-  ],
-  "SupportedRootDeviceTypes": [
-    "ebs"
-  ],
-  "SupportedVirtualizationTypes": [
-    "hvm"
-  ],
+  "SupportedUsageClasses": ["capacity-block", "on-demand", "spot"],
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedVirtualizationTypes": ["hvm"],
   "BareMetal": false,
   "Hypervisor": "nitro",
   "ProcessorInfo": {
-    "SupportedArchitectures": [
-      "x86_64"
-    ],
+    "SupportedArchitectures": ["x86_64"],
     "SustainedClockSpeedInGhz": 3.6,
     "Manufacturer": "AMD"
   },
@@ -26,20 +16,8 @@
     "DefaultVCpus": 192,
     "DefaultCores": 96,
     "DefaultThreadsPerCore": 2,
-    "ValidCores": [
-      12,
-      24,
-      36,
-      48,
-      60,
-      72,
-      84,
-      96
-    ],
-    "ValidThreadsPerCore": [
-      1,
-      2
-    ]
+    "ValidCores": [12, 24, 36, 48, 60, 72, 84, 96],
+    "ValidThreadsPerCore": [1, 2]
   },
   "MemoryInfo": {
     "SizeInMiB": 2097152
@@ -326,19 +304,13 @@
     "TotalGpuMemoryInMiB": 655360
   },
   "PlacementGroupInfo": {
-    "SupportedStrategies": [
-      "cluster",
-      "partition",
-      "spread"
-    ]
+    "SupportedStrategies": ["cluster", "partition", "spread"]
   },
   "HibernationSupported": false,
   "BurstablePerformanceSupported": false,
   "DedicatedHostsSupported": true,
   "AutoRecoverySupported": false,
-  "SupportedBootModes": [
-    "legacy-bios"
-  ],
+  "SupportedBootModes": ["legacy-bios"],
   "NitroEnclavesSupport": "supported",
   "NitroTpmSupport": "unsupported"
 }

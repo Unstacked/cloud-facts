@@ -31,20 +31,10 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": [
-    "2xlarge",
-    "large",
-    "medium",
-    "micro",
-    "nano",
-    "small",
-    "xlarge"
-  ],
+  "sizes": ["2xlarge", "large", "medium", "micro", "nano", "small", "xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "arm64"
-    ],
+    "architectures": ["arm64"],
     "minThreads": 2,
     "maxCores": 8
   },

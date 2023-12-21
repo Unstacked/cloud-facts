@@ -26,17 +26,10 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": [
-    "16xlarge",
-    "24xlarge",
-    "32xlarge",
-    "metal"
-  ],
+  "sizes": ["16xlarge", "24xlarge", "32xlarge", "metal"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 64,
     "maxCores": 128
   },
