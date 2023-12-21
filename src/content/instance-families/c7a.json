@@ -1,11 +1,6 @@
 {
   "name": "c7a",
-  "regions": [
-    "eu-west-1",
-    "us-east-1",
-    "us-east-2",
-    "us-west-2"
-  ],
+  "regions": ["eu-west-1", "us-east-1", "us-east-2", "us-west-2"],
   "sizes": [
     "12xlarge",
     "16xlarge",
@@ -22,9 +17,7 @@
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 1,
     "maxCores": 192
   },

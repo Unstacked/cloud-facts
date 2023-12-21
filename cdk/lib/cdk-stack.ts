@@ -13,77 +13,77 @@ import {
   aws_lambda as lambda,
 } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { join } from 'path'
+import { join } from 'path';
 
 export class CloudFactsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    const domainName = 'undoc.cloud'
+    const domainName = 'undoc.cloud';
 
-    const zone = r53.HostedZone.fromLookup(this, 'Zone', { domainName })
+    const zone = r53.HostedZone.fromLookup(this, 'Zone', { domainName });
 
     const certificate = new acm.Certificate(this, 'Certificate', {
       domainName,
-      validation: acm.CertificateValidation.fromDns(zone)
-    })
+      validation: acm.CertificateValidation.fromDns(zone),
+    });
 
-    const websiteBucket = new s3.Bucket(this, 'WebsiteBucket')
+    const websiteBucket = new s3.Bucket(this, 'WebsiteBucket');
 
     const distribution = new cf.Distribution(this, 'WebDistrobution', {
       defaultBehavior: {
         origin: new cfo.S3Origin(websiteBucket),
-        viewerProtocolPolicy: cf.ViewerProtocolPolicy.REDIRECT_TO_HTTPS
+        viewerProtocolPolicy: cf.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       },
       certificate,
-      domainNames: [
-        domainName
-      ],
+      domainNames: [domainName],
       defaultRootObject: 'index.html',
       errorResponses: [
         {
           httpStatus: 404,
           responsePagePath: '404.html',
-          responseHttpStatus: 404
+          responseHttpStatus: 404,
         },
         {
           httpStatus: 403,
           responsePagePath: '404.html',
-          responseHttpStatus: 404
-        }
-      ]
-    })
+          responseHttpStatus: 404,
+        },
+      ],
+    });
 
     new s3d.BucketDeployment(this, 'Deployment', {
       distribution,
       distributionPaths: ['/', '/*'],
       sources: [
-        s3d.Source.asset(
-          join(__dirname, '..', '..'), {
-            bundling: {
-              image: lambda.Runtime.NODEJS_18_X.bundlingImage,
-              command: [
-                'bash',
-                '-xc',
-                'export npm_config_update_notifier=false && export npm_config_cache=$(mktemp -d) && npm ci && npm run build && cp -au dist/* /asset-output'
-              ]
-            }
-          }
-        )
+        s3d.Source.asset(join(__dirname, '..', '..'), {
+          bundling: {
+            image: lambda.Runtime.NODEJS_18_X.bundlingImage,
+            command: [
+              'bash',
+              '-xc',
+              'export npm_config_update_notifier=false && export npm_config_cache=$(mktemp -d) && npm ci && npm run build && cp -au dist/* /asset-output',
+            ],
+          },
+        }),
       ],
-      destinationBucket: websiteBucket
-    })
+      destinationBucket: websiteBucket,
+    });
 
     new r53.ARecord(this, 'WebsiteARecord', {
       zone,
-      target: r53.RecordTarget.fromAlias(new r53t.CloudFrontTarget(distribution)),
-      recordName: domainName
-    })
+      target: r53.RecordTarget.fromAlias(
+        new r53t.CloudFrontTarget(distribution)
+      ),
+      recordName: domainName,
+    });
 
     new r53.AaaaRecord(this, 'WebsiteAaaaRecord', {
       zone,
-      target: r53.RecordTarget.fromAlias(new r53t.CloudFrontTarget(distribution)),
-      recordName: domainName
-    })
+      target: r53.RecordTarget.fromAlias(
+        new r53t.CloudFrontTarget(distribution)
+      ),
+      recordName: domainName,
+    });
   }
 }

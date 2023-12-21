@@ -9,14 +9,10 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": [
-    "24xlarge"
-  ],
+  "sizes": ["24xlarge"],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 96,
     "maxCores": 96
   },

@@ -30,9 +30,7 @@
   ],
   "currentGeneration": true,
   "cpu": {
-    "architectures": [
-      "x86_64"
-    ],
+    "architectures": ["x86_64"],
     "minThreads": 4,
     "maxCores": 192
   },

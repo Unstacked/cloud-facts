@@ -10,15 +10,10 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": [
-    "micro"
-  ],
+  "sizes": ["micro"],
   "currentGeneration": false,
   "cpu": {
-    "architectures": [
-      "i386",
-      "x86_64"
-    ],
+    "architectures": ["i386", "x86_64"],
     "minThreads": 1,
     "maxCores": 1
   },

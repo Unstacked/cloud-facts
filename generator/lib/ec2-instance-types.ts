@@ -119,8 +119,8 @@ export async function getInstanceTypes() {
   }
 
   writeDataToFile(
-    "src/lib/instance-free-tier-regions.json",
-    instanceFreeTierRegions,
+    'src/lib/instance-free-tier-regions.json',
+    instanceFreeTierRegions
   );
 
   writeContentDir('instance-families', instanceFamilies);
