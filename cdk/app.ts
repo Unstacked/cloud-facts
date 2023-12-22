@@ -18,7 +18,7 @@ import { join } from 'path';
 import gitRootDir from 'git-root-dir';
 import { spawnSync } from 'child_process';
 
-const rootDir = await gitRootDir() || ".";
+const rootDir = (await gitRootDir()) || '.';
 
 class CloudFactsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -113,5 +113,5 @@ class CloudFactsStack extends Stack {
 
 const app = new App();
 new CloudFactsStack(app, 'CloudFacts', {
-  env: { account: '806124249357', region: 'us-east-1' }
+  env: { account: '806124249357', region: 'us-east-1' },
 });
