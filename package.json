@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "generator": "npx tsx generator/generator.ts",
-    "prettier": "npx prettier --write .",
+    "prettier": "prettier --write $(git ls-files -mo --exclude-standard)",
+    "prettier:full": "npx prettier --write .",
     "sso": "aws sts get-caller-identity  || aws sso login",
     "all": "npm run sso && npm run generator && npm run prettier && npm run build"
   },
