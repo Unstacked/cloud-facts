@@ -6,7 +6,7 @@ const config = {
   semi: true,
   singleQuote: true,
   singleAttributePerLine: true,
-  plugins: ['prettier-plugin-sort-json'],
+  plugins: ['prettier-plugin-sort-json', 'prettier-plugin-astro'],
 };
 
 export default config;

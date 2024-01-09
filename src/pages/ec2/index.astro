@@ -5,7 +5,6 @@ import { getInstanceComputeClass, instanceSizeSort } from '../../lib/instances';
 
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import type { InstanceFamily } from '../../../generator/lib/ec2-instance-types';
-
 ---
 
 <style>
@@ -42,10 +41,7 @@ import type { InstanceFamily } from '../../../generator/lib/ec2-instance-types';
           const regions = entry.data.regions.sort();
           const familyName = entry.data.name;
           const instanceSizes = instanceSizeSort(entry.data.sizes);
-          const instanceSizesNoMetal = instanceSizeSort(
-            entry.data.sizes,
-            true
-          );
+          const instanceSizesNoMetal = instanceSizeSort(entry.data.sizes, true);
           const largestSize =
             instanceSizesNoMetal[instanceSizesNoMetal.length - 1];
           const smallestSize = instanceSizesNoMetal[0];
