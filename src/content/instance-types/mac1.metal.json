@@ -1,25 +1,9 @@
 {
-  "InstanceType": "mac1.metal",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": false,
   "BareMetal": true,
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64_mac"],
-    "SustainedClockSpeedInGhz": 3.2,
-    "Manufacturer": "Intel"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 12,
-    "DefaultCores": 6,
-    "DefaultThreadsPerCore": 2
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 32768
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -32,6 +16,13 @@
       "MaximumIops": 80000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "InstanceStorageSupported": false,
+  "InstanceType": "mac1.metal",
+  "MemoryInfo": {
+    "SizeInMiB": 32768
   },
   "NetworkInfo": {
     "NetworkPerformance": "25 Gigabit",
@@ -55,14 +46,23 @@
     "EncryptionInTransitSupported": false,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": false,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64_mac"],
+    "SustainedClockSpeedInGhz": 3.2,
+    "Manufacturer": "Intel"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 12,
+    "DefaultCores": 6,
+    "DefaultThreadsPerCore": 2
+  }
 }

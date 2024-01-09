@@ -1,15 +1,15 @@
 {
-  "name": "vt1",
-  "regions": ["ap-northeast-1", "eu-west-1", "us-east-1", "us-west-2"],
-  "sizes": ["24xlarge", "3xlarge", "6xlarge"],
-  "currentGeneration": true,
   "cpu": {
     "architectures": ["x86_64"],
     "minThreads": 12,
     "maxCores": 96
   },
+  "currentGeneration": true,
   "memory": {
     "minMib": 24576,
     "maxMib": 196608
-  }
+  },
+  "name": "vt1",
+  "regions": ["ap-northeast-1", "eu-west-1", "us-east-1", "us-west-2"],
+  "sizes": ["24xlarge", "3xlarge", "6xlarge"]
 }

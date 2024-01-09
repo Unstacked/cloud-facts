@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["arm64"],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 2048,
+    "maxMib": 131072
+  },
   "name": "c6g",
   "regions": [
     "ap-east-1",
@@ -40,15 +50,5 @@
     "medium",
     "metal",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["arm64"],
-    "minThreads": 1,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 2048,
-    "maxMib": 131072
-  }
+  ]
 }

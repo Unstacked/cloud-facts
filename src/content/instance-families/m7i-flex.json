@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 32
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 131072
+  },
   "name": "m7i-flex",
   "regions": [
     "ap-northeast-2",
@@ -16,15 +26,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["2xlarge", "4xlarge", "8xlarge", "large", "xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 32
-  },
-  "memory": {
-    "minMib": 8192,
-    "maxMib": 131072
-  }
+  "sizes": ["2xlarge", "4xlarge", "8xlarge", "large", "xlarge"]
 }

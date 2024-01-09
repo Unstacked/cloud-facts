@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  },
   "name": "r7iz",
   "regions": ["ap-northeast-1", "eu-central-1", "us-east-1", "us-west-2"],
   "sizes": [
@@ -12,15 +22,5 @@
     "metal-16xl",
     "metal-32xl",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 128
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 1048576
-  }
+  ]
 }

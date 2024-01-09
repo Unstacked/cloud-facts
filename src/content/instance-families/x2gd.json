@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["arm64"],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  },
   "name": "x2gd",
   "regions": ["eu-west-1", "us-east-1", "us-east-2", "us-west-2"],
   "sizes": [
@@ -11,15 +21,5 @@
     "medium",
     "metal",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["arm64"],
-    "minThreads": 1,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 1048576
-  }
+  ]
 }

@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 448,
+    "maxCores": 448
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 9437184,
+    "maxMib": 9437184
+  },
   "name": "u-9tb1",
   "regions": [
     "ap-northeast-1",
@@ -10,15 +20,5 @@
     "us-east-1",
     "us-west-2"
   ],
-  "sizes": ["112xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 448,
-    "maxCores": 448
-  },
-  "memory": {
-    "minMib": 9437184,
-    "maxMib": 9437184
-  }
+  "sizes": ["112xlarge"]
 }

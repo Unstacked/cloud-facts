@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1572864
+  },
   "name": "r7i",
   "regions": [
     "eu-north-1",
@@ -20,15 +30,5 @@
     "metal-24xl",
     "metal-48xl",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 192
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 1572864
-  }
+  ]
 }

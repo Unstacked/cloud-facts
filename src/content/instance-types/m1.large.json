@@ -1,37 +1,9 @@
 {
-  "InstanceType": "m1.large",
-  "CurrentGeneration": false,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs", "instance-store"],
-  "SupportedVirtualizationTypes": ["hvm", "paravirtual"],
+  "AutoRecoverySupported": false,
   "BareMetal": false,
-  "Hypervisor": "xen",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
-    "Manufacturer": "Intel"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 2,
-    "DefaultCores": 2,
-    "DefaultThreadsPerCore": 1
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 7680
-  },
-  "InstanceStorageSupported": true,
-  "InstanceStorageInfo": {
-    "TotalSizeInGB": 840,
-    "Disks": [
-      {
-        "SizeInGB": 420,
-        "Count": 2,
-        "Type": "hdd"
-      }
-    ],
-    "NvmeSupport": "unsupported",
-    "EncryptionSupport": "unsupported"
-  },
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": false,
+  "DedicatedHostsSupported": false,
   "EbsInfo": {
     "EbsOptimizedSupport": "supported",
     "EncryptionSupport": "supported",
@@ -44,6 +16,26 @@
       "MaximumIops": 4000
     },
     "NvmeSupport": "unsupported"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "xen",
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 840,
+    "Disks": [
+      {
+        "SizeInGB": 420,
+        "Count": 2,
+        "Type": "hdd"
+      }
+    ],
+    "NvmeSupport": "unsupported",
+    "EncryptionSupport": "unsupported"
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "m1.large",
+  "MemoryInfo": {
+    "SizeInMiB": 7680
   },
   "NetworkInfo": {
     "NetworkPerformance": "Moderate",
@@ -67,14 +59,22 @@
     "EncryptionInTransitSupported": false,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": false,
-  "AutoRecoverySupported": false,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64"],
+    "Manufacturer": "Intel"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs", "instance-store"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm", "paravirtual"],
+  "VCpuInfo": {
+    "DefaultVCpus": 2,
+    "DefaultCores": 2,
+    "DefaultThreadsPerCore": 1
+  }
 }

@@ -1,15 +1,15 @@
 {
-  "name": "p5",
-  "regions": ["us-east-1", "us-east-2", "us-west-2"],
-  "sizes": ["48xlarge"],
-  "currentGeneration": true,
   "cpu": {
     "architectures": ["x86_64"],
     "minThreads": 192,
     "maxCores": 192
   },
+  "currentGeneration": true,
   "memory": {
     "minMib": 2097152,
     "maxMib": 2097152
-  }
+  },
+  "name": "p5",
+  "regions": ["us-east-1", "us-east-2", "us-west-2"],
+  "sizes": ["48xlarge"]
 }

@@ -1,40 +1,9 @@
 {
-  "InstanceType": "g4ad.8xlarge",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": false,
   "BareMetal": false,
-  "Hypervisor": "nitro",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
-    "SustainedClockSpeedInGhz": 3,
-    "Manufacturer": "AMD"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 32,
-    "DefaultCores": 16,
-    "DefaultThreadsPerCore": 2,
-    "ValidCores": [2, 4, 8, 16],
-    "ValidThreadsPerCore": [1, 2]
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 131072
-  },
-  "InstanceStorageSupported": true,
-  "InstanceStorageInfo": {
-    "TotalSizeInGB": 1200,
-    "Disks": [
-      {
-        "SizeInGB": 1200,
-        "Count": 1,
-        "Type": "ssd"
-      }
-    ],
-    "NvmeSupport": "required",
-    "EncryptionSupport": "required"
-  },
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -47,6 +16,39 @@
       "MaximumIops": 13333
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "Radeon Pro V520",
+        "Manufacturer": "AMD",
+        "Count": 2,
+        "MemoryInfo": {
+          "SizeInMiB": 8192
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 16384
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 1200,
+    "Disks": [
+      {
+        "SizeInGB": 1200,
+        "Count": 1,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "g4ad.8xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 131072
   },
   "NetworkInfo": {
     "NetworkPerformance": "15 Gigabit",
@@ -70,27 +72,25 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": false
   },
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Name": "Radeon Pro V520",
-        "Manufacturer": "AMD",
-        "Count": 2,
-        "MemoryInfo": {
-          "SizeInMiB": 8192
-        }
-      }
-    ],
-    "TotalGpuMemoryInMiB": 16384
-  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": false,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64"],
+    "SustainedClockSpeedInGhz": 3,
+    "Manufacturer": "AMD"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 32,
+    "DefaultCores": 16,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [2, 4, 8, 16],
+    "ValidThreadsPerCore": [1, 2]
+  }
 }

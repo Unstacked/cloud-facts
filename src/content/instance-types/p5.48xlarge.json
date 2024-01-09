@@ -1,40 +1,9 @@
 {
-  "InstanceType": "p5.48xlarge",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["capacity-block", "on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": false,
   "BareMetal": false,
-  "Hypervisor": "nitro",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
-    "SustainedClockSpeedInGhz": 3.6,
-    "Manufacturer": "AMD"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 192,
-    "DefaultCores": 96,
-    "DefaultThreadsPerCore": 2,
-    "ValidCores": [12, 24, 36, 48, 60, 72, 84, 96],
-    "ValidThreadsPerCore": [1, 2]
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 2097152
-  },
-  "InstanceStorageSupported": true,
-  "InstanceStorageInfo": {
-    "TotalSizeInGB": 30400,
-    "Disks": [
-      {
-        "SizeInGB": 3800,
-        "Count": 8,
-        "Type": "ssd"
-      }
-    ],
-    "NvmeSupport": "required",
-    "EncryptionSupport": "required"
-  },
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -47,6 +16,39 @@
       "MaximumIops": 260000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "H100",
+        "Manufacturer": "NVIDIA",
+        "Count": 8,
+        "MemoryInfo": {
+          "SizeInMiB": 81920
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 655360
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 30400,
+    "Disks": [
+      {
+        "SizeInGB": 3800,
+        "Count": 8,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "p5.48xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 2097152
   },
   "NetworkInfo": {
     "NetworkPerformance": "3200 Gigabit",
@@ -290,27 +292,25 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": false
   },
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Name": "H100",
-        "Manufacturer": "NVIDIA",
-        "Count": 8,
-        "MemoryInfo": {
-          "SizeInMiB": 81920
-        }
-      }
-    ],
-    "TotalGpuMemoryInMiB": 655360
-  },
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": false,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64"],
+    "SustainedClockSpeedInGhz": 3.6,
+    "Manufacturer": "AMD"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "supported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["capacity-block", "on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 192,
+    "DefaultCores": 96,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [12, 24, 36, 48, 60, 72, 84, 96],
+    "ValidThreadsPerCore": [1, 2]
+  }
 }

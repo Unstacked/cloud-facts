@@ -1,26 +1,9 @@
 {
-  "InstanceType": "hpc7g.16xlarge",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": true,
   "BareMetal": false,
-  "Hypervisor": "nitro",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["arm64"],
-    "SustainedClockSpeedInGhz": 2.6,
-    "Manufacturer": "AWS"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 64,
-    "DefaultCores": 64,
-    "DefaultThreadsPerCore": 1
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 131072
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": false,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -33,6 +16,14 @@
       "MaximumIops": 11000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "hpc7g.16xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 131072
   },
   "NetworkInfo": {
     "NetworkPerformance": "200 Gigabit",
@@ -59,14 +50,23 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": false,
-  "AutoRecoverySupported": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["arm64"],
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
+  },
   "SupportedBootModes": ["uefi"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 64,
+    "DefaultCores": 64,
+    "DefaultThreadsPerCore": 1
+  }
 }

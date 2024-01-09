@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 8
+  },
+  "currentGeneration": false,
+  "memory": {
+    "minMib": 1740,
+    "maxMib": 7168
+  },
   "name": "c1",
   "regions": [
     "ap-northeast-1",
@@ -10,15 +20,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["medium", "xlarge"],
-  "currentGeneration": false,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 8
-  },
-  "memory": {
-    "minMib": 1740,
-    "maxMib": 7168
-  }
+  "sizes": ["medium", "xlarge"]
 }

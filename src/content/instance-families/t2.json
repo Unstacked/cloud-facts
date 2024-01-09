@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 1,
+    "maxCores": 8
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 512,
+    "maxMib": 32768
+  },
   "name": "t2",
   "regions": [
     "ap-northeast-1",
@@ -18,15 +28,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["2xlarge", "large", "medium", "micro", "nano", "small", "xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 1,
-    "maxCores": 8
-  },
-  "memory": {
-    "minMib": 512,
-    "maxMib": 32768
-  }
+  "sizes": ["2xlarge", "large", "medium", "micro", "nano", "small", "xlarge"]
 }

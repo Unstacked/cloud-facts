@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 8,
+    "maxCores": 64
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 124928,
+    "maxMib": 999424
+  },
   "name": "f1",
   "regions": [
     "ap-southeast-2",
@@ -8,15 +18,5 @@
     "us-east-1",
     "us-west-2"
   ],
-  "sizes": ["16xlarge", "2xlarge", "4xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 8,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 124928,
-    "maxMib": 999424
-  }
+  "sizes": ["16xlarge", "2xlarge", "4xlarge"]
 }

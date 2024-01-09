@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 4,
+    "maxCores": 64
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 62464,
+    "maxMib": 749568
+  },
   "name": "p2",
   "regions": [
     "ap-northeast-1",
@@ -12,15 +22,5 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["16xlarge", "8xlarge", "xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 4,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 62464,
-    "maxMib": 749568
-  }
+  "sizes": ["16xlarge", "8xlarge", "xlarge"]
 }

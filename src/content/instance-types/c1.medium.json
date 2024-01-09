@@ -1,25 +1,17 @@
 {
-  "InstanceType": "c1.medium",
-  "CurrentGeneration": false,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs", "instance-store"],
-  "SupportedVirtualizationTypes": ["hvm", "paravirtual"],
+  "AutoRecoverySupported": false,
   "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": false,
+  "DedicatedHostsSupported": false,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "unsupported",
+    "EncryptionSupport": "supported",
+    "NvmeSupport": "unsupported"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
   "Hypervisor": "xen",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["i386", "x86_64"],
-    "Manufacturer": "Intel"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 2,
-    "DefaultCores": 2,
-    "DefaultThreadsPerCore": 1
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 1740
-  },
-  "InstanceStorageSupported": true,
   "InstanceStorageInfo": {
     "TotalSizeInGB": 350,
     "Disks": [
@@ -32,10 +24,10 @@
     "NvmeSupport": "unsupported",
     "EncryptionSupport": "unsupported"
   },
-  "EbsInfo": {
-    "EbsOptimizedSupport": "unsupported",
-    "EncryptionSupport": "supported",
-    "NvmeSupport": "unsupported"
+  "InstanceStorageSupported": true,
+  "InstanceType": "c1.medium",
+  "MemoryInfo": {
+    "SizeInMiB": 1740
   },
   "NetworkInfo": {
     "NetworkPerformance": "Moderate",
@@ -59,14 +51,22 @@
     "EncryptionInTransitSupported": false,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": false,
-  "AutoRecoverySupported": false,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["i386", "x86_64"],
+    "Manufacturer": "Intel"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs", "instance-store"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm", "paravirtual"],
+  "VCpuInfo": {
+    "DefaultVCpus": 2,
+    "DefaultCores": 2,
+    "DefaultThreadsPerCore": 1
+  }
 }

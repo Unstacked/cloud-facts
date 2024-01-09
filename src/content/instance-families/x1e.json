@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 4,
+    "maxCores": 128
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 124928,
+    "maxMib": 3997696
+  },
   "name": "x1e",
   "regions": [
     "af-south-1",
@@ -16,15 +26,5 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["16xlarge", "2xlarge", "32xlarge", "4xlarge", "8xlarge", "xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 4,
-    "maxCores": 128
-  },
-  "memory": {
-    "minMib": 124928,
-    "maxMib": 3997696
-  }
+  "sizes": ["16xlarge", "2xlarge", "32xlarge", "4xlarge", "8xlarge", "xlarge"]
 }

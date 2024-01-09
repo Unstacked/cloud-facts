@@ -1,28 +1,9 @@
 {
-  "InstanceType": "r4.2xlarge",
-  "CurrentGeneration": false,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": true,
   "BareMetal": false,
-  "Hypervisor": "xen",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
-    "SustainedClockSpeedInGhz": 2.3,
-    "Manufacturer": "Intel"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 8,
-    "DefaultCores": 4,
-    "DefaultThreadsPerCore": 2,
-    "ValidCores": [1, 2, 3, 4],
-    "ValidThreadsPerCore": [1, 2]
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 62464
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": false,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -35,6 +16,14 @@
       "MaximumIops": 12000
     },
     "NvmeSupport": "unsupported"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": true,
+  "Hypervisor": "xen",
+  "InstanceStorageSupported": false,
+  "InstanceType": "r4.2xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 62464
   },
   "NetworkInfo": {
     "NetworkPerformance": "Up to 10 Gigabit",
@@ -58,14 +47,25 @@
     "EncryptionInTransitSupported": false,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": true,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64"],
+    "SustainedClockSpeedInGhz": 2.3,
+    "Manufacturer": "Intel"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 8,
+    "DefaultCores": 4,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [1, 2, 3, 4],
+    "ValidThreadsPerCore": [1, 2]
+  }
 }

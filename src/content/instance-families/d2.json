@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 4,
+    "maxCores": 36
+  },
+  "currentGeneration": false,
+  "memory": {
+    "minMib": 31232,
+    "maxMib": 249856
+  },
   "name": "d2",
   "regions": [
     "af-south-1",
@@ -22,15 +32,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["2xlarge", "4xlarge", "8xlarge", "xlarge"],
-  "currentGeneration": false,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 4,
-    "maxCores": 36
-  },
-  "memory": {
-    "minMib": 31232,
-    "maxMib": 249856
-  }
+  "sizes": ["2xlarge", "4xlarge", "8xlarge", "xlarge"]
 }

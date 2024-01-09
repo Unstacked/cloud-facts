@@ -1,37 +1,9 @@
 {
-  "InstanceType": "g4dn.metal",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": false,
   "BareMetal": true,
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
-    "SustainedClockSpeedInGhz": 2.5,
-    "Manufacturer": "Intel"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 96,
-    "DefaultCores": 48,
-    "DefaultThreadsPerCore": 2
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 393216
-  },
-  "InstanceStorageSupported": true,
-  "InstanceStorageInfo": {
-    "TotalSizeInGB": 1800,
-    "Disks": [
-      {
-        "SizeInGB": 900,
-        "Count": 2,
-        "Type": "ssd"
-      }
-    ],
-    "NvmeSupport": "required",
-    "EncryptionSupport": "required"
-  },
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -44,6 +16,38 @@
       "MaximumIops": 80000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "T4",
+        "Manufacturer": "NVIDIA",
+        "Count": 8,
+        "MemoryInfo": {
+          "SizeInMiB": 16384
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 131072
+  },
+  "HibernationSupported": false,
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 1800,
+    "Disks": [
+      {
+        "SizeInGB": 900,
+        "Count": 2,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "g4dn.metal",
+  "MemoryInfo": {
+    "SizeInMiB": 393216
   },
   "NetworkInfo": {
     "NetworkPerformance": "100 Gigabit",
@@ -70,27 +74,23 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": false
   },
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Name": "T4",
-        "Manufacturer": "NVIDIA",
-        "Count": 8,
-        "MemoryInfo": {
-          "SizeInMiB": 16384
-        }
-      }
-    ],
-    "TotalGpuMemoryInMiB": 131072
-  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": false,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64"],
+    "SustainedClockSpeedInGhz": 2.5,
+    "Manufacturer": "Intel"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 96,
+    "DefaultCores": 48,
+    "DefaultThreadsPerCore": 2
+  }
 }

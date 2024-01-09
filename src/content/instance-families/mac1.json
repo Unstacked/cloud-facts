@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64_mac"],
+    "minThreads": 12,
+    "maxCores": 12
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 32768,
+    "maxMib": 32768
+  },
   "name": "mac1",
   "regions": [
     "ap-northeast-1",
@@ -14,15 +24,5 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["metal"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64_mac"],
-    "minThreads": 12,
-    "maxCores": 12
-  },
-  "memory": {
-    "minMib": 32768,
-    "maxMib": 32768
-  }
+  "sizes": ["metal"]
 }

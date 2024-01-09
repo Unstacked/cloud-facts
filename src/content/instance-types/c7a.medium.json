@@ -1,26 +1,9 @@
 {
-  "InstanceType": "c7a.medium",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": true,
   "BareMetal": false,
-  "Hypervisor": "nitro",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
-    "SustainedClockSpeedInGhz": 3.7,
-    "Manufacturer": "AMD"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 1,
-    "DefaultCores": 1,
-    "DefaultThreadsPerCore": 1
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 2048
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -33,6 +16,14 @@
       "MaximumIops": 40000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "c7a.medium",
+  "MemoryInfo": {
+    "SizeInMiB": 2048
   },
   "NetworkInfo": {
     "NetworkPerformance": "Up to 12.5 Gigabit",
@@ -56,14 +47,23 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64"],
+    "SustainedClockSpeedInGhz": 3.7,
+    "Manufacturer": "AMD"
+  },
   "SupportedBootModes": ["legacy-bios", "uefi"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 1,
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 1
+  }
 }

@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 4,
+    "maxCores": 192
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 786432
+  },
   "name": "inf2",
   "regions": [
     "ap-northeast-1",
@@ -10,15 +20,5 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["24xlarge", "48xlarge", "8xlarge", "xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 4,
-    "maxCores": 192
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 786432
-  }
+  "sizes": ["24xlarge", "48xlarge", "8xlarge", "xlarge"]
 }

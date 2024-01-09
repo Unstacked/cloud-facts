@@ -1,15 +1,15 @@
 {
-  "name": "trn1",
-  "regions": ["us-east-1", "us-east-2", "us-west-2"],
-  "sizes": ["2xlarge", "32xlarge"],
-  "currentGeneration": true,
   "cpu": {
     "architectures": ["x86_64"],
     "minThreads": 8,
     "maxCores": 128
   },
+  "currentGeneration": true,
   "memory": {
     "minMib": 32768,
     "maxMib": 524288
-  }
+  },
+  "name": "trn1",
+  "regions": ["us-east-1", "us-east-2", "us-west-2"],
+  "sizes": ["2xlarge", "32xlarge"]
 }

@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 393216
+  },
   "name": "c6a",
   "regions": [
     "ap-northeast-1",
@@ -27,15 +37,5 @@
     "large",
     "metal",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 192
-  },
-  "memory": {
-    "minMib": 4096,
-    "maxMib": 393216
-  }
+  ]
 }

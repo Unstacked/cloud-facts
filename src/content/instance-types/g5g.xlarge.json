@@ -1,28 +1,9 @@
 {
-  "InstanceType": "g5g.xlarge",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": true,
   "BareMetal": false,
-  "Hypervisor": "nitro",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["arm64"],
-    "SustainedClockSpeedInGhz": 2.5,
-    "Manufacturer": "AWS"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 4,
-    "DefaultCores": 4,
-    "DefaultThreadsPerCore": 1,
-    "ValidCores": [1, 2, 3, 4],
-    "ValidThreadsPerCore": [1]
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 8192
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": false,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -35,6 +16,27 @@
       "MaximumIops": 20000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "T4g",
+        "Manufacturer": "NVIDIA",
+        "Count": 1,
+        "MemoryInfo": {
+          "SizeInMiB": 16384
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 16384
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "g5g.xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 8192
   },
   "NetworkInfo": {
     "NetworkPerformance": "Up to 10 Gigabit",
@@ -58,27 +60,25 @@
     "EncryptionInTransitSupported": false,
     "EnaSrdSupported": false
   },
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Name": "T4g",
-        "Manufacturer": "NVIDIA",
-        "Count": 1,
-        "MemoryInfo": {
-          "SizeInMiB": 16384
-        }
-      }
-    ],
-    "TotalGpuMemoryInMiB": 16384
-  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": false,
-  "AutoRecoverySupported": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["arm64"],
+    "SustainedClockSpeedInGhz": 2.5,
+    "Manufacturer": "AWS"
+  },
   "SupportedBootModes": ["uefi"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 4,
+    "DefaultCores": 4,
+    "DefaultThreadsPerCore": 1,
+    "ValidCores": [1, 2, 3, 4],
+    "ValidThreadsPerCore": [1]
+  }
 }

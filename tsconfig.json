@@ -1,5 +1,4 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
@@ -23,5 +22,6 @@
     "strictPropertyInitialization": false,
     "typeRoots": ["./node_modules/@types"]
   },
-  "exclude": ["node_modules", "cdk.out"]
+  "exclude": ["node_modules", "cdk.out"],
+  "extends": "astro/tsconfigs/strict"
 }

@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 4,
+    "maxCores": 48
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 196608
+  },
   "name": "d3en",
   "regions": [
     "ap-northeast-1",
@@ -8,15 +18,5 @@
     "us-east-1",
     "us-west-2"
   ],
-  "sizes": ["12xlarge", "2xlarge", "4xlarge", "6xlarge", "8xlarge", "xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 4,
-    "maxCores": 48
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 196608
-  }
+  "sizes": ["12xlarge", "2xlarge", "4xlarge", "6xlarge", "8xlarge", "xlarge"]
 }

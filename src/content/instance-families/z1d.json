@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 48
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 393216
+  },
   "name": "z1d",
   "regions": [
     "ap-northeast-1",
@@ -22,15 +32,5 @@
     "large",
     "metal",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 48
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 393216
-  }
+  ]
 }

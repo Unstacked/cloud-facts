@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 128
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 1048576
+  },
   "name": "r6idn",
   "regions": [
     "ap-northeast-1",
@@ -20,15 +30,5 @@
     "large",
     "metal",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 128
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 1048576
-  }
+  ]
 }

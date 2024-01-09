@@ -1,25 +1,9 @@
 {
-  "InstanceType": "m7g.metal",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": true,
   "BareMetal": true,
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["arm64"],
-    "SustainedClockSpeedInGhz": 2.6,
-    "Manufacturer": "AWS"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 64,
-    "DefaultCores": 64,
-    "DefaultThreadsPerCore": 1
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 262144
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -32,6 +16,13 @@
       "MaximumIops": 80000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "InstanceStorageSupported": false,
+  "InstanceType": "m7g.metal",
+  "MemoryInfo": {
+    "SizeInMiB": 262144
   },
   "NetworkInfo": {
     "NetworkPerformance": "30 Gigabit",
@@ -58,14 +49,23 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": true
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": true,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["arm64"],
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
+  },
   "SupportedBootModes": ["uefi"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 64,
+    "DefaultCores": 64,
+    "DefaultThreadsPerCore": 1
+  }
 }

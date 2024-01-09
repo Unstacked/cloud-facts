@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 1,
+    "maxCores": 192
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 786432
+  },
   "name": "m7a",
   "regions": ["eu-west-1", "us-east-1", "us-east-2", "us-west-2"],
   "sizes": [
@@ -14,15 +24,5 @@
     "medium",
     "metal-48xl",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 1,
-    "maxCores": 192
-  },
-  "memory": {
-    "minMib": 4096,
-    "maxMib": 786432
-  }
+  ]
 }

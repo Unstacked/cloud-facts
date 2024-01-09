@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["arm64"],
+    "minThreads": 2,
+    "maxCores": 64
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 524288
+  },
   "name": "i4g",
   "regions": [
     "ca-central-1",
@@ -7,15 +17,5 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["16xlarge", "2xlarge", "4xlarge", "8xlarge", "large", "xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["arm64"],
-    "minThreads": 2,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 16384,
-    "maxMib": 524288
-  }
+  "sizes": ["16xlarge", "2xlarge", "4xlarge", "8xlarge", "large", "xlarge"]
 }

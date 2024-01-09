@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 192
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 393216
+  },
   "name": "c7i",
   "regions": [
     "ap-northeast-1",
@@ -28,15 +38,5 @@
     "metal-24xl",
     "metal-48xl",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 192
-  },
-  "memory": {
-    "minMib": 4096,
-    "maxMib": 393216
-  }
+  ]
 }

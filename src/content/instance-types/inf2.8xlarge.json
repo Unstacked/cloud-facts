@@ -1,28 +1,9 @@
 {
-  "InstanceType": "inf2.8xlarge",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand", "spot"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": false,
   "BareMetal": false,
-  "Hypervisor": "nitro",
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
-    "SustainedClockSpeedInGhz": 3.6,
-    "Manufacturer": "AMD"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 32,
-    "DefaultCores": 16,
-    "DefaultThreadsPerCore": 2,
-    "ValidCores": [4, 6, 8, 10, 12, 14, 16],
-    "ValidThreadsPerCore": [1, 2]
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 131072
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": false,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -35,6 +16,27 @@
       "MaximumIops": 40000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InferenceAcceleratorInfo": {
+    "Accelerators": [
+      {
+        "Count": 1,
+        "Name": "Inferentia",
+        "Manufacturer": "AWS",
+        "MemoryInfo": {
+          "SizeInMiB": 32768
+        }
+      }
+    ],
+    "TotalInferenceMemoryInMiB": 32768
+  },
+  "InstanceStorageSupported": false,
+  "InstanceType": "inf2.8xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 131072
   },
   "NetworkInfo": {
     "NetworkPerformance": "Up to 25 Gigabit",
@@ -58,30 +60,28 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": ["2.0"]
+  },
+  "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["cluster", "partition", "spread"]
   },
-  "InferenceAcceleratorInfo": {
-    "Accelerators": [
-      {
-        "Count": 1,
-        "Name": "Inferentia",
-        "Manufacturer": "AWS",
-        "MemoryInfo": {
-          "SizeInMiB": 32768
-        }
-      }
-    ],
-    "TotalInferenceMemoryInMiB": 32768
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["x86_64"],
+    "SustainedClockSpeedInGhz": 3.6,
+    "Manufacturer": "AMD"
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": false,
-  "AutoRecoverySupported": false,
   "SupportedBootModes": ["legacy-bios", "uefi"],
-  "NitroEnclavesSupport": "supported",
-  "NitroTpmSupport": "supported",
-  "NitroTpmInfo": {
-    "SupportedVersions": ["2.0"]
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 32,
+    "DefaultCores": 16,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [4, 6, 8, 10, 12, 14, 16],
+    "ValidThreadsPerCore": [1, 2]
   }
 }

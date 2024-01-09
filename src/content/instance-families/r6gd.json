@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["arm64"],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 524288
+  },
   "name": "r6gd",
   "regions": [
     "ap-northeast-1",
@@ -30,15 +40,5 @@
     "medium",
     "metal",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["arm64"],
-    "minThreads": 1,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 8192,
-    "maxMib": 524288
-  }
+  ]
 }

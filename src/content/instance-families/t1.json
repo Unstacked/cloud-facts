@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["i386", "x86_64"],
+    "minThreads": 1,
+    "maxCores": 1
+  },
+  "currentGeneration": false,
+  "memory": {
+    "minMib": 627,
+    "maxMib": 627
+  },
   "name": "t1",
   "regions": [
     "ap-northeast-1",
@@ -10,15 +20,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["micro"],
-  "currentGeneration": false,
-  "cpu": {
-    "architectures": ["i386", "x86_64"],
-    "minThreads": 1,
-    "maxCores": 1
-  },
-  "memory": {
-    "minMib": 627,
-    "maxMib": 627
-  }
+  "sizes": ["micro"]
 }

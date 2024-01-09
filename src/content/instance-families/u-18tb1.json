@@ -1,15 +1,15 @@
 {
-  "name": "u-18tb1",
-  "regions": ["eu-west-1", "us-east-1", "us-west-2"],
-  "sizes": ["112xlarge"],
-  "currentGeneration": true,
   "cpu": {
     "architectures": ["x86_64"],
     "minThreads": 448,
     "maxCores": 448
   },
+  "currentGeneration": true,
   "memory": {
     "minMib": 18874368,
     "maxMib": 18874368
-  }
+  },
+  "name": "u-18tb1",
+  "regions": ["eu-west-1", "us-east-1", "us-west-2"],
+  "sizes": ["112xlarge"]
 }

@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 1,
+    "maxCores": 8
+  },
+  "currentGeneration": false,
+  "memory": {
+    "minMib": 3840,
+    "maxMib": 30720
+  },
   "name": "m3",
   "regions": [
     "ap-northeast-1",
@@ -11,15 +21,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["2xlarge", "large", "medium", "xlarge"],
-  "currentGeneration": false,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 1,
-    "maxCores": 8
-  },
-  "memory": {
-    "minMib": 3840,
-    "maxMib": 30720
-  }
+  "sizes": ["2xlarge", "large", "medium", "xlarge"]
 }

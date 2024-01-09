@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 64,
+    "maxCores": 128
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 1048576,
+    "maxMib": 2097152
+  },
   "name": "x2idn",
   "regions": [
     "af-south-1",
@@ -26,15 +36,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["16xlarge", "24xlarge", "32xlarge", "metal"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 64,
-    "maxCores": 128
-  },
-  "memory": {
-    "minMib": 1048576,
-    "maxMib": 2097152
-  }
+  "sizes": ["16xlarge", "24xlarge", "32xlarge", "metal"]
 }

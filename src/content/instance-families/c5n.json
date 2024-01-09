@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 72
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 5376,
+    "maxMib": 196608
+  },
   "name": "c5n",
   "regions": [
     "af-south-1",
@@ -32,15 +42,5 @@
     "large",
     "metal",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 72
-  },
-  "memory": {
-    "minMib": 5376,
-    "maxMib": 196608
-  }
+  ]
 }

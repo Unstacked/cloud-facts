@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["arm64"],
+    "minThreads": 1,
+    "maxCores": 64
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 8192,
+    "maxMib": 524288
+  },
   "name": "r7gd",
   "regions": [
     "ap-northeast-1",
@@ -23,15 +33,5 @@
     "large",
     "medium",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["arm64"],
-    "minThreads": 1,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 8192,
-    "maxMib": 524288
-  }
+  ]
 }

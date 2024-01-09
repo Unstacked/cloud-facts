@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 4,
+    "maxCores": 4
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 31232,
+    "maxMib": 31232
+  },
   "name": "g3s",
   "regions": [
     "ap-northeast-1",
@@ -11,15 +21,5 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["xlarge"],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 4,
-    "maxCores": 4
-  },
-  "memory": {
-    "minMib": 31232,
-    "maxMib": 31232
-  }
+  "sizes": ["xlarge"]
 }

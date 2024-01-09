@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 64
+  },
+  "currentGeneration": false,
+  "memory": {
+    "minMib": 15616,
+    "maxMib": 499712
+  },
   "name": "r4",
   "regions": [
     "ap-northeast-1",
@@ -18,15 +28,5 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["16xlarge", "2xlarge", "4xlarge", "8xlarge", "large", "xlarge"],
-  "currentGeneration": false,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 64
-  },
-  "memory": {
-    "minMib": 15616,
-    "maxMib": 499712
-  }
+  "sizes": ["16xlarge", "2xlarge", "4xlarge", "8xlarge", "large", "xlarge"]
 }

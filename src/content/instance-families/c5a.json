@@ -1,4 +1,14 @@
 {
+  "cpu": {
+    "architectures": ["x86_64"],
+    "minThreads": 2,
+    "maxCores": 96
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 4096,
+    "maxMib": 196608
+  },
   "name": "c5a",
   "regions": [
     "af-south-1",
@@ -31,15 +41,5 @@
     "8xlarge",
     "large",
     "xlarge"
-  ],
-  "currentGeneration": true,
-  "cpu": {
-    "architectures": ["x86_64"],
-    "minThreads": 2,
-    "maxCores": 96
-  },
-  "memory": {
-    "minMib": 4096,
-    "maxMib": 196608
-  }
+  ]
 }

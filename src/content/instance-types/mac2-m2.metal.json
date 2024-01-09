@@ -1,25 +1,9 @@
 {
-  "InstanceType": "mac2-m2.metal",
-  "CurrentGeneration": true,
-  "FreeTierEligible": false,
-  "SupportedUsageClasses": ["on-demand"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "AutoRecoverySupported": false,
   "BareMetal": true,
-  "ProcessorInfo": {
-    "SupportedArchitectures": ["arm64_mac"],
-    "SustainedClockSpeedInGhz": 3.5,
-    "Manufacturer": "Apple"
-  },
-  "VCpuInfo": {
-    "DefaultVCpus": 8,
-    "DefaultCores": 8,
-    "DefaultThreadsPerCore": 1
-  },
-  "MemoryInfo": {
-    "SizeInMiB": 24576
-  },
-  "InstanceStorageSupported": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
@@ -32,6 +16,13 @@
       "MaximumIops": 55000
     },
     "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "InstanceStorageSupported": false,
+  "InstanceType": "mac2-m2.metal",
+  "MemoryInfo": {
+    "SizeInMiB": 24576
   },
   "NetworkInfo": {
     "NetworkPerformance": "10 Gigabit",
@@ -55,14 +46,23 @@
     "EncryptionInTransitSupported": false,
     "EnaSrdSupported": false
   },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": ["partition", "spread"]
   },
-  "HibernationSupported": false,
-  "BurstablePerformanceSupported": false,
-  "DedicatedHostsSupported": true,
-  "AutoRecoverySupported": false,
+  "ProcessorInfo": {
+    "SupportedArchitectures": ["arm64_mac"],
+    "SustainedClockSpeedInGhz": 3.5,
+    "Manufacturer": "Apple"
+  },
   "SupportedBootModes": ["legacy-bios"],
-  "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported"
+  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedUsageClasses": ["on-demand"],
+  "SupportedVirtualizationTypes": ["hvm"],
+  "VCpuInfo": {
+    "DefaultVCpus": 8,
+    "DefaultCores": 8,
+    "DefaultThreadsPerCore": 1
+  }
 }
