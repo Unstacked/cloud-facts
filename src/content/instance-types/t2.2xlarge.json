@@ -42,7 +42,10 @@
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["partition", "spread"]
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
   },
   "ProcessorInfo": {
     "SupportedArchitectures": ["x86_64"],
@@ -51,7 +54,10 @@
   },
   "SupportedBootModes": ["legacy-bios"],
   "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
   "SupportedVirtualizationTypes": ["hvm"],
   "VCpuInfo": {
     "DefaultVCpus": 8,

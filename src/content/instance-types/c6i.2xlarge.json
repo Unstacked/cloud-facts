@@ -53,22 +53,38 @@
   },
   "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "ProcessorInfo": {
     "SupportedArchitectures": ["x86_64"],
     "SustainedClockSpeedInGhz": 3.5,
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios", "uefi"],
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
   "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
   "SupportedVirtualizationTypes": ["hvm"],
   "VCpuInfo": {
     "DefaultVCpus": 8,
     "DefaultCores": 4,
     "DefaultThreadsPerCore": 2,
-    "ValidCores": [2, 4],
-    "ValidThreadsPerCore": [1, 2]
+    "ValidCores": [
+      2,
+      4
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
   }
 }

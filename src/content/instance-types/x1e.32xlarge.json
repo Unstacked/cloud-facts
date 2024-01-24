@@ -62,7 +62,11 @@
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "ProcessorInfo": {
     "SupportedArchitectures": ["x86_64"],
@@ -71,15 +75,36 @@
   },
   "SupportedBootModes": ["legacy-bios"],
   "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
   "SupportedVirtualizationTypes": ["hvm"],
   "VCpuInfo": {
     "DefaultVCpus": 128,
     "DefaultCores": 64,
     "DefaultThreadsPerCore": 2,
     "ValidCores": [
-      4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60,
+      64
     ],
-    "ValidThreadsPerCore": [1, 2]
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
   }
 }

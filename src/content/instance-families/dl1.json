@@ -10,6 +10,9 @@
     "maxMib": 786432
   },
   "name": "dl1",
-  "regions": ["us-east-1", "us-west-2"],
+  "regions": [
+    "us-east-1",
+    "us-west-2"
+  ],
   "sizes": ["24xlarge"]
 }

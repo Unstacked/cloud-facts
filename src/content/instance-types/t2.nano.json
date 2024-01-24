@@ -42,10 +42,16 @@
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["partition", "spread"]
+    "SupportedStrategies": [
+      "partition",
+      "spread"
+    ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["i386", "x86_64"],
+    "SupportedArchitectures": [
+      "i386",
+      "x86_64"
+    ],
     "SustainedClockSpeedInGhz": 2.4,
     "Manufacturer": "Intel"
   },

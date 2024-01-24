@@ -50,7 +50,11 @@
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "ProcessorInfo": {
     "SupportedArchitectures": ["x86_64"],
@@ -66,9 +70,38 @@
     "DefaultCores": 112,
     "DefaultThreadsPerCore": 2,
     "ValidCores": [
-      4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76,
-      80, 84, 88, 92, 96, 100, 104, 108, 112
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60,
+      64,
+      68,
+      72,
+      76,
+      80,
+      84,
+      88,
+      92,
+      96,
+      100,
+      104,
+      108,
+      112
     ],
-    "ValidThreadsPerCore": [1, 2]
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
   }
 }

@@ -10,6 +10,10 @@
     "maxMib": 24576
   },
   "name": "mac2-m2",
-  "regions": ["us-east-1", "us-east-2", "us-west-2"],
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
   "sizes": ["metal"]
 }

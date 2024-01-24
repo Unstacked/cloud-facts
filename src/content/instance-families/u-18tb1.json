@@ -10,6 +10,10 @@
     "maxMib": 18874368
   },
   "name": "u-18tb1",
-  "regions": ["eu-west-1", "us-east-1", "us-west-2"],
+  "regions": [
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2"
+  ],
   "sizes": ["112xlarge"]
 }

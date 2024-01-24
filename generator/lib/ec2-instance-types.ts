@@ -41,7 +41,7 @@ export async function getInstanceTypes() {
     // get all instance types in this region
     for await (const page of paginateDescribeInstanceTypes(
       { client: ec2 },
-      {}
+      {},
     )) {
       for (let instanceType of page.InstanceTypes!) {
         if (instanceTypesByRegion[region]) {
@@ -102,25 +102,25 @@ export async function getInstanceTypes() {
     instanceFamilies[family].sizes = instanceFamilies[family].sizes.sort();
     instanceFamilies[family].cpu.minThreads = Math.min(
       instanceType.VCpuInfo?.DefaultVCpus!,
-      instanceFamilies[family].cpu.minThreads
+      instanceFamilies[family].cpu.minThreads,
     );
     instanceFamilies[family].cpu.maxCores = Math.max(
       instanceType.VCpuInfo?.DefaultVCpus!,
-      instanceFamilies[family].cpu.maxCores
+      instanceFamilies[family].cpu.maxCores,
     );
     instanceFamilies[family].memory.minMib = Math.min(
       instanceType.MemoryInfo?.SizeInMiB!,
-      instanceFamilies[family].memory.minMib
+      instanceFamilies[family].memory.minMib,
     );
     instanceFamilies[family].memory.maxMib = Math.max(
       instanceType.MemoryInfo?.SizeInMiB!,
-      instanceFamilies[family].memory.maxMib
+      instanceFamilies[family].memory.maxMib,
     );
   }
 
   writeDataToFile(
     'src/lib/instance-free-tier-regions.json',
-    instanceFreeTierRegions
+    instanceFreeTierRegions,
   );
 
   writeContentDir('instance-families', instanceFamilies);

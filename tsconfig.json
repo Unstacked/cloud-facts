@@ -6,7 +6,10 @@
     "strictNullChecks": true,
     "target": "ES2020",
     "module": "es2022",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
@@ -22,6 +25,9 @@
     "strictPropertyInitialization": false,
     "typeRoots": ["./node_modules/@types"]
   },
-  "exclude": ["node_modules", "cdk.out"],
+  "exclude": [
+    "node_modules",
+    "cdk.out"
+  ],
   "extends": "astro/tsconfigs/strict"
 }

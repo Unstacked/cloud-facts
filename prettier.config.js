@@ -1,12 +1,17 @@
 /** @type {import("prettier").Config} */
 const config = {
-  trailingComma: 'es5',
+  trailingComma: 'all',
   tabWidth: 2,
   useTabs: false,
   semi: true,
   singleQuote: true,
   singleAttributePerLine: true,
-  plugins: ['prettier-plugin-sort-json', 'prettier-plugin-astro'],
+  multilineArraysWrapThreshold: 1,
+  plugins: [
+    'prettier-plugin-sort-json',
+    'prettier-plugin-astro',
+    'prettier-plugin-multiline-arrays',
+  ],
 };
 
 export default config;

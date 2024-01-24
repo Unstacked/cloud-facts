@@ -50,22 +50,38 @@
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "ProcessorInfo": {
     "SupportedArchitectures": ["x86_64"],
     "SustainedClockSpeedInGhz": 3.2,
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios", "uefi"],
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
   "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
   "SupportedVirtualizationTypes": ["hvm"],
   "VCpuInfo": {
     "DefaultVCpus": 4,
     "DefaultCores": 2,
     "DefaultThreadsPerCore": 2,
-    "ValidCores": [1, 2],
-    "ValidThreadsPerCore": [1, 2]
+    "ValidCores": [
+      1,
+      2
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
   }
 }

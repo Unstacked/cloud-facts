@@ -31,7 +31,7 @@ const sizeOrder = [
 
 export function instanceSizeSort(
   sizes: string[],
-  excludeMetal?: boolean
+  excludeMetal?: boolean,
 ): string[] {
   let output: string[] = [];
   for (let index in sizeOrder) {

@@ -56,23 +56,50 @@
   },
   "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
-    "SupportedStrategies": ["cluster", "partition", "spread"]
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
   },
   "ProcessorInfo": {
     "SupportedArchitectures": ["x86_64"],
     "SustainedClockSpeedInGhz": 3.7,
     "Manufacturer": "AMD"
   },
-  "SupportedBootModes": ["legacy-bios", "uefi"],
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
   "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand", "spot"],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
   "SupportedVirtualizationTypes": ["hvm"],
   "VCpuInfo": {
     "DefaultVCpus": 192,
     "DefaultCores": 192,
     "DefaultThreadsPerCore": 1,
     "ValidCores": [
-      4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 48, 72, 96, 120, 144, 168, 192
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192
     ],
     "ValidThreadsPerCore": [1]
   }

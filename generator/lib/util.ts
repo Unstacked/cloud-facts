@@ -6,7 +6,7 @@ export let filesWritten = 0;
 
 export async function writeContentDir(
   name: string,
-  data: { [key: string]: any }
+  data: { [key: string]: any },
 ) {
   rmSync(`src/content/${name}`, { recursive: true, force: true });
   mkdirSync(`src/content/${name}`);

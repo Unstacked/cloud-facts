@@ -21,7 +21,10 @@
     {
       "type": "shell",
       "command": "aws",
-      "args": ["sso", "login"],
+      "args": [
+        "sso",
+        "login"
+      ],
       "label": "AWS Login"
     }
   ],

@@ -20,5 +20,10 @@
     "us-west-1",
     "us-west-2"
   ],
-  "sizes": ["large", "medium", "small", "xlarge"]
+  "sizes": [
+    "large",
+    "medium",
+    "small",
+    "xlarge"
+  ]
 }

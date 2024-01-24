@@ -10,6 +10,16 @@
     "maxMib": 262144
   },
   "name": "h1",
-  "regions": ["eu-west-1", "us-east-1", "us-east-2", "us-west-2"],
-  "sizes": ["16xlarge", "2xlarge", "4xlarge", "8xlarge"]
+  "regions": [
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "16xlarge",
+    "2xlarge",
+    "4xlarge",
+    "8xlarge"
+  ]
 }

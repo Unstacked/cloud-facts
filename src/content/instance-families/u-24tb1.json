@@ -10,6 +10,10 @@
     "maxMib": 25165824
   },
   "name": "u-24tb1",
-  "regions": ["ap-northeast-2", "us-east-1", "us-west-2"],
+  "regions": [
+    "ap-northeast-2",
+    "us-east-1",
+    "us-west-2"
+  ],
   "sizes": ["112xlarge"]
 }

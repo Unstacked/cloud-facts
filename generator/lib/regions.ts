@@ -21,7 +21,7 @@ export async function getAllRegions(): Promise<string[]> {
           accountClient.send(enableCommand);
         }
         return r.RegionName!;
-      })
+      }),
     );
   }
   const listCommand = new ListRegionsCommand({

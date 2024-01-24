@@ -20,5 +20,10 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["24xlarge", "48xlarge", "8xlarge", "xlarge"]
+  "sizes": [
+    "24xlarge",
+    "48xlarge",
+    "8xlarge",
+    "xlarge"
+  ]
 }

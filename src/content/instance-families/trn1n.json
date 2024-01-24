@@ -10,6 +10,10 @@
     "maxMib": 524288
   },
   "name": "trn1n",
-  "regions": ["us-east-1", "us-east-2", "us-west-2"],
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
   "sizes": ["32xlarge"]
 }

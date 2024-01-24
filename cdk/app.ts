@@ -84,11 +84,21 @@ class CloudFactsStack extends Stack {
       ],
     });
 
-    spawnSync('npm', ['run', 'build'], { cwd: rootDir });
+    spawnSync(
+      'npm',
+      [
+        'run',
+        'build',
+      ],
+      { cwd: rootDir },
+    );
 
     new s3d.BucketDeployment(this, 'Deployment', {
       distribution,
-      distributionPaths: ['/', '/*'],
+      distributionPaths: [
+        '/',
+        '/*',
+      ],
       sources: [s3d.Source.asset(join(rootDir, 'dist'))],
       destinationBucket: websiteBucket,
     });
@@ -96,7 +106,7 @@ class CloudFactsStack extends Stack {
     new r53.ARecord(this, 'WebsiteARecord', {
       zone,
       target: r53.RecordTarget.fromAlias(
-        new r53t.CloudFrontTarget(distribution)
+        new r53t.CloudFrontTarget(distribution),
       ),
       recordName: domainName,
     });
@@ -104,7 +114,7 @@ class CloudFactsStack extends Stack {
     new r53.AaaaRecord(this, 'WebsiteAaaaRecord', {
       zone,
       target: r53.RecordTarget.fromAlias(
-        new r53t.CloudFrontTarget(distribution)
+        new r53t.CloudFrontTarget(distribution),
       ),
       recordName: domainName,
     });
