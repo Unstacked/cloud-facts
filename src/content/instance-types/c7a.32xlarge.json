@@ -49,7 +49,9 @@
   },
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmInfo": {
-    "SupportedVersions": ["2.0"]
+    "SupportedVersions": [
+      "2.0"
+    ]
   },
   "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
@@ -60,7 +62,9 @@
     ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
     "SustainedClockSpeedInGhz": 3.7,
     "Manufacturer": "AMD"
   },
@@ -68,12 +72,16 @@
     "legacy-bios",
     "uefi"
   ],
-  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "VCpuInfo": {
     "DefaultVCpus": 128,
     "DefaultCores": 128,
@@ -94,6 +102,8 @@
       112,
       128
     ],
-    "ValidThreadsPerCore": [1]
+    "ValidThreadsPerCore": [
+      1
+    ]
   }
 }

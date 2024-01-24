@@ -61,11 +61,15 @@
     ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
     "SustainedClockSpeedInGhz": 2.8,
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
   "SupportedRootDeviceTypes": [
     "ebs",
     "instance-store"

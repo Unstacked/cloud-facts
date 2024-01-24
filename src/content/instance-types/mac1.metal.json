@@ -55,14 +55,24 @@
     ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64_mac"],
+    "SupportedArchitectures": [
+      "x86_64_mac"
+    ],
     "SustainedClockSpeedInGhz": 3.2,
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "VCpuInfo": {
     "DefaultVCpus": 12,
     "DefaultCores": 6,

@@ -55,10 +55,18 @@
     "SustainedClockSpeedInGhz": 2.4,
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "VCpuInfo": {
     "DefaultVCpus": 1,
     "DefaultCores": 1,

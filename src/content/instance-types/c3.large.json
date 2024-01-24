@@ -68,7 +68,9 @@
     "SustainedClockSpeedInGhz": 2.8,
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
   "SupportedRootDeviceTypes": [
     "ebs",
     "instance-store"
@@ -85,7 +87,9 @@
     "DefaultVCpus": 2,
     "DefaultCores": 1,
     "DefaultThreadsPerCore": 2,
-    "ValidCores": [1],
+    "ValidCores": [
+      1
+    ],
     "ValidThreadsPerCore": [
       1,
       2

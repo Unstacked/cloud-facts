@@ -62,7 +62,9 @@
   },
   "NitroEnclavesSupport": "supported",
   "NitroTpmInfo": {
-    "SupportedVersions": ["2.0"]
+    "SupportedVersions": [
+      "2.0"
+    ]
   },
   "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
@@ -73,7 +75,9 @@
     ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
     "SustainedClockSpeedInGhz": 2.5,
     "Manufacturer": "Intel"
   },
@@ -81,17 +85,23 @@
     "legacy-bios",
     "uefi"
   ],
-  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "VCpuInfo": {
     "DefaultVCpus": 4,
     "DefaultCores": 2,
     "DefaultThreadsPerCore": 2,
-    "ValidCores": [2],
+    "ValidCores": [
+      2
+    ],
     "ValidThreadsPerCore": [
       1,
       2

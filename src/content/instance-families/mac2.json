@@ -1,6 +1,8 @@
 {
   "cpu": {
-    "architectures": ["arm64_mac"],
+    "architectures": [
+      "arm64_mac"
+    ],
     "minThreads": 8,
     "maxCores": 8
   },
@@ -17,5 +19,7 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["metal"]
+  "sizes": [
+    "metal"
+  ]
 }

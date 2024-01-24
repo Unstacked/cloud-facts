@@ -54,8 +54,12 @@
     ],
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios"],
-  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedUsageClasses": [
     "on-demand",
     "spot"

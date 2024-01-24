@@ -1,6 +1,8 @@
 {
   "cpu": {
-    "architectures": ["x86_64"],
+    "architectures": [
+      "x86_64"
+    ],
     "minThreads": 448,
     "maxCores": 448
   },
@@ -24,5 +26,7 @@
     "us-east-2",
     "us-west-2"
   ],
-  "sizes": ["112xlarge"]
+  "sizes": [
+    "112xlarge"
+  ]
 }
