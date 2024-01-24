@@ -43,4 +43,4 @@ jobs:
         run: |
           cdk synth
           cdk --app cdk.out diff
-          cdk --app cdk.out deploy --no-execute --require-approval never
+          cdk --app cdk.out deploy --require-approval never
