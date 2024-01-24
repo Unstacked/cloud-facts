@@ -68,10 +68,14 @@
     ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
   "SupportedRootDeviceTypes": [
     "ebs",
     "instance-store"

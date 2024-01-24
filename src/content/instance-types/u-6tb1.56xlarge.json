@@ -57,14 +57,24 @@
     ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["x86_64"],
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
     "SustainedClockSpeedInGhz": 2.1,
     "Manufacturer": "Intel"
   },
-  "SupportedBootModes": ["legacy-bios"],
-  "SupportedRootDeviceTypes": ["ebs"],
-  "SupportedUsageClasses": ["on-demand"],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedBootModes": [
+    "legacy-bios"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "VCpuInfo": {
     "DefaultVCpus": 224,
     "DefaultCores": 224,
@@ -99,6 +109,8 @@
       216,
       224
     ],
-    "ValidThreadsPerCore": [1]
+    "ValidThreadsPerCore": [
+      1
+    ]
   }
 }

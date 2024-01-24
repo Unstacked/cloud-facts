@@ -69,17 +69,25 @@
     ]
   },
   "ProcessorInfo": {
-    "SupportedArchitectures": ["arm64"],
+    "SupportedArchitectures": [
+      "arm64"
+    ],
     "SustainedClockSpeedInGhz": 2.6,
     "Manufacturer": "AWS"
   },
-  "SupportedBootModes": ["uefi"],
-  "SupportedRootDeviceTypes": ["ebs"],
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
   "SupportedUsageClasses": [
     "on-demand",
     "spot"
   ],
-  "SupportedVirtualizationTypes": ["hvm"],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
   "VCpuInfo": {
     "DefaultVCpus": 2,
     "DefaultCores": 2,
@@ -88,6 +96,8 @@
       1,
       2
     ],
-    "ValidThreadsPerCore": [1]
+    "ValidThreadsPerCore": [
+      1
+    ]
   }
 }
