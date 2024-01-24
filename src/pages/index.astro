@@ -2,4 +2,19 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 ---
 
-<SiteLayout title="Home" />
+<SiteLayout title="Home" >
+  <div class="lg:w-11/12 mx-auto mt-4">
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div
+              class=
+                'max-w-sm rounded overflow-hidden shadow-lg dark:bg-slate-900 bg-slate-100'
+              
+            >
+            <a href="/ec2">🖥️ EC2</a>
+            <br />
+
+            Compare EC2 Instances and see availability by region
+            </div>
+    </div>
+  </div>
+</SiteLayout>
