@@ -3,18 +3,17 @@
     "architectures": [
       "arm64_mac"
     ],
-    "minThreads": 8,
-    "maxCores": 8
+    "minThreads": 12,
+    "maxCores": 12
   },
   "currentGeneration": true,
   "memory": {
-    "minMib": 24576,
-    "maxMib": 24576
+    "minMib": 32768,
+    "maxMib": 32768
   },
-  "name": "mac2-m2",
+  "name": "mac2-m2pro",
   "regions": [
     "ap-southeast-2",
-    "eu-central-1",
     "us-east-1",
     "us-east-2",
     "us-west-2"
