@@ -119,6 +119,7 @@
     "ebs"
   ],
   "SupportedUsageClasses": [
+    "capacity-block",
     "on-demand",
     "spot"
   ],
