@@ -39,14 +39,14 @@
   },
   "NetworkInfo": {
     "NetworkPerformance": "25 Gigabit",
-    "MaximumNetworkInterfaces": 15,
+    "MaximumNetworkInterfaces": 8,
     "MaximumNetworkCards": 1,
     "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
         "NetworkCardIndex": 0,
         "NetworkPerformance": "25 Gigabit",
-        "MaximumNetworkInterfaces": 15,
+        "MaximumNetworkInterfaces": 8,
         "BaselineBandwidthInGbps": 25,
         "PeakBandwidthInGbps": 25
       }
