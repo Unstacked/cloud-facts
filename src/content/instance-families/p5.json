@@ -13,6 +13,7 @@
   },
   "name": "p5",
   "regions": [
+    "eu-north-1",
     "us-east-1",
     "us-east-2",
     "us-west-2"
