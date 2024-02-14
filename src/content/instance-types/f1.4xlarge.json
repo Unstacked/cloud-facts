@@ -67,7 +67,7 @@
     "Ipv4AddressesPerInterface": 30,
     "Ipv6AddressesPerInterface": 30,
     "Ipv6Supported": true,
-    "EnaSupport": "unsupported",
+    "EnaSupport": "supported",
     "EfaSupported": false,
     "EncryptionInTransitSupported": false,
     "EnaSrdSupported": false
