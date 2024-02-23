@@ -13,6 +13,7 @@
   },
   "name": "i4g",
   "regions": [
+    "ap-southeast-1",
     "ca-central-1",
     "eu-west-1",
     "us-east-1",
