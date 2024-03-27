@@ -27,6 +27,7 @@
     "8xlarge",
     "large",
     "medium",
+    "metal",
     "xlarge"
   ]
 }
