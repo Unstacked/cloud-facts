@@ -1,6 +1,6 @@
 {
   "AutoRecoverySupported": true,
-  "BareMetal": false,
+  "BareMetal": true,
   "BurstablePerformanceSupported": false,
   "CurrentGeneration": true,
   "DedicatedHostsSupported": true,
@@ -8,52 +8,49 @@
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
     "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 20000,
-      "BaselineThroughputInMBps": 2500,
-      "BaselineIops": 80000,
-      "MaximumBandwidthInMbps": 20000,
-      "MaximumThroughputInMBps": 2500,
-      "MaximumIops": 80000
+      "BaselineBandwidthInMbps": 33333,
+      "BaselineThroughputInMBps": 4166.625,
+      "BaselineIops": 133333,
+      "MaximumBandwidthInMbps": 40000,
+      "MaximumThroughputInMBps": 5000,
+      "MaximumIops": 160000
     },
     "NvmeSupport": "required"
   },
   "FreeTierEligible": false,
   "HibernationSupported": false,
-  "Hypervisor": "nitro",
   "InstanceStorageSupported": false,
-  "InstanceType": "m7i.16xlarge",
+  "InstanceType": "c7gn.metal",
   "MemoryInfo": {
-    "SizeInMiB": 262144
+    "SizeInMiB": 131072
   },
   "NetworkInfo": {
-    "NetworkPerformance": "25 Gigabit",
+    "NetworkPerformance": "200 Gigabit",
     "MaximumNetworkInterfaces": 15,
     "MaximumNetworkCards": 1,
     "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
         "NetworkCardIndex": 0,
-        "NetworkPerformance": "25 Gigabit",
+        "NetworkPerformance": "200 Gigabit",
         "MaximumNetworkInterfaces": 15,
-        "BaselineBandwidthInGbps": 25,
-        "PeakBandwidthInGbps": 25
+        "BaselineBandwidthInGbps": 200,
+        "PeakBandwidthInGbps": 200
       }
     ],
     "Ipv4AddressesPerInterface": 50,
     "Ipv6AddressesPerInterface": 50,
     "Ipv6Supported": true,
     "EnaSupport": "required",
-    "EfaSupported": false,
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 1
+    },
     "EncryptionInTransitSupported": true,
-    "EnaSrdSupported": true
+    "EnaSrdSupported": false
   },
   "NitroEnclavesSupport": "unsupported",
-  "NitroTpmInfo": {
-    "SupportedVersions": [
-      "2.0"
-    ]
-  },
-  "NitroTpmSupport": "supported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "cluster",
@@ -63,13 +60,12 @@
   },
   "ProcessorInfo": {
     "SupportedArchitectures": [
-      "x86_64"
+      "arm64"
     ],
-    "SustainedClockSpeedInGhz": 3.2,
-    "Manufacturer": "Intel"
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
   },
   "SupportedBootModes": [
-    "legacy-bios",
     "uefi"
   ],
   "SupportedRootDeviceTypes": [
@@ -84,45 +80,7 @@
   ],
   "VCpuInfo": {
     "DefaultVCpus": 64,
-    "DefaultCores": 32,
-    "DefaultThreadsPerCore": 2,
-    "ValidCores": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32
-    ],
-    "ValidThreadsPerCore": [
-      1,
-      2
-    ]
+    "DefaultCores": 64,
+    "DefaultThreadsPerCore": 1
   }
 }
