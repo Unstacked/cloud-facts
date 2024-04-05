@@ -1,0 +1,24 @@
+{
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 16,
+    "maxCores": 32
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 131072,
+    "maxMib": 262144
+  },
+  "name": "gr6",
+  "regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "4xlarge",
+    "8xlarge"
+  ]
+}

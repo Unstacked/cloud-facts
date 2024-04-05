@@ -1,0 +1,136 @@
+{
+  "AutoRecoverySupported": false,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 60000,
+      "BaselineThroughputInMBps": 7500,
+      "BaselineIops": 240000,
+      "MaximumBandwidthInMbps": 60000,
+      "MaximumThroughputInMBps": 7500,
+      "MaximumIops": 240000
+    },
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "L4",
+        "Manufacturer": "NVIDIA",
+        "Count": 8,
+        "MemoryInfo": {
+          "SizeInMiB": 183105
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 1464840
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 60800,
+    "Disks": [
+      {
+        "SizeInGB": 7600,
+        "Count": 8,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "g6.48xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 786432
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "100 Gigabit",
+    "MaximumNetworkInterfaces": 15,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 15,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 1
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": true
+  },
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  },
+  "NitroTpmSupport": "supported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.4,
+    "Manufacturer": "AMD"
+  },
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultVCpus": 192,
+    "DefaultCores": 96,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      24,
+      36,
+      48,
+      60,
+      72,
+      84,
+      96
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}
