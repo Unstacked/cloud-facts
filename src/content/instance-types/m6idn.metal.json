@@ -38,21 +38,21 @@
   },
   "NetworkInfo": {
     "NetworkPerformance": "200 Gigabit",
-    "MaximumNetworkInterfaces": 14,
+    "MaximumNetworkInterfaces": 16,
     "MaximumNetworkCards": 2,
     "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
         "NetworkCardIndex": 0,
         "NetworkPerformance": "Up to 170 Gigabit",
-        "MaximumNetworkInterfaces": 7,
+        "MaximumNetworkInterfaces": 8,
         "BaselineBandwidthInGbps": 200,
         "PeakBandwidthInGbps": 200
       },
       {
         "NetworkCardIndex": 1,
         "NetworkPerformance": "Up to 170 Gigabit",
-        "MaximumNetworkInterfaces": 7,
+        "MaximumNetworkInterfaces": 8,
         "BaselineBandwidthInGbps": 200,
         "PeakBandwidthInGbps": 200
       }
