@@ -2,7 +2,7 @@
   "AutoRecoverySupported": true,
   "BareMetal": false,
   "BurstablePerformanceSupported": false,
-  "CurrentGeneration": true,
+  "CurrentGeneration": false,
   "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
