@@ -6,7 +6,7 @@
     "minThreads": 16,
     "maxCores": 64
   },
-  "currentGeneration": true,
+  "currentGeneration": false,
   "memory": {
     "minMib": 124928,
     "maxMib": 499712
