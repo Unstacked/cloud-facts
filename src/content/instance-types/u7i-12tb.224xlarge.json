@@ -1,0 +1,153 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 60000,
+      "BaselineThroughputInMBps": 7500,
+      "BaselineIops": 420000,
+      "MaximumBandwidthInMbps": 60000,
+      "MaximumThroughputInMBps": 7500,
+      "MaximumIops": 420000
+    },
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "u7i-12tb.224xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 12582912
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "100 Gigabit",
+    "MaximumNetworkInterfaces": 15,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "100 Gigabit",
+        "MaximumNetworkInterfaces": 15,
+        "BaselineBandwidthInGbps": 100,
+        "PeakBandwidthInGbps": 100
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 1
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": true
+  },
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  },
+  "NitroTpmSupport": "supported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 1.9,
+    "Manufacturer": "Intel"
+  },
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultVCpus": 896,
+    "DefaultCores": 448,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96,
+      104,
+      112,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      184,
+      192,
+      200,
+      208,
+      216,
+      224,
+      232,
+      240,
+      248,
+      256,
+      264,
+      272,
+      280,
+      288,
+      296,
+      304,
+      312,
+      320,
+      328,
+      336,
+      344,
+      352,
+      360,
+      368,
+      376,
+      384,
+      392,
+      400,
+      408,
+      416,
+      424,
+      432,
+      440,
+      448
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}

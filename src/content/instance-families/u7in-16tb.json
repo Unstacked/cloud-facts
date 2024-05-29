@@ -1,0 +1,24 @@
+{
+  "cpu": {
+    "architectures": [
+      "x86_64"
+    ],
+    "minThreads": 896,
+    "maxCores": 896
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16777216,
+    "maxMib": 16777216
+  },
+  "name": "u7in-16tb",
+  "regions": [
+    "ap-northeast-2",
+    "ap-southeast-2",
+    "us-east-1",
+    "us-west-2"
+  ],
+  "sizes": [
+    "224xlarge"
+  ]
+}
