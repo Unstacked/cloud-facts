@@ -1,0 +1,22 @@
+{
+  "cpu": {
+    "architectures": [
+      "arm64_mac"
+    ],
+    "minThreads": 20,
+    "maxCores": 20
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 131072,
+    "maxMib": 131072
+  },
+  "name": "mac2-m1ultra",
+  "regions": [
+    "us-east-1",
+    "us-west-2"
+  ],
+  "sizes": [
+    "metal"
+  ]
+}
