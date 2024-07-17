@@ -1,87 +1,54 @@
 {
-  "AutoRecoverySupported": false,
+  "AutoRecoverySupported": true,
   "BareMetal": false,
   "BurstablePerformanceSupported": false,
   "CurrentGeneration": true,
-  "DedicatedHostsSupported": false,
+  "DedicatedHostsSupported": true,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
     "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 20000,
-      "BaselineThroughputInMBps": 2500,
-      "BaselineIops": 80000,
-      "MaximumBandwidthInMbps": 20000,
-      "MaximumThroughputInMBps": 2500,
-      "MaximumIops": 80000
+      "BaselineBandwidthInMbps": 10000,
+      "BaselineThroughputInMBps": 1250,
+      "BaselineIops": 40000,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 40000
     },
     "NvmeSupport": "required"
   },
   "FreeTierEligible": false,
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Name": "L4",
-        "Manufacturer": "NVIDIA",
-        "Count": 4,
-        "MemoryInfo": {
-          "SizeInMiB": 91553
-        }
-      }
-    ],
-    "TotalGpuMemoryInMiB": 366212
-  },
   "HibernationSupported": false,
   "Hypervisor": "nitro",
-  "InstanceStorageInfo": {
-    "TotalSizeInGB": 3760,
-    "Disks": [
-      {
-        "SizeInGB": 940,
-        "Count": 4,
-        "Type": "ssd"
-      }
-    ],
-    "NvmeSupport": "required",
-    "EncryptionSupport": "required"
-  },
-  "InstanceStorageSupported": true,
-  "InstanceType": "g6.12xlarge",
+  "InstanceStorageSupported": false,
+  "InstanceType": "r8g.8xlarge",
   "MemoryInfo": {
-    "SizeInMiB": 196608
+    "SizeInMiB": 262144
   },
   "NetworkInfo": {
-    "NetworkPerformance": "40 Gigabit",
+    "NetworkPerformance": "15 Gigabit",
     "MaximumNetworkInterfaces": 8,
     "MaximumNetworkCards": 1,
     "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
         "NetworkCardIndex": 0,
-        "NetworkPerformance": "40 Gigabit",
+        "NetworkPerformance": "15 Gigabit",
         "MaximumNetworkInterfaces": 8,
-        "BaselineBandwidthInGbps": 40,
-        "PeakBandwidthInGbps": 40
+        "BaselineBandwidthInGbps": 15,
+        "PeakBandwidthInGbps": 15
       }
     ],
     "Ipv4AddressesPerInterface": 30,
     "Ipv6AddressesPerInterface": 30,
     "Ipv6Supported": true,
     "EnaSupport": "required",
-    "EfaSupported": true,
-    "EfaInfo": {
-      "MaximumEfaInterfaces": 1
-    },
+    "EfaSupported": false,
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": false
   },
   "NitroEnclavesSupport": "supported",
-  "NitroTpmInfo": {
-    "SupportedVersions": [
-      "2.0"
-    ]
-  },
-  "NitroTpmSupport": "supported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "cluster",
@@ -91,13 +58,12 @@
   },
   "ProcessorInfo": {
     "SupportedArchitectures": [
-      "x86_64"
+      "arm64"
     ],
-    "SustainedClockSpeedInGhz": 3.4,
-    "Manufacturer": "AMD"
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
   },
   "SupportedBootModes": [
-    "legacy-bios",
     "uefi"
   ],
   "SupportedRootDeviceTypes": [
@@ -111,24 +77,45 @@
     "hvm"
   ],
   "VCpuInfo": {
-    "DefaultVCpus": 48,
-    "DefaultCores": 24,
-    "DefaultThreadsPerCore": 2,
+    "DefaultVCpus": 32,
+    "DefaultCores": 32,
+    "DefaultThreadsPerCore": 1,
     "ValidCores": [
       1,
       2,
       3,
+      4,
+      5,
       6,
+      7,
+      8,
       9,
+      10,
+      11,
       12,
+      13,
+      14,
       15,
+      16,
+      17,
       18,
+      19,
+      20,
       21,
-      24
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
     ],
     "ValidThreadsPerCore": [
-      1,
-      2
+      1
     ]
   }
 }
