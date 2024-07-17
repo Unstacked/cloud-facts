@@ -34,10 +34,10 @@
   "HibernationSupported": false,
   "Hypervisor": "nitro",
   "InstanceStorageInfo": {
-    "TotalSizeInGB": 3800,
+    "TotalSizeInGB": 1880,
     "Disks": [
       {
-        "SizeInGB": 1900,
+        "SizeInGB": 940,
         "Count": 2,
         "Type": "ssd"
       }

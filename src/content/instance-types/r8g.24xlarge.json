@@ -1,5 +1,5 @@
 {
-  "AutoRecoverySupported": false,
+  "AutoRecoverySupported": true,
   "BareMetal": false,
   "BurstablePerformanceSupported": false,
   "CurrentGeneration": true,
@@ -8,60 +8,35 @@
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
     "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 60000,
-      "BaselineThroughputInMBps": 7500,
-      "BaselineIops": 240000,
-      "MaximumBandwidthInMbps": 60000,
-      "MaximumThroughputInMBps": 7500,
-      "MaximumIops": 240000
+      "BaselineBandwidthInMbps": 30000,
+      "BaselineThroughputInMBps": 3750,
+      "BaselineIops": 120000,
+      "MaximumBandwidthInMbps": 30000,
+      "MaximumThroughputInMBps": 3750,
+      "MaximumIops": 120000
     },
     "NvmeSupport": "required"
   },
   "FreeTierEligible": false,
-  "GpuInfo": {
-    "Gpus": [
-      {
-        "Name": "L4",
-        "Manufacturer": "NVIDIA",
-        "Count": 8,
-        "MemoryInfo": {
-          "SizeInMiB": 183105
-        }
-      }
-    ],
-    "TotalGpuMemoryInMiB": 1464840
-  },
   "HibernationSupported": false,
   "Hypervisor": "nitro",
-  "InstanceStorageInfo": {
-    "TotalSizeInGB": 7520,
-    "Disks": [
-      {
-        "SizeInGB": 940,
-        "Count": 8,
-        "Type": "ssd"
-      }
-    ],
-    "NvmeSupport": "required",
-    "EncryptionSupport": "required"
-  },
-  "InstanceStorageSupported": true,
-  "InstanceType": "g6.48xlarge",
+  "InstanceStorageSupported": false,
+  "InstanceType": "r8g.24xlarge",
   "MemoryInfo": {
     "SizeInMiB": 786432
   },
   "NetworkInfo": {
-    "NetworkPerformance": "100 Gigabit",
+    "NetworkPerformance": "40 Gigabit",
     "MaximumNetworkInterfaces": 15,
     "MaximumNetworkCards": 1,
     "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
         "NetworkCardIndex": 0,
-        "NetworkPerformance": "100 Gigabit",
+        "NetworkPerformance": "40 Gigabit",
         "MaximumNetworkInterfaces": 15,
-        "BaselineBandwidthInGbps": 100,
-        "PeakBandwidthInGbps": 100
+        "BaselineBandwidthInGbps": 40,
+        "PeakBandwidthInGbps": 40
       }
     ],
     "Ipv4AddressesPerInterface": 50,
@@ -76,12 +51,7 @@
     "EnaSrdSupported": true
   },
   "NitroEnclavesSupport": "supported",
-  "NitroTpmInfo": {
-    "SupportedVersions": [
-      "2.0"
-    ]
-  },
-  "NitroTpmSupport": "supported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "cluster",
@@ -91,13 +61,12 @@
   },
   "ProcessorInfo": {
     "SupportedArchitectures": [
-      "x86_64"
+      "arm64"
     ],
-    "SustainedClockSpeedInGhz": 3.4,
-    "Manufacturer": "AMD"
+    "SustainedClockSpeedInGhz": 2.6,
+    "Manufacturer": "AWS"
   },
   "SupportedBootModes": [
-    "legacy-bios",
     "uefi"
   ],
   "SupportedRootDeviceTypes": [
@@ -111,26 +80,109 @@
     "hvm"
   ],
   "VCpuInfo": {
-    "DefaultVCpus": 192,
+    "DefaultVCpus": 96,
     "DefaultCores": 96,
-    "DefaultThreadsPerCore": 2,
+    "DefaultThreadsPerCore": 1,
     "ValidCores": [
+      1,
+      2,
+      3,
       4,
+      5,
       6,
+      7,
       8,
+      9,
       10,
+      11,
       12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
       24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
       36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
       48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
       60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
       72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
       84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
       96
     ],
     "ValidThreadsPerCore": [
-      1,
-      2
+      1
     ]
   }
 }
