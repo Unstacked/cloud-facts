@@ -18,7 +18,7 @@
     "NvmeSupport": "required"
   },
   "FreeTierEligible": false,
-  "HibernationSupported": true,
+  "HibernationSupported": false,
   "Hypervisor": "nitro",
   "InstanceStorageSupported": false,
   "InstanceType": "c6gn.8xlarge",
