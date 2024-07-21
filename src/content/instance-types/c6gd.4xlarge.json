@@ -18,7 +18,7 @@
     "NvmeSupport": "required"
   },
   "FreeTierEligible": false,
-  "HibernationSupported": true,
+  "HibernationSupported": false,
   "Hypervisor": "nitro",
   "InstanceStorageInfo": {
     "TotalSizeInGB": 950,
