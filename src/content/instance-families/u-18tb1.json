@@ -13,6 +13,7 @@
   },
   "name": "u-18tb1",
   "regions": [
+    "eu-central-1",
     "eu-west-1",
     "us-east-1",
     "us-west-2"
