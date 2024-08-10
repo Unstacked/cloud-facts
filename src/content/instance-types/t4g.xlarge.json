@@ -48,12 +48,7 @@
     "EnaSrdSupported": false
   },
   "NitroEnclavesSupport": "unsupported",
-  "NitroTpmInfo": {
-    "SupportedVersions": [
-      "2.0"
-    ]
-  },
-  "NitroTpmSupport": "supported",
+  "NitroTpmSupport": "unsupported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "partition",
