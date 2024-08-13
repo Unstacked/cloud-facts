@@ -51,7 +51,12 @@
     "EnaSrdSupported": false
   },
   "NitroEnclavesSupport": "unsupported",
-  "NitroTpmSupport": "unsupported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  },
+  "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
       "cluster",
