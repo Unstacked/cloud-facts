@@ -1,0 +1,153 @@
+{
+  "AutoRecoverySupported": false,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 60000,
+      "BaselineThroughputInMBps": 7500,
+      "BaselineIops": 240000,
+      "MaximumBandwidthInMbps": 60000,
+      "MaximumThroughputInMBps": 7500,
+      "MaximumIops": 240000
+    },
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "L40S",
+        "Manufacturer": "NVIDIA",
+        "Count": 8,
+        "MemoryInfo": {
+          "SizeInMiB": 366211
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 2929688
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 7600,
+    "Disks": [
+      {
+        "SizeInGB": 1900,
+        "Count": 4,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "g6e.48xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 1572864
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "400 Gigabit",
+    "MaximumNetworkInterfaces": 40,
+    "MaximumNetworkCards": 4,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "400 Gigabit",
+        "MaximumNetworkInterfaces": 10,
+        "BaselineBandwidthInGbps": 400,
+        "PeakBandwidthInGbps": 400
+      },
+      {
+        "NetworkCardIndex": 1,
+        "NetworkPerformance": "400 Gigabit",
+        "MaximumNetworkInterfaces": 10,
+        "BaselineBandwidthInGbps": 400,
+        "PeakBandwidthInGbps": 400
+      },
+      {
+        "NetworkCardIndex": 2,
+        "NetworkPerformance": "400 Gigabit",
+        "MaximumNetworkInterfaces": 10,
+        "BaselineBandwidthInGbps": 400,
+        "PeakBandwidthInGbps": 400
+      },
+      {
+        "NetworkCardIndex": 3,
+        "NetworkPerformance": "400 Gigabit",
+        "MaximumNetworkInterfaces": 10,
+        "BaselineBandwidthInGbps": 400,
+        "PeakBandwidthInGbps": 400
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 4
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": true
+  },
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  },
+  "NitroTpmSupport": "supported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.4,
+    "Manufacturer": "AMD"
+  },
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultVCpus": 192,
+    "DefaultCores": 96,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      12,
+      24,
+      36,
+      48,
+      60,
+      72,
+      84,
+      96
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}
