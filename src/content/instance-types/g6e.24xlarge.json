@@ -1,0 +1,139 @@
+{
+  "AutoRecoverySupported": false,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 30000,
+      "BaselineThroughputInMBps": 3750,
+      "BaselineIops": 120000,
+      "MaximumBandwidthInMbps": 30000,
+      "MaximumThroughputInMBps": 3750,
+      "MaximumIops": 120000
+    },
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "GpuInfo": {
+    "Gpus": [
+      {
+        "Name": "L40S",
+        "Manufacturer": "NVIDIA",
+        "Count": 4,
+        "MemoryInfo": {
+          "SizeInMiB": 183105
+        }
+      }
+    ],
+    "TotalGpuMemoryInMiB": 732420
+  },
+  "HibernationSupported": false,
+  "Hypervisor": "nitro",
+  "InstanceStorageInfo": {
+    "TotalSizeInGB": 3800,
+    "Disks": [
+      {
+        "SizeInGB": 1900,
+        "Count": 2,
+        "Type": "ssd"
+      }
+    ],
+    "NvmeSupport": "required",
+    "EncryptionSupport": "required"
+  },
+  "InstanceStorageSupported": true,
+  "InstanceType": "g6e.24xlarge",
+  "MemoryInfo": {
+    "SizeInMiB": 786432
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "200 Gigabit",
+    "MaximumNetworkInterfaces": 20,
+    "MaximumNetworkCards": 2,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "200 Gigabit",
+        "MaximumNetworkInterfaces": 10,
+        "BaselineBandwidthInGbps": 200,
+        "PeakBandwidthInGbps": 200
+      },
+      {
+        "NetworkCardIndex": 1,
+        "NetworkPerformance": "200 Gigabit",
+        "MaximumNetworkInterfaces": 10,
+        "BaselineBandwidthInGbps": 200,
+        "PeakBandwidthInGbps": 200
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 2
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": true
+  },
+  "NitroEnclavesSupport": "supported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  },
+  "NitroTpmSupport": "supported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "x86_64"
+    ],
+    "SustainedClockSpeedInGhz": 3.4,
+    "Manufacturer": "AMD"
+  },
+  "SupportedBootModes": [
+    "legacy-bios",
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultVCpus": 96,
+    "DefaultCores": 48,
+    "DefaultThreadsPerCore": 2,
+    "ValidCores": [
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48
+    ],
+    "ValidThreadsPerCore": [
+      1,
+      2
+    ]
+  }
+}
