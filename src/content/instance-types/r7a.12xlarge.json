@@ -45,7 +45,7 @@
     "EnaSupport": "required",
     "EfaSupported": false,
     "EncryptionInTransitSupported": true,
-    "EnaSrdSupported": false
+    "EnaSrdSupported": true
   },
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmInfo": {
