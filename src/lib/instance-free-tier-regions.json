@@ -32,6 +32,9 @@
   "ap-southeast-4": [
     "t3.micro"
   ],
+  "ap-southeast-5": [
+    "t3.micro"
+  ],
   "ca-central-1": [
     "t2.micro"
   ],
