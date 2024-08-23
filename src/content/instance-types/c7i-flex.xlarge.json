@@ -3,49 +3,49 @@
   "BareMetal": false,
   "BurstablePerformanceSupported": false,
   "CurrentGeneration": true,
-  "DedicatedHostsSupported": true,
+  "DedicatedHostsSupported": false,
   "EbsInfo": {
     "EbsOptimizedSupport": "default",
     "EncryptionSupport": "supported",
     "EbsOptimizedInfo": {
-      "BaselineBandwidthInMbps": 30000,
-      "BaselineThroughputInMBps": 3750,
-      "BaselineIops": 120000,
-      "MaximumBandwidthInMbps": 30000,
-      "MaximumThroughputInMBps": 3750,
-      "MaximumIops": 120000
+      "BaselineBandwidthInMbps": 625,
+      "BaselineThroughputInMBps": 78.125,
+      "BaselineIops": 3600,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 40000
     },
     "NvmeSupport": "required"
   },
   "FreeTierEligible": false,
-  "HibernationSupported": false,
+  "HibernationSupported": true,
   "Hypervisor": "nitro",
   "InstanceStorageSupported": false,
-  "InstanceType": "m7a.24xlarge",
+  "InstanceType": "c7i-flex.xlarge",
   "MemoryInfo": {
-    "SizeInMiB": 393216
+    "SizeInMiB": 8192
   },
   "NetworkInfo": {
-    "NetworkPerformance": "37.5 Gigabit",
-    "MaximumNetworkInterfaces": 15,
+    "NetworkPerformance": "Up to 12.5 Gigabit",
+    "MaximumNetworkInterfaces": 4,
     "MaximumNetworkCards": 1,
     "DefaultNetworkCardIndex": 0,
     "NetworkCards": [
       {
         "NetworkCardIndex": 0,
-        "NetworkPerformance": "37.5 Gigabit",
-        "MaximumNetworkInterfaces": 15,
-        "BaselineBandwidthInGbps": 37.5,
-        "PeakBandwidthInGbps": 37.5
+        "NetworkPerformance": "Up to 12.5 Gigabit",
+        "MaximumNetworkInterfaces": 4,
+        "BaselineBandwidthInGbps": 0.781,
+        "PeakBandwidthInGbps": 12.5
       }
     ],
-    "Ipv4AddressesPerInterface": 50,
-    "Ipv6AddressesPerInterface": 50,
+    "Ipv4AddressesPerInterface": 15,
+    "Ipv6AddressesPerInterface": 15,
     "Ipv6Supported": true,
     "EnaSupport": "required",
     "EfaSupported": false,
     "EncryptionInTransitSupported": true,
-    "EnaSrdSupported": true
+    "EnaSrdSupported": false
   },
   "NitroEnclavesSupport": "unsupported",
   "NitroTpmInfo": {
@@ -56,7 +56,6 @@
   "NitroTpmSupport": "supported",
   "PlacementGroupInfo": {
     "SupportedStrategies": [
-      "cluster",
       "partition",
       "spread"
     ]
@@ -65,8 +64,8 @@
     "SupportedArchitectures": [
       "x86_64"
     ],
-    "SustainedClockSpeedInGhz": 3.7,
-    "Manufacturer": "AMD"
+    "SustainedClockSpeedInGhz": 3.2,
+    "Manufacturer": "Intel"
   },
   "SupportedBootModes": [
     "legacy-bios",
@@ -83,32 +82,16 @@
     "hvm"
   ],
   "VCpuInfo": {
-    "DefaultVCpus": 96,
-    "DefaultCores": 96,
-    "DefaultThreadsPerCore": 1,
+    "DefaultVCpus": 4,
+    "DefaultCores": 2,
+    "DefaultThreadsPerCore": 2,
     "ValidCores": [
       1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      24,
-      36,
-      48,
-      60,
-      72,
-      84,
-      96
+      2
     ],
     "ValidThreadsPerCore": [
-      1
+      1,
+      2
     ]
   }
 }
