@@ -73,7 +73,7 @@
       "MaximumEfaInterfaces": 1
     },
     "EncryptionInTransitSupported": true,
-    "EnaSrdSupported": false
+    "EnaSrdSupported": true
   },
   "NitroEnclavesSupport": "supported",
   "NitroTpmInfo": {
