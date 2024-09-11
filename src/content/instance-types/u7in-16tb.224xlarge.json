@@ -57,7 +57,7 @@
     "EncryptionInTransitSupported": true,
     "EnaSrdSupported": true
   },
-  "NitroEnclavesSupport": "supported",
+  "NitroEnclavesSupport": "unsupported",
   "NitroTpmInfo": {
     "SupportedVersions": [
       "2.0"
