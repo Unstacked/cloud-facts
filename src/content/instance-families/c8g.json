@@ -1,0 +1,35 @@
+{
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 192
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 2048,
+    "maxMib": 393216
+  },
+  "name": "c8g",
+  "regions": [
+    "eu-central-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "sizes": [
+    "12xlarge",
+    "16xlarge",
+    "24xlarge",
+    "2xlarge",
+    "48xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "medium",
+    "metal-24xl",
+    "metal-48xl",
+    "xlarge"
+  ]
+}

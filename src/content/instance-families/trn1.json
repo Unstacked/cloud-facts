@@ -13,6 +13,7 @@
   },
   "name": "trn1",
   "regions": [
+    "ap-southeast-4",
     "us-east-1",
     "us-east-2",
     "us-west-2"
