@@ -1,0 +1,34 @@
+{
+  "cpu": {
+    "architectures": [
+      "arm64"
+    ],
+    "minThreads": 1,
+    "maxCores": 192
+  },
+  "currentGeneration": true,
+  "memory": {
+    "minMib": 16384,
+    "maxMib": 3145728
+  },
+  "name": "x8g",
+  "regions": [
+    "eu-central-1",
+    "us-east-1",
+    "us-west-2"
+  ],
+  "sizes": [
+    "12xlarge",
+    "16xlarge",
+    "24xlarge",
+    "2xlarge",
+    "48xlarge",
+    "4xlarge",
+    "8xlarge",
+    "large",
+    "medium",
+    "metal-24xl",
+    "metal-48xl",
+    "xlarge"
+  ]
+}

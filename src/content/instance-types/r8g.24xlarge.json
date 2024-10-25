@@ -68,7 +68,7 @@
     "SupportedArchitectures": [
       "arm64"
     ],
-    "SustainedClockSpeedInGhz": 2.6,
+    "SustainedClockSpeedInGhz": 2.8,
     "Manufacturer": "AWS"
   },
   "SupportedBootModes": [

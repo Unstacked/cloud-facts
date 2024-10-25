@@ -1,0 +1,89 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": false,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 315,
+      "BaselineThroughputInMBps": 39.375,
+      "BaselineIops": 2500,
+      "MaximumBandwidthInMbps": 10000,
+      "MaximumThroughputInMBps": 1250,
+      "MaximumIops": 40000
+    },
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": true,
+  "Hypervisor": "nitro",
+  "InstanceStorageSupported": false,
+  "InstanceType": "c8g.medium",
+  "MemoryInfo": {
+    "SizeInMiB": 2048
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "Up to 12.5 Gigabit",
+    "MaximumNetworkInterfaces": 2,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "Up to 12.5 Gigabit",
+        "MaximumNetworkInterfaces": 2,
+        "BaselineBandwidthInGbps": 0.52,
+        "PeakBandwidthInGbps": 12.5
+      }
+    ],
+    "Ipv4AddressesPerInterface": 4,
+    "Ipv6AddressesPerInterface": 4,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": false,
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": false
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmInfo": {
+    "SupportedVersions": [
+      "2.0"
+    ]
+  },
+  "NitroTpmSupport": "supported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.8,
+    "Manufacturer": "AWS"
+  },
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultVCpus": 1,
+    "DefaultCores": 1,
+    "DefaultThreadsPerCore": 1
+  }
+}

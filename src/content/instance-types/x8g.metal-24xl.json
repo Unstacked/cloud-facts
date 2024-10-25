@@ -1,0 +1,86 @@
+{
+  "AutoRecoverySupported": true,
+  "BareMetal": true,
+  "BurstablePerformanceSupported": false,
+  "CurrentGeneration": true,
+  "DedicatedHostsSupported": true,
+  "EbsInfo": {
+    "EbsOptimizedSupport": "default",
+    "EncryptionSupport": "supported",
+    "EbsOptimizedInfo": {
+      "BaselineBandwidthInMbps": 30000,
+      "BaselineThroughputInMBps": 3750,
+      "BaselineIops": 120000,
+      "MaximumBandwidthInMbps": 30000,
+      "MaximumThroughputInMBps": 3750,
+      "MaximumIops": 120000
+    },
+    "NvmeSupport": "required"
+  },
+  "FreeTierEligible": false,
+  "HibernationSupported": false,
+  "InstanceStorageSupported": false,
+  "InstanceType": "x8g.metal-24xl",
+  "MemoryInfo": {
+    "SizeInMiB": 1572864
+  },
+  "NetworkInfo": {
+    "NetworkPerformance": "40 Gigabit",
+    "MaximumNetworkInterfaces": 15,
+    "MaximumNetworkCards": 1,
+    "DefaultNetworkCardIndex": 0,
+    "NetworkCards": [
+      {
+        "NetworkCardIndex": 0,
+        "NetworkPerformance": "40 Gigabit",
+        "MaximumNetworkInterfaces": 15,
+        "BaselineBandwidthInGbps": 40,
+        "PeakBandwidthInGbps": 40
+      }
+    ],
+    "Ipv4AddressesPerInterface": 50,
+    "Ipv6AddressesPerInterface": 50,
+    "Ipv6Supported": true,
+    "EnaSupport": "required",
+    "EfaSupported": true,
+    "EfaInfo": {
+      "MaximumEfaInterfaces": 1
+    },
+    "EncryptionInTransitSupported": true,
+    "EnaSrdSupported": true
+  },
+  "NitroEnclavesSupport": "unsupported",
+  "NitroTpmSupport": "unsupported",
+  "PlacementGroupInfo": {
+    "SupportedStrategies": [
+      "cluster",
+      "partition",
+      "spread"
+    ]
+  },
+  "ProcessorInfo": {
+    "SupportedArchitectures": [
+      "arm64"
+    ],
+    "SustainedClockSpeedInGhz": 2.8,
+    "Manufacturer": "AWS"
+  },
+  "SupportedBootModes": [
+    "uefi"
+  ],
+  "SupportedRootDeviceTypes": [
+    "ebs"
+  ],
+  "SupportedUsageClasses": [
+    "on-demand",
+    "spot"
+  ],
+  "SupportedVirtualizationTypes": [
+    "hvm"
+  ],
+  "VCpuInfo": {
+    "DefaultVCpus": 96,
+    "DefaultCores": 96,
+    "DefaultThreadsPerCore": 1
+  }
+}
