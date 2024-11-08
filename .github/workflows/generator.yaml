@@ -54,6 +54,7 @@ jobs:
       - name: Commit Changes
         if: steps.git-status.outputs.CHANGES == 'true'
         run: |
+          git push origin --delete generator/updates
           git config --global user.name "GitHub Actions"
           git config --global user.email "pwed@duck.com"
           git checkout -B generator/updates
