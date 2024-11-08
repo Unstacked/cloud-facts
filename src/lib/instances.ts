@@ -65,7 +65,7 @@ const InstanceComputeTypes: { [type: string]: InstanceComputeClass } = {
   r: InstanceComputeClass.Memory_Optimized,
   x: InstanceComputeClass.Memory_Optimized,
   z: InstanceComputeClass.Memory_Optimized,
-  'u-': InstanceComputeClass.Memory_Optimized,
+  u: InstanceComputeClass.Memory_Optimized,
   p: InstanceComputeClass.Accelerated_Computing,
   g: InstanceComputeClass.Accelerated_Computing,
   gr: InstanceComputeClass.Accelerated_Computing,
