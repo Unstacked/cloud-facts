@@ -1,6 +1,7 @@
 {
   "cpu": {
     "architectures": [
+      "i386",
       "x86_64"
     ],
     "minThreads": 2,
