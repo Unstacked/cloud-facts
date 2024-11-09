@@ -66,6 +66,7 @@ jobs:
         if: steps.git-status.outputs.CHANGES == 'true'
         run: |
           gh pr create -B main -H generator/updates --title 'Merge generator/updates into main' --body 'Created by Github action'
+          sleep 5
           gh pr merge --auto --delete-branch --squash
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
