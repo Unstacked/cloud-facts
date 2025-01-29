@@ -27,7 +27,7 @@
     "@types/source-map-support": "^0.5.10",
     "astro": "^4.16.10",
     "aws-cdk": "2.114.1",
-    "aws-cdk-lib": "2.114.1",
+    "aws-cdk-lib": "2.177.0",
     "aws-icon-lib": "^1.0.0",
     "constructs": "^10.0.0",
     "git-root-dir": "^1.0.2",
